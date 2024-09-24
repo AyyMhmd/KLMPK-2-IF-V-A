@@ -2,7 +2,7 @@ NAMA: AYI MUHAMAD N
 KELAS: IF V A
 NIM: 10222058
 
-NAMA: Khoerunisa
+NAMA: Khoerunisa (menambahkan nisa)
 KELAS: IF V A
 NIM: 10222012
 
