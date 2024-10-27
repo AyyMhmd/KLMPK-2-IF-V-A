@@ -7,15 +7,16 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
       <title>home</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="styles.css">
   </head>
   
-  <!-- top -->
+ 
   <body>
+       <!-- top -->
       <ul class="nav justify-content-end fixed-top">
         <li class="nav-item dropdown">
           <!-- Tombol dropdown dengan ikon pencarian -->
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link haha dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fas fa-search"></i> <!-- Ikon pencarian -->
           </a>
       
@@ -31,26 +32,26 @@
         </li>
       
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
+          <a class="nav-link active" href="#">Link</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link active" href="#">Link</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link active" href="#">Link</a>
         </li>
-        <button type="button" class="btn btn-primary">Login</button>
-        <button type="button" class="btn btn-danger">Sign up</button>
+        <li>
+          <button type="button" class="btn btn-primary btn-sm align-items-center">Login</button>
+          <button type="button" class="btn btn-danger btn-sm align-items-center">Sign up</button>
+        </li>
       </ul>
-  
       <!-- end top -->
 
       <!-- navbar -->
-  
       <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="https://sttcipasung.ac.id/wp-content/uploads/2023/07/STT-CIPASUNG-2-e1688823058980.png" alt="Brand Logo" style="height: 100px;">
+                <img src="https://sttcipasung.ac.id/wp-content/uploads/2023/07/STT-CIPASUNG-2-e1688823058980.png" alt="Brand Logo" style="height: 60px;">
             </a>     
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,11 +121,11 @@
           </div>
         </div>
       </nav>
-
       <! -- end navbar -->
 
-      <div class="container-fluid" style="height:100vh">
-        <! -- slide -->
+      <! -- slide -->
+      <div class="container-fluid-custom" style="height:100vh">
+
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -171,11 +172,13 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <!-- end slide -->
+        
       </div>
+      <!-- end slide -->
 
       <!-- content -->
       <div class="container text-center">
+
         <!-- content 1 -->
         <div class="container text-center mt-3 mb-5">
           <h2>
@@ -188,27 +191,66 @@
         <!-- end content 1 -->
 
         <!-- content 2 -->
+        <div class="container">
+          <!-- pa chobir -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">pak chobir</h5>
+                  <p class="card-text">kata kata hari ini</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="img/su_152.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+            </div>
+          </div>
+          <!-- end pa chobir -->
+
+          <!-- pa ade -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/kv_2.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">pak ade</h5>
+                  <p class="card-text">kata kata hari ini</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end pa ade -->
+        </div>
+        <!-- end content 2 -->
+
+        <!-- content 3 -->
         <div class="container text-center mb-5">
           <!-- content split -->
           <div class="row align-items-center mt-3">
             <!-- content 2 Left -->
             <div class="col align-items-center">
               <h2>World Of Tank Blitz</h2>
-              <img src="img/wotb.jpeg" alt="..." style="height: auto; width: auto;">
+              <img src="img/wotb.jpeg" alt="..." style="display: block; margin: auto; height: auto; width: auto;">
             </div>
             <!-- end content 2 Left -->
         
             <!-- content 2 Right -->
             <div class="col align-items-center">
               <h2>World Of Tank</h2>
-              <img src="img/wot.jpeg" alt="..." style="height: auto; width: auto;">
+              <img src="img/wot.jpeg" alt="..." style="display: block; margin: auto; height: auto; width: auto;">
             </div>
             <!-- end content 2 Right -->
           </div>
-          <!-- end content 2 split -->
+          <!-- end content 3 split -->
         </div>
-        
-        <!-- content 3 -->
+        <!-- end content 3 -->
+
+        <!-- content 4 -->
         <div class="container text-center mb-5">
           <h2>
             Undergraduate and Graduate Degree Programs
@@ -217,9 +259,9 @@
             STT cipasung College offers a BA in Liberal and Islamic Studies with a minor in Arabic. 
           </a>
         </div>
-        <!-- end content 3 -->
+        <!-- end content 4 -->
 
-        <!-- content 4 -->
+        <!-- content 5 -->
         <div class="container text-center mb-5">
           <div class="row align-items-start">
             <div class="col">
@@ -236,18 +278,18 @@
             </div>
           </div>
         </div>
-        <!-- end content 4 -->
+        <!-- end content 5 -->
 
-        <!-- content 5 -->
+        <!-- content 6 -->
         <div class="container text-center mb-5">
           <h2>
             Events and Academic Calendar
           </h2>
           <button type="button" class="btn btn-secondary btn-lg align-items-center mt-3">View Calendar</button>
         </div>
-        <!-- end content 5 -->
+        <!-- end content 6 -->
 
-        <!-- content 6 -->
+        <!-- content 7 -->
         <div class="container text-start mb-5">
           <h2>
             Acara Terdekat
@@ -256,9 +298,9 @@
             lihat lebih lanjut 
           </a>
         </div>
-        <!-- end content 6 -->
+        <!-- end content 7 -->
 
-        <!-- content 7 -->
+        <!-- content 8 -->
         <div class="container text-start mb-5">
           <h2>
             ukm
@@ -316,9 +358,9 @@
               </div>
             </div>
           </div>
-          <!-- end content 7 -->
+          <!-- end content 8 -->
 
-          <!-- content 8 -->
+          <!-- content 9 -->
           <div class="container text-center mb-5">
             <h2>
               ayo daftar!!
@@ -326,7 +368,7 @@
             <p> daftar</p>
             <button type="button" class="btn btn-secondary btn-lg align-items-center">Daftar</button>
           </div>
-          <!-- end content 8 -->
+          <!-- end content 9 -->
         </div>
         <!-- end content -->
 
@@ -349,7 +391,6 @@
             </div>
           </div>
         </div>        
-        
         <!-- end footer 1 -->
 
         <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto;">
@@ -405,7 +446,6 @@
             </div>
           </div>
         </div>
-
         <!-- end footer 2 -->
 
         <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto;">
@@ -435,7 +475,6 @@
             </div>
           </div>
         </div>
-
         <!-- end footer 3 -->
         
         <!-- footer 4 -->
@@ -457,7 +496,6 @@
             </div>
           </div>
         </footer>
-
       <!-- end footer 4 -->
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
