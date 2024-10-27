@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: green;
+  background-color: white;
+}
+
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav.justify-content-end.fixed-top {
+  background-color: green; /* contoh warna latar belakang */
+  color: #000; /* warna teks */
+}
+
+.nav-link.active{
+  color: white;
+}
+
+.nav-link.active:hover {
+  color: #2d6a4f; /* Warna teks saat di-hover */
+}
+
+.container-fluid{
+  background-color: white;
+  margin-top: 40px;
+}
+
+/* Mengatur warna latar belakang dan warna teks navbar */
+.navbar.bg-body-tertiary.sticky-top{
+  color: #347928;
+  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.216); /* efek bayangan */
+}
+
+/* Mengatur warna, ukuran font, dan dekorasi link navbar */
+.navbar .nav-link {
+  color: #347928; /* Warna teks */
+  font-size: 18px; /* Ukuran font */
+  font-family: Arial, sans-serif; /* Ganti sesuai kebutuhan */
+  text-decoration: none; /* Hilangkan garis bawah */
+}
+
+.navbar .nav-link:hover {
+  color: #2d6a4f; /* Warna teks saat di-hover */
+}
+
+/* Mengatur tombol Sumbangan dan PMB */
+.navbar .btn {
+  font-size: 16px; /* Ukuran font tombol */
+  font-weight: bold; /* Tebal font */
+  padding: 8px 16px; /* Ruang dalam tombol */
+  border-radius: 8px; /* Sudut tombol melengkung */
+}
+
+/* Mengatur menu dropdown */
+.navbar .dropdown-menu {
+  background-color: #f9f9f9; /* Latar belakang dropdown */
+}
+
+.navbar .dropdown-item {
+  color: #347928; /* Warna teks item dropdown */
+  font-size: 16px; /* Ukuran font dropdown */
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #C0EBA6; /* Warna saat di-hover */
+  color: #2d6a4f;
+}
+
+footer {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
