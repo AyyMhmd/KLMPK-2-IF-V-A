@@ -32,44 +32,8 @@ h1 {
   color: #2d6a4f; /* Warna teks saat di-hover */
 }
 
-/* caraousel */
-.container-fluid-custom {
-  background-color: #f8f9fa; /* Warna latar belakang untuk kontainer */
-}
-
-.carousel-inner {
-  border-radius: 10px; /* Membuat sudut carousel menjadi melengkung */
-  overflow: hidden; /* Menghilangkan bagian gambar yang melampaui batas */
-}
-
-.carousel-item img {
-  object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi */
-  transition: transform 0.5s ease; /* Animasi saat gambar berpindah */
-}
-
-.carousel-item.active img {
-  transform: scale(1.05); /* Membesarkan gambar yang aktif */
-}
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan untuk caption */
-  color: white; /* Warna teks */
-  padding: 20px; /* Ruang di dalam caption */
-  border-radius: 5px; /* Sudut melengkung untuk caption */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang untuk tombol kontrol */
-  border-radius: 50%; /* Membuat tombol kontrol menjadi bulat */
-}
-
-.carousel-control-prev-icon:focus,
-.carousel-control-next-icon:focus {
-  outline: none; /* Menghilangkan outline saat tombol fokus */
-}
 .container-fluid{
-  background-color: rgba(255, 255, 255, 0);
+  background-color: white;
   margin-top: 40px;
 }
 
@@ -100,17 +64,17 @@ h1 {
 }
 
 /* Mengatur menu dropdown */
-/* .navbar .dropdown-menu {
-  background-color: #f9f9f9; 
+.navbar .dropdown-menu {
+  background-color: #f9f9f9; /* Latar belakang dropdown */
 }
 
 .navbar .dropdown-item {
-  color: #347928; 
-  font-size: 16px; 
+  color: #347928; /* Warna teks item dropdown */
+  font-size: 16px; /* Ukuran font dropdown */
 }
 
 .navbar .dropdown-item:hover {
-  background-color: #C0EBA6;
+  background-color: #C0EBA6; /* Warna saat di-hover */
   color: #2d6a4f;
 } */
 /* Styling untuk dropdown menu */
@@ -212,7 +176,7 @@ a:hover {
 .col a:hover {
   color: #37d81b;
 }
-/* p */
+
 /* Style for the footer */
 .footer-left {
   margin-right: auto;
