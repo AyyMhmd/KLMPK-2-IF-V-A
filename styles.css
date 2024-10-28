@@ -68,6 +68,14 @@ h1 {
   background-color: #f9f9f9; /* Latar belakang dropdown */
 }
 
+.nav-link.haha.dropdown-toggle{
+  color: #f9f9f9;
+}
+
+/* .nav.justify-content-end.fixed-top .li a{
+  margin-top: 5px;
+} */
+
 .navbar .dropdown-item {
   color: #347928; /* Warna teks item dropdown */
   font-size: 16px; /* Ukuran font dropdown */
@@ -132,18 +140,13 @@ h1 {
   margin-left: -15px;
 }
 
-/* Style for the column */
-.col {
-  flex: 1 0 0%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
 
 /* Style for the header */
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color:red;
 }
 
 /* Style for the links */
@@ -169,12 +172,12 @@ a:hover {
 
 .col a {
   font-size: 16px;
-  color: #333;
+  color: #ff0000;
 }
 
 
 .col a:hover {
-  color: #37d81b;
+  color: #347928;
 }
 
 /* Style for the footer */
