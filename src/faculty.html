@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,15 +10,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- js scroll animasi -->
-     <script src="../script.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <title>home</title>
-    <link rel="stylesheet" href="if.css" />
+    <link rel="stylesheet" href="faculty.css">
   </head>
+
   <body>
     <!-- top -->
     <ul class="nav justify-content-end fixed-top">
@@ -34,6 +33,7 @@
           <i class="fas fa-search"></i>
           <!-- Ikon pencarian -->
         </a>
+
         <!-- Dropdown dengan form pencarian -->
         <ul class="dropdown-menu p-3">
           <li>
@@ -52,6 +52,7 @@
           </li>
         </ul>
       </li>
+
       <li class="nav-item">
         <a class="nav-link active" href="#">Link</a>
       </li>
@@ -62,15 +63,23 @@
         <a class="nav-link active" href="#">Link</a>
       </li>
       <li>
-        <button type="button" class="btn btn-primary btn-sm align-items-center">
-          Login
-        </button>
-        <button type="button" class="btn btn-danger btn-sm align-items-center">
+        <a
+          href="src/login.html"
+          class="btn btn-primary btn-sm align-items-center"
+          style="margin-top: 5px"
+          >Login</a
+        >
+        <button
+          type="button"
+          class="btn btn-danger btn-sm align-items-center"
+          style="margin-top: 5px; margin-right: 5px"
+        >
           Sign up
         </button>
       </li>
     </ul>
     <!-- end top -->
+
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container-fluid">
@@ -81,6 +90,7 @@
             style="height: 60px"
           />
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -92,6 +102,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
             class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between"
@@ -106,9 +117,12 @@
               >
                 About
               </a>
+
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">About</a></li>
-                <li><a class="dropdown-item" href="#">Accreditation</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Accreditation</a>
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Student Achievements</a>
                 </li>
@@ -116,6 +130,7 @@
                 <li><a class="dropdown-item" href="#">Contact</a></li>
               </ul>
             </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -127,10 +142,10 @@
                 Academics
               </a>
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Faculty</a></li>
                 <li>
-                  <a class="dropdown-item" href="faculty.html">Faculty</a>
+                  <a class="dropdown-item" href="#">Academics</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Academics</a></li>
                 <li>
                   <a class="dropdown-item" href="#">Bachelor of Arts Degree</a>
                 </li>
@@ -142,6 +157,7 @@
                 </li>
               </ul>
             </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -153,7 +169,9 @@
                 Admissions & Aid
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">How to Apply</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">How to Apply</a>
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Tuition & Financial Aid</a>
                 </li>
@@ -162,6 +180,7 @@
                 </li>
               </ul>
             </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -173,9 +192,15 @@
                 Campus Life
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Campus Life</a></li>
-                <li><a class="dropdown-item" href="#">Residential Life</a></li>
-                <li><a class="dropdown-item" href="#">Honor Code</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Campus Life</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Residential Life</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Honor Code</a>
+                </li>
                 <li><a class="dropdown-item" href="#">Parents</a></li>
                 <li>
                   <a class="dropdown-item" href="#"
@@ -184,30 +209,54 @@
                 </li>
               </ul>
             </li>
+
             <button type="button" class="btn btn-success">Sumbangan</button>
             <button type="button" class="btn btn-success">PMB</button>
           </ul>
         </div>
       </div>
     </nav>
-    <! -- end navbar -->
-    <! -- slide -->
-    
-    <!-- end slide -->
-    <!-- content -->
-    <section id="informatika" class="informatika">
-      <h2>INFORMATIKA</h2>
-  
-      <div class="row">
-        <div class="informatika-img">
-          <img src="../img/INFORMATIKA (1).png" alt="INFORMATIKA">
+    <!-- <! -- end navbar -->
+    <!-- content prodi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+/>
+<h1>PROGRAM STUDI</h1>
+
+<main class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0 row-one">
+        <div class="card">
+            <img src="../img/INFORMATIKA (1).png"alt="LOGO INFORMATIKA" class="logo-informatika"/>
+                 <div class="card-content">
+                    <h2 class="if">INFORMATIKA</h2></div>
+                        <p class="Informatika">Di Jurusan Informatika kamu akan mempelajari berbagai prinsip terkait ilmu komputer mulai dari proses perancangan, pengembangan, pengujian, hingga evaluasi sistem operasi perangkat lunak.</p>
+                            <a href="informatika.html" class="button">
+                                Find out more
+                                    <span class="material-symbols-outlined"> arrow_right_alt </span>
+                            </a>
+         </div>
+    </div>
+    <div class="col-sm-6 row-two">
+        <div class="card">
+          <img src="../img/TEKNIK INDUSRTRI.png" alt="LOGO TEKNIK INDUSTRI" class="logo-teknik-industri"/>
+            <div class="card-content">
+                <h2>TEKNIK INDUSTRI</h2>
+                    <p>Keilmuan Teknik Industri lahir dari keinginan untuk memperbaiki system pekerjaan yang sudah ada. Itu dibuktikan dengan salah satu bahasan dalam keilmuan Teknik Industri yang menerapkan Plan, Do, Check, Action.</p>
+                    <a href="#" class="button">
+                     Find out more
+                     <span class="material-symbols-outlined"> arrow_right_alt </span>
+                    </a>
+            </div>
         </div>
-        <div class="content">
-          <h3>Kenapa memilih informatika?</h3>
-          <p>Program Studi Informatika adalah salah satu disiplin ilmu yang mengkaji teknologi informasi dan sistem komputer. Dengan fokus pada pengembangan perangkat lunak, pemrograman, dan pengelolaan data, program ini membekali mahasiswa dengan keterampilan teknis dan analitis yang diperlukan untuk merancang, mengimplementasikan, dan mengelola solusi teknologi. Mahasiswa akan mempelajari berbagai topik, termasuk algoritma, struktur data, rekayasa perangkat lunak, dan keamanan siber, serta memperdalam pengetahuan tentang basis data dan jaringan komputer. Selain aspek teknis, program ini juga menekankan pentingnya pemikiran kritis dan etika dalam penggunaan teknologi, sehingga lulusan dapat berkontribusi secara positif dalam masyarakat yang semakin terdigitalisasi. Dengan bimbingan dari pengajar yang berpengalaman dan fasilitas modern, Program Studi Informatika mempersiapkan mahasiswa untuk menghadapi tantangan industri dan menjawab kebutuhan pasar kerja di era digital.</p>
-        </div>
-      </div>
-    </section>
+    </div>
+</main>
       <!-- content 9 -->
       <div class="container text-center mb-5">
         <h2>ayo daftar!!</h2>
@@ -224,6 +273,7 @@
     <!-- end content -->
 
     <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
+
     <!-- content footer 1 -->
     <div class="container">
       <div class="row align-items-center">
@@ -236,6 +286,7 @@
               style="height: 75px"
             />
           </a>
+
           <!-- Teks dan Tombol di sebelah kanan gambar -->
           <div class="ms-auto d-flex align-items-center">
             <a class="me-3">Get STT Cipasung News Delivered to Your Email</a>
@@ -304,43 +355,40 @@
       </div>
     </div>
     <!-- end footer 2 -->
+
     <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
+
     <!-- footer 3 -->
     <div class="container text-start mt-5 mb-5">
       <div class="row align-items-start">
         <div class="col">
           <!-- Membuat h3 menjadi link -->
-          <h3>
-            <a href="tel:5103564760" class="text-decoration-none text-dark"
+          <h1>
+            <a href="tel:5103564760" class="text-decoration-none text-primary"
               >510.356.4760</a
             >
-          </h3>
+          </h1>
+
           <!-- Membuat a sebagai link juga -->
-          <a href="#" class="d-block text-decoration-none text-primary"
-            >Faculty</a
-          >
+          <a href="#" class="d-block text-decoration-none text-dark">Faculty</a>
         </div>
+
         <div class="col">
           <h3>Administrative Office</h3>
-          <a href="#" class="d-block text-decoration-none text-primary"
-            >Faculty</a
-          >
+          <a href="#" class="d-block text-decoration-none text-dark">Faculty</a>
         </div>
         <div class="col">
           <h3>Lower Campus</h3>
-          <a href="#" class="d-block text-decoration-none text-primary"
-            >Faculty</a
-          >
+          <a href="#" class="d-block text-decoration-none text-dark">Faculty</a>
         </div>
         <div class="col">
           <h3>Upper Campus</h3>
-          <a href="#" class="d-block text-decoration-none text-primary"
-            >Faculty</a
-          >
+          <a href="#" class="d-block text-decoration-none text-dark">Faculty</a>
         </div>
       </div>
     </div>
     <!-- end footer 3 -->
+
     <!-- footer 4 -->
     <footer class="bg-dark text-white py-3 w-100">
       <div
@@ -352,22 +400,20 @@
           <a href="#" class="text-white text-decoration-none"
             >Covid-19 Policy</a
           >
+          |
           <a href="#" class="text-white text-decoration-none">Privacy/CCPA</a>
         </div>
+
         <!-- Bagian Kanan: Ikon Media Sosial -->
         <div class="footer-right">
-          <a href="#" class="text-white me-3" aria-label="Facebook"
+          <a href="#" class="text-white me-3"
             ><i class="fab fa-facebook"></i
           ></a>
-          <a href="#" class="text-white me-3" aria-label="Twitter"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="#" class="text-white me-3" aria-label="Instagram"
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-3"
             ><i class="fab fa-instagram"></i
           ></a>
-          <a href="#" class="text-white" aria-label="LinkedIn"
-            ><i class="fab fa-linkedin"></i
-          ></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
     </footer>
