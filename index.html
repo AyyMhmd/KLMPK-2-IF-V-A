@@ -8,342 +8,449 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>home</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
     <!-- top -->
-    <ul class="nav justify-content-end fixed-top">
-      <li class="nav-item dropdown">
-        <!-- Tombol dropdown dengan ikon pencarian -->
-        <a
-          class="nav-link haha dropdown-toggle"
-          href="#"
-          role="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="fas fa-search"></i>
-          <!-- Ikon pencarian -->
-        </a>
+    <div>
+      <ul class="nav justify-content-end fixed-top bg-success">
+        <li class="nav-item dropdown">
+          <!-- Tombol dropdown dengan ikon pencarian -->
+          <a
+            class="nav-link haha dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fas fa-search"></i>
+            <!-- Ikon pencarian -->
+          </a>
+          <!-- Dropdown dengan form pencarian -->
+          <ul class="dropdown-menu p-3">
+            <li>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  style="width: 300px"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </li>
+          </ul>
+        </li>
 
-        <!-- Dropdown dengan form pencarian -->
-        <ul class="dropdown-menu p-3">
-          <li>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                style="width: 300px"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </li>
-        </ul>
-      </li>
+        <li class="nav-item dropdown">
+          <!-- Tombol dropdown untuk sosial media -->
+          <a
+            class="nav-link haha dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Social Media
+          </a>
 
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Link</a>
-      </li>
-      <li>
-        <a
-          href="src/login.html"
-          class="btn btn-primary btn-sm align-items-center"
-          style="margin-top: 5px"
-          >Login</a
-        >
-        <button
-          type="button"
-          class="btn btn-danger btn-sm align-items-center"
-          style="margin-top: 5px; margin-right: 5px"
-        >
-          Sign up
-        </button>
-      </li>
-    </ul>
+          <!-- Dropdown untuk link sosial media -->
+          <ul class="dropdown-menu p-3">
+            <li>
+              <!-- Tautan Facebook -->
+              <a
+                href="https://www.facebook.com/sttcipasung"
+                target="_blank"
+                class="dropdown-item">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <!-- Tautan Twitter -->
+              <a
+                href="https://twitter.com/stt_cipasung"
+                target="_blank"
+                class="dropdown-item">
+                Twitter
+              </a>
+            </li>
+            <li>
+              <!-- Tautan Instagram -->
+              <a
+                href="https://www.instagram.com/sttcipasung_official"
+                target="_blank"
+                class="dropdown-item">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <!-- Tautan LinkedIn -->
+              <a
+                href="https://id.linkedin.com/school/sttcipasung/"
+                target="_blank"
+                class="dropdown-item">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <!-- Tombol dropdown untuk Career -->
+          <a
+            class="nav-link dropdown-toggle haha"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Career
+          </a>
+
+          <!-- Dropdown untuk link Career -->
+          <ul class="dropdown-menu p-3">
+            <li>
+              <!-- Tautan Lowongan Pekerjaan -->
+              <a
+                href="https://yourwebsite.com/jobs"
+                target="_blank"
+                class="dropdown-item">
+                Job Openings
+              </a>
+            </li>
+            <li>
+              <!-- Tautan Internship -->
+              <a
+                href="https://yourwebsite.com/internships"
+                target="_blank"
+                class="dropdown-item">
+                Internships
+              </a>
+            </li>
+            <li>
+              <!-- Tautan Program Magang -->
+              <a
+                href="https://yourwebsite.com/graduate-program"
+                target="_blank"
+                class="dropdown-item">
+                Graduate Program
+              </a>
+            </li>
+            <li>
+              <!-- Tautan Tips dan Sumberdaya Karir -->
+              <a
+                href="https://yourwebsite.com/career-tips"
+                target="_blank"
+                class="dropdown-item">
+                Career Tips & Resources
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="src/login.html"
+            class="btn btn-primary btn-sm align-items-center"
+            style="margin-top: 5px">
+            Login
+          </a>
+          <button
+            type="button"
+            class="btn btn-danger btn-sm align-items-center"
+            style="margin-top: 5px; margin-right: 5px">
+              Sign up
+          </button>
+        </li>
+      </ul>
+    </div>
     <!-- end top -->
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-md bg-light">
+      <div class="container-fluid semua-nav">
+        <!-- Navbar Brand -->
+        <a class="navbar-brand" href="target_page.html">
           <img
             src="https://sttcipasung.ac.id/wp-content/uploads/2023/07/STT-CIPASUNG-2-e1688823058980.png"
-            alt="Brand Logo"
-            style="height: 60px"
-          />
+            alt="Logo"
+            style="height: 60px; width: auto"/>
         </a>
-
+        <!-- Toggler Button for Offcanvas -->
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul
-            class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between"
-          >
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                About
-              </a>
-
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">About</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Accreditation</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Student Achievements</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Careers</a></li>
-                <li><a class="dropdown-item" href="#">Contact</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Academics
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="src/faculty.html">Faculty</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Academics</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Bachelor of Arts Degree</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Master of Arts Degree</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Experiential Learning</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Admissions & Aid
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">How to Apply</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Tuition & Financial Aid</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">International Students</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Campus Life
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Campus Life</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Residential Life</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Honor Code</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Parents</a></li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Center for Ethical Living and Learning (ZCELL)</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <button type="button" class="btn btn-success">Sumbangan</button>
-            <button type="button" class="btn btn-success">PMB</button>
-          </ul>
+        <!-- Offcanvas Menu -->
+        <div
+          class="offcanvas offcanvas-end bg-success"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close">
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
+                  <li>
+                    <a class="dropdown-item" href="target_page.html">About</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Accreditation</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Student Achievements</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Contact</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Academics
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
+                  <li>
+                    <a class="dropdown-item" href="#">Faculty</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Academics</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Bachelor of Arts Degree</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Master of Arts Degree</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Experiential Learning</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Admissions & Aid
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
+                  <li>
+                    <a class="dropdown-item" href="#">How to Apply</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Tuition & Financial Aid</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">International Students</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Campus Life
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
+                  <li>
+                    <a class="dropdown-item" href="#">Campus Life</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Residential Life</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Honor Code</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Parents</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Center for Ethical Living and Learning (ZCELL)
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="btn btn-outline-success" href="#" role="button"
+                  >PMB</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
-    <!-- <! -- end navbar -->
 
-    <!-- <! -- slide -->
-    <div class="container-fluid-custom" style="height: 100vh">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
+    <!-- end navbar -->
+
+    <main>
+      <! -- slide -->
+      <div class="container-fluid-custom">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="asset/img/su_152.jpeg"
+                class="d-block w-100"
+                alt="..."
+                style="height: 500px"
+                style="width: 500px"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>SU 152</h5>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="asset/img/leopard.jpeg"
+                class="d-block w-100"
+                alt="..."
+                style="height: 500px"
+                style="width: 500px"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>LEOPARD</h5>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="asset/img/tiger.jpeg"
+                class="d-block w-100"
+                alt="..."
+                style="height: 500px"
+                style="width: 500px"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>TIGER</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="asset/img/kv_2.jpeg"
+                class="d-block w-100"
+                alt="..."
+                style="height: 500px"
+                style="width: 500px"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>KV 2</h5>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
           <button
+            class="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
           <button
+            class="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="img/su_152.jpeg"
-              class="d-block w-100"
-              alt="..."
-              style="height: 500px"
-              style="width: 500px"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>SU 152</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img/leopard.jpeg"
-              class="d-block w-100"
-              alt="..."
-              style="height: 500px"
-              style="width: 500px"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>LEOPARD</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img/tiger.jpeg"
-              class="d-block w-100"
-              alt="..."
-              style="height: 500px"
-              style="width: 500px"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>TIGER</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="img/kv_2.jpeg"
-              class="d-block w-100"
-              alt="..."
-              style="height: 500px"
-              style="width: 500px"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>KV 2</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
-    <!-- end slide -->
+      <!-- end slide -->
 
-    <!-- content -->
-    <div class="container text-center">
+      <!-- content -->
+    <div class="container text-center konten-main">
       <!-- content 1 -->
-      <div class="container text-center mt-3 mb-5">
-        <h2>Undergraduate and Graduate Degree Programs</h2>
+      <div class="container text-center konten-1 mt-3 mb-5">
+        <h2>Sejarah STT CIPASUNG</h2>
         <a>
-          Zaytuna College offers a BA in Liberal and Islamic Studies with a
-          minor in Arabic, as well as an MA in Islamic Texts with three
-          concentration options.
+          Didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian. <a href="https://example.com">Baca lebih lanjut...</a>
         </a>
       </div>
       <!-- end content 1 -->
@@ -353,22 +460,24 @@
         <!-- pa chobir -->
         <div class="card mb-3">
           <div class="row g-0">
-            <div class="col-md-4 order-md-2">
+            <div class="col-md-4 order-md-2 d-flex align-items-center justify-content-center">
               <img
-                src="img/su_152.jpeg"
+                src="asset/img/su_152.jpeg"
                 class="img-fluid rounded-start"
                 alt="..."
               />
             </div>
             <div class="col-md-8 order-md-1">
               <div class="card-body">
-                <h5 class="card-title">pak chobir</h5>
-                <p class="card-text">kata kata hari ini</p>
+                <h2 class="card-title">pak chobir</h2>
                 <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
+                  Sekolah Tinggi Teknologi Cipasung (STT Cipasung) didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian.
                 </p>
+                <!-- <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago
+                  </small>
+                </p> -->
               </div>
             </div>
           </div>
@@ -378,22 +487,22 @@
         <!-- pa ade -->
         <div class="card mb-3">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
               <img
-                src="img/kv_2.jpeg"
+                src="asset/img/kv_2.jpeg"
                 class="img-fluid rounded-start"
                 alt="..."
               />
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">pak ade</h5>
-                <p class="card-text">kata kata hari ini</p>
-                <p class="card-text">
+                <h2 class="card-title">pak ade</h2>
+                <p class="card-text">Sekolah Tinggi Teknologi Cipasung (STT Cipasung) didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian.</p>
+                <!-- <p class="card-text">
                   <small class="text-body-secondary"
-                    >Last updated 3 mins ago</small
-                  >
-                </p>
+                    >Last updated 3 mins ago
+                  </small>
+                </p> -->
               </div>
             </div>
           </div>
@@ -405,26 +514,34 @@
       <!-- content 3 -->
       <div class="container text-center mb-5">
         <!-- content split -->
-        <div class="row align-items-center mt-3">
+        <div class="row align-items-center mt-5">
           <!-- content 2 Left -->
           <div class="col align-items-center">
-            <h2>World Of Tank Blitz</h2>
+            <h2>Informatika</h2>
             <img
-              src="img/wotb.jpeg"
+              src="asset/img/wotb.jpeg"
               alt="..."
-              style="display: block; margin: auto; height: auto; width: auto"
+              style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
             />
+            <p style="
+              text-align: justify;">
+              Informatika adalah ilmu yang mempelajari pemanfaatan komputer untuk mengelola dan menganalisis data dalam jumlah besar. Bidang ini mencakup pengumpulan, pengolahan, penyimpanan, dan penyebaran informasi menggunakan teknologi komputer, serta pengembangan sistem informasi yang efisien untuk mendukung kegiatan manusia. Informatika terdiri dari berbagai sub-bidang, seperti pengolahan data, sistem informasi, teknologi komputer, pengembangan perangkat lunak, jaringan komputer, kecerdasan buatan, grafika komputer, sistem operasi, dan basis data. <a href="https://example.com">Baca lebih lanjut...</a>
+            </p>
           </div>
           <!-- end content 2 Left -->
 
           <!-- content 2 Right -->
           <div class="col align-items-center">
-            <h2>World Of Tank</h2>
+            <h2>Teknik Industri</h2>
             <img
-              src="img/wot.jpeg"
+              src="asset/img/wot.jpeg"
               alt="..."
-              style="display: block; margin: auto; height: auto; width: auto"
+              style="margin-top: 5px; margin-bottom: 10px;  height: auto; width: auto"
             />
+            <p style="
+              text-align: justify;">
+              Teknik Industri adalah cabang ilmu teknik yang awalnya berkembang di Amerika Utara, berbeda dengan negara-negara Eropa atau persemakmuran yang lebih spesifik pada teknik manufaktur atau teknik manajemen. Teknik Industri berawal dari teknik mesin dengan fokus pada pengelolaan sistem manufaktur secara menyeluruh, termasuk aliran produksi, penjadwalan, dan biaya. <a href="https://example.com">Baca lebih lanjut...</a>
+            </p>
           </div>
           <!-- end content 2 Right -->
         </div>
@@ -432,36 +549,49 @@
       </div>
       <!-- end content 3 -->
 
-      <!-- content 4 -->
+      <!-- content 4&5 -->
       <div class="container text-center mb-5">
-        <h2>Undergraduate and Graduate Degree Programs</h2>
-        <a>
-          STT cipasung College offers a BA in Liberal and Islamic Studies with a
-          minor in Arabic.
-        </a>
-      </div>
-      <!-- end content 4 -->
-
-      <!-- content 5 -->
-      <div class="container text-center mb-5">
+        <h2>Prestasi Mahasiswa</h2>
         <div class="row align-items-start">
-          <div class="col">Alumni terbaik 1</div>
-          <div class="col">Alumni terbaik 2</div>
-          <div class="col">Alumni terbaik 3</div>
-          <div class="col">Alumni terbaik 4</div>
+          <div class="col">Prestasi Mahasiswa 1</div>
+          <div class="col">Prestasi Mahasiswa 2</div>
+          <div class="col">Prestasi Mahasiswa 3</div>
+          <div class="col">Prestasi Mahasiswa 4</div>
         </div>
       </div>
-      <!-- end content 5 -->
+      <!-- end content 4&5 -->
 
       <!-- content 6 -->
       <div class="container text-center mb-5">
         <h2>Events and Academic Calendar</h2>
-        <button
-          type="button"
-          class="btn btn-secondary btn-lg align-items-center mt-3"
+        <div class="calendar sm">
+          <header>
+            <h1></h1>
+            <nav>
+              <button id="prev"></button>
+              <button id="next"></button>
+            </nav>
+          </header>
+          <section>
+            <ul class="days">
+              <li>Sun</li>
+              <li>Mon</li>
+              <li>Tue</li>
+              <li>Wed</li>
+              <li>Thu</li>
+              <li>Fri</li>
+              <li>Sat</li>
+            </ul>
+            <ul class="dates"></ul>
+          </section>
+        </div>
+        <a
+          href="src/calendar.html"
+          class="btn btn-primary btn-sm align-items-center"
+          style="margin-top: 5px"
         >
-          View Calendar
-        </button>
+          view more
+        </a>
       </div>
       <!-- end content 6 -->
 
@@ -473,43 +603,127 @@
       <!-- end content 7 -->
 
       <!-- content 8 -->
-      <div class="container text-start mb-5">
-        <h2>ukm</h2>
+      <div class="container text-center mb-5">
+        <h2>Unit Kegiatan Mahasiswa</h2>
         <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col">
+              <H2>HMIF</H2>
+              <img
+                src="asset/img/wotb.jpeg"
+                alt="..."
+                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+              />
+              <P style="text-align: justify;">
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.<a href="https://example.com">Baca lebih lanjut...</a>
+              </P>
+            </div>
+            <div class="col">
+              <h2>BEM</h2>
+              <img
+                src="asset/img/wotb.jpeg"
+                alt="..."
+                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+              />
+              <P style="text-align: justify;">
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>
+              </P>
+            </div>
+            <div class="col">
+              <h2>HMTI</h2>
+              <img
+                src="asset/img/wotb.jpeg"
+                alt="..."
+                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+              />
+              <P style="text-align: justify;">
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>
+              </P>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col">
+              <h2>KELAPA</h2>
+              <img
+                src="asset/img/wotb.jpeg"
+                alt="..."
+                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+              />
+              <P style="text-align: justify;">
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+            </div>
+            <div class="col">
+              <h2>PROCLUB</h2>
+              <img
+                src="asset/img/wotb.jpeg"
+                alt="..."
+                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+              />
+              <P style="text-align: justify;">
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+            </div>
+            <div class="col">
+              <H2>KDD</H2>
+              <img
+                src="asset/img/wotb.jpeg"
+                alt="..."
+                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+              />
+              <P style="text-align: justify;">
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col">
+              <h2>RILIS</h2>
+              <img
+                src="asset/img/wotb.jpeg"
+                alt="..."
+                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+              />
+              <P style="text-align: justify;">
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+            </div>
+            <div class="col">
+              <h2>SANGGAR</h2>
+              <img
+                src="asset/img/wotb.jpeg"
+                alt="..."
+                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+              />
+              <P style="text-align: justify;">
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+            </div>
+            <div class="col">
+              <h2>OLAHRAGA</h2>
+              <img
+                src="asset/img/wotb.jpeg"
+                alt="..."
+                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+              />
+              <P style="text-align: justify;">
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container text-center">
           <div class="row align-items-start">
             <div class="col">if</div>
             <div class="col">bem</div>
             <div class="col">ti</div>
           </div>
         </div>
-        <div class="container text-center">
-          <div class="row align-items-start">
-            <div class="col">Proclub</div>
-            <div class="col">kelapa</div>
-            <div class="col">ti</div>
-          </div>
-        </div>
-        <div class="container text-center">
-          <div class="row align-items-start">
-            <div class="col">One of three columns</div>
-            <div class="col">One of three columns</div>
-            <div class="col">One of three columns</div>
-          </div>
-        </div>
-        <div class="container text-center">
-          <div class="row align-items-start">
-            <div class="col">if</div>
-            <div class="col">bem</div>
-            <div class="col">ti</div>
-          </div>
-        </div>
-      </div>
+      </div> -->
       <!-- end content 8 -->
 
       <!-- content 9 -->
-      <div class="container text-center mb-5">
+      <div class="container text-start mb-5 daftar vignette">
         <h2>ayo daftar!!</h2>
-        <p>daftar</p>
+        <p class="isi-daftar">daftar</p>
         <button
           type="button"
           class="btn btn-secondary btn-lg align-items-center"
@@ -520,6 +734,7 @@
       <!-- end content 9 -->
     </div>
     <!-- end content -->
+    </main>
 
     <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
 
@@ -538,7 +753,7 @@
 
           <!-- Teks dan Tombol di sebelah kanan gambar -->
           <div class="ms-auto d-flex align-items-center">
-            <a class="me-3">Get STT Cipasung News Delivered to Your Email</a>
+            <a class="me-3 do">Get STT Cipasung News Delivered to Your Email</a>
             <button type="button" class="btn btn-secondary">
               Sign Up for Email
             </button>
@@ -555,51 +770,182 @@
       <div class="row align-items-start">
         <div class="col">
           <h3>About</h3>
-          <a class="d-block mt-2">Accreditation</a>
-          <a class="d-block mt-2">Student Achievements</a>
-          <a class="d-block mt-2">Careers</a>
-          <a class="d-block mt-2">Contact</a>
+          <a 
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            >
+            Accreditation
+          </a>
+          <a 
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do">
+            Student Achievements
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Careers
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Contact
+          </a>
         </div>
 
         <div class="col">
           <h3>Academics</h3>
-          <a class="d-block mt-2">Faculty</a>
-          <a class="d-block mt-2">Academics</a>
-          <a class="d-block mt-2">BA Program</a>
-          <a class="d-block mt-2">MA Program</a>
-          <a class="d-block mt-2">Experiential Learning</a>
+          <a 
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Faculty
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Academics
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            BA Program
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            MA Program
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Experiential Learning
+          </a>
         </div>
         <div class="col">
           <h3>Admissions&aid</h3>
-          <a class="d-block mt-2">How to Apply</a>
-          <a class="d-block mt-2">Tuition & Financial Aid</a>
-          <a class="d-block mt-2">International Students</a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            How to Apply
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Tuition & Financial Aid
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            International Students
+          </a>
         </div>
         <div class="col">
           <h3>Campus Life</h3>
-          <a class="d-block mt-2">Overview</a>
-          <a class="d-block mt-2">Residential Life</a>
-          <a class="d-block mt-2">Honor Code</a>
-          <a class="d-block mt-2">Parents</a>
-          <a class="d-block mt-2"
-            >Center for Ethical Living and Learning (ZCELL)</a
-          >
+          <a
+            href="target_page.html"
+            class="d-block mt-2 do">
+            Overview
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Residential Life
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Honor Code
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Parents
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Center for Ethical Living and Learning (ZCELL)
+          </a>
         </div>
         <div class="col">
           <h3>Give</h3>
-          <a class="d-block mt-2">Ways to Give</a>
-          <a class="d-block mt-2">12000 Strong</a>
-          <a class="d-block mt-2">Legacy Giving</a>
-          <a class="d-block mt-2">Capital Projects</a>
-          <a class="d-block mt-2">Contact Advancement</a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Ways to Give
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            12000 Strong
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Legacy Giving
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Capital Projects
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Contact Advancement
+          </a>
         </div>
         <div class="col">
           <h3>Resources</h3>
-          <a class="d-block mt-2">College Catalog</a>
-          <a class="d-block mt-2">Features</a>
-          <a class="d-block mt-2">Calendar</a>
-          <a class="d-block mt-2">Transcript Request</a>
-          <a class="d-block mt-2">Volunteer</a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            College Catalog
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Features
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Calendar
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Transcript Request
+          </a>
+          <a
+            href="https://www.facebook.com/sttcipasung"
+            class="d-block mt-2 do
+            ">
+            Volunteer
+          </a>
         </div>
       </div>
     </div>
@@ -608,66 +954,65 @@
     <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
 
     <!-- footer 3 -->
-    <div class="container text-start mt-5 mb-5">
-      <div class="row align-items-start">
-        <div class="col">
-          <!-- Membuat h3 menjadi link -->
-          <h1>
-            <a href="tel:5103564760" class="text-decoration-none text-primary"
-              >510.356.4760</a
-            >
-          </h1>
 
-          <!-- Membuat a sebagai link juga -->
-          <a href="#" class="d-block text-decoration-none text-dark">Faculty</a>
+    <div class="container text-center">
+      <div class="row g-2">
+        <div class="col-6">
+          <div class="p-3">          
+            <h3>
+              <a
+                href="tel:(0265)2550424"
+                class="text-decoration-none text-dark bottom"
+                >(0265) 2550424
+              </a>
+            </h3>
+          </div>
         </div>
-
-        <div class="col">
-          <h3>Administrative Office</h3>
-          <a href="#" class="d-block text-decoration-none text-dark">Faculty</a>
+        <div class="col-6">
+          <div class="p-3">          
+            <h3>
+              <a
+                href="mailto:lppm@sttcipasung.ac.id"
+                class="text-decoration-none text-dark bottom"
+                >lppm@sttcipasung.ac.id
+              </a>
+            </h3>
+          </div>
         </div>
-        <div class="col">
-          <h3>Lower Campus</h3>
-          <a href="#" class="d-block text-decoration-none text-dark">Faculty</a>
-        </div>
-        <div class="col">
-          <h3>Upper Campus</h3>
-          <a href="#" class="d-block text-decoration-none text-dark">Faculty</a>
+        <!-- baris 2 -->
+        <div class="col-12">
+          <div class="p-3">          
+            <h1>
+              <a
+                href="https://g.co/kgs/BUKhG8w"
+                class="text-decoration-none text-dark bottom"
+                >Jl. Raya Cisinga KM 01 Desa Cilampunghilir Kecamatan Padakembang Kabupaten Tasikmalaya 46466
+              </a>
+            </h1>
+          </div>
         </div>
       </div>
     </div>
     <!-- end footer 3 -->
 
     <!-- footer 4 -->
-    <footer class="bg-dark text-white py-3 w-100">
+    <footer class="text-white w-100">
       <div
-        class="container-fluid d-flex justify-content-between align-items-center"
+        class="container-fluid bg-dark d-flex paling-bawah justify-content-center align-items-center"
+        style="height: 50px;"
       >
         <!-- Bagian Kiri -->
-        <div class="footer-left">
           <span>© 2024</span> |
           <a href="#" class="text-white text-decoration-none"
             >Covid-19 Policy</a
           >
           |
           <a href="#" class="text-white text-decoration-none">Privacy/CCPA</a>
-        </div>
-
-        <!-- Bagian Kanan: Ikon Media Sosial -->
-        <div class="footer-right">
-          <a href="#" class="text-white me-3"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-white me-3"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
-        </div>
       </div>
     </footer>
     <!-- end footer 4 -->
 
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
