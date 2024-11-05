@@ -1,169 +1,85 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: system-ui, sans-serif;
-    color: green;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+h1 {
+  font-size: 20px;
+}
+  /* navbar */
+  .semua-nav {
+    position: fixed;
+    top: 0;
     background-color: white;
+    z-index: 3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow lebih gelap dan lebih kabur */
   }
   
-  
-  main {
-    padding: 1rem;
+  @media (max-width: 425px) {
+    .offcanvas.offcanvas-end {
+      width: 50vw; /* Atur lebar offcanvas menjadi 50% dari lebar viewport */
+    }
   }
   
-  h1 {
-    font-weight: bold;
-    font-size: 1.5rem;
+  @media (max-width: 767px) {
+    .nav {
+      display: none; /* top hilang */
+    }
+    .semua-nav {
+      margin-top: 0px; /*navbar */
+      top: 0;
+    }
+    main {
+      margin-top: 50px;
+    }
+    
+  }
+  @media (min-width: 768px) {
+    .semua-nav {
+      margin-top: 40px;
+      position: fixed;
+      z-index: 5;
+    }
+    main {
+      margin-top: 95px;
+    }
+  }
+  .container{
+    max-width: 1400px;
   }
   
-  .nav.justify-content-end.fixed-top {
-    background-color: green; /* contoh warna latar belakang */
-    color: #000; /* warna teks */
+  /* link samar */
+  .do {
+    color: rgba(0, 0, 0, 0.65);
+    text-decoration: none;
+  }
+  .do:focus {
+    color: crimson;
+  }
+  .do:hover {
+    border: 5px;
+    border-color: violet;
+    color: black;
   }
   
-  .nav-link.active{
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    color: crimson;
+  }
+  
+  /* top */
+  .haha {
     color: white;
   }
-  
-  .nav-link.active:hover {
-    color: #2d6a4f; /* Warna teks saat di-hover */
+  .haha::after,
+  .dropdown-toggle::after {
+    display: none; /* Menghilangkan caret pada tombol dropdown dan elemen lain dengan kelas yang ditentukan */
   }
-  
-  .container-fluid{
-    background-color: rgba(255, 255, 255, 0);
-    margin-top: 40px;
-  }
-  
-  /* Mengatur warna latar belakang dan warna teks navbar */
-  .navbar.bg-body-tertiary.sticky-top{
-    color: #347928;
-    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.216); /* efek bayangan */
-  }
-  
-  /* Mengatur warna, ukuran font, dan dekorasi link navbar */
-  .navbar .nav-link {
-    color: #347928; /* Warna teks */
-    font-size: 18px; /* Ukuran font */
-    font-family: Arial, sans-serif; /* Ganti sesuai kebutuhan */
-    text-decoration: none; /* Hilangkan garis bawah */
-  }
-  
-  .navbar .nav-link:hover {
-    color: #2d6a4f; /* Warna teks saat di-hover */
-  }
-  
-  /* Mengatur tombol Sumbangan dan PMB */
-  .navbar .btn {
-    font-size: 16px; /* Ukuran font tombol */
-    font-weight: bold; /* Tebal font */
-    padding: 8px 16px; /* Ruang dalam tombol */
-    border-radius: 8px; /* Sudut tombol melengkung */
-  }
-  
-  /* Mengatur menu dropdown */
-  .navbar .dropdown-menu {
-    background-color: #f9f9f9; /* Latar belakang dropdown */
-  }
-  
-  .nav-link.haha.dropdown-toggle{
-    color: #f9f9f9;
-  }
-  
-  /* .nav.justify-content-end.fixed-top .li a{
-    margin-top: 5px;
-  } */
-  
-  .navbar .dropdown-item {
-    color: #347928; /* Warna teks item dropdown */
-    font-size: 16px; /* Ukuran font dropdown */
-  }
-  
-  .navbar .dropdown-item:hover {
-    background-color: #C0EBA6; /* Warna saat di-hover */
-    color: #2d6a4f;
-  } */
-  /* Styling untuk dropdown menu */
-  .dropdown-menu {
-    background-color: #ffffff; /* Warna latar belakang dropdown */
-    border: 1px solid #dee2e6; /* Border untuk dropdown */
-    border-radius: 0.5rem; /* Sudut melengkung untuk dropdown */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
-    transition: all 0.3s ease; /* Transisi halus saat dropdown muncul */
-    z-index: 1000; /* Menempatkan dropdown di atas elemen lain */
-  }
-  
-  /* Styling untuk item dropdown */
-  .dropdown-item {
-    color: #347928; /* Warna teks item dropdown */
-    padding: 10px 15px; /* Ruang dalam item dropdown */
-    transition: background-color 0.3s ease; /* Transisi halus untuk efek hover */
-  }
-  
-  /* Efek hover untuk item dropdown */
-  .dropdown-item:hover {
-    background-color: #f8f9fa; /* Warna latar belakang saat hover */
-    color: #40b32b; /* Warna teks saat hover */
-  }
-  
-  /* Styling untuk dropdown toggle */
-  .nav-link.dropdown-toggle {
-    color: #212529; /* Warna teks untuk dropdown toggle */
-    padding: 10px 15px; /* Ruang dalam untuk dropdown toggle */
-    transition: color 0.3s ease; /* Transisi halus untuk efek hover */
-  }
-  
-  /* Efek hover untuk dropdown toggle */
-  .nav-link.dropdown-toggle:hover {
-    color: #37d81b; /* Warna teks saat hover */
-  }
-  
-  /* Menyembunyikan dropdown saat tidak aktif */
-  .dropdown-menu.show {
-    display: block; /* Menampilkan dropdown ketika aktif */
-  }
-  /* style for ayo daftar start */
-  .container {
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 600px;
-    background-color: #f8f9fa; /* Latar belakang terang */
-    border-radius: 10px; /* Sudut melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
-}
 
-h2 {
-    font-size: 2em; /* Ukuran font untuk judul */
-    color: #343a40; /* Warna teks gelap */
-    margin-bottom: 10px; /* Jarak bawah */
-}
-
-p {
-    font-size: 1.2em; /* Ukuran font untuk paragraf */
-    color: #6c757d; /* Warna teks abu-abu */
-    margin-bottom: 20px; /* Jarak bawah */
-}
-
-.btn {
-    padding: 10px 20px; /* Padding untuk tombol */
-    font-size: 1.2em; /* Ukuran font untuk tombol */
-    border: none; /* Menghilangkan border default */
-    border-radius: 5px; /* Sudut melengkung pada tombol */
-    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
-    transition: background-color 0.3s; /* Transisi untuk perubahan warna */
-}
-
-.btn-secondary {
-    background-color: #6c757d; /* Warna latar belakang tombol */
-    color: white; /* Warna teks tombol */
-}
-
-.btn-secondary:hover {
-    background-color: #5a6268; /* Warna latar belakang saat hover */
-}
-  /* style for ayo daftar end */
+  /* nav end */
 
   /* PRODI START */
 
@@ -171,10 +87,10 @@ h1{
     font-weight: bold;
     color: #000;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
     font-size: 40px;
     animation: fadeIn 2s ease-in-out;
-}
+  }
 $color-background-even: rgb(0, 35, 116); /* Warna latar belakang untuk baris genap */
 $color-background-odd: rgb(240, 240, 240); /* Warna latar belakang untuk baris ganjil */
 
@@ -201,12 +117,12 @@ $color-background-odd: rgb(240, 240, 240); /* Warna latar belakang untuk baris g
   animation: fadeIn 2s ease-in-out;
 
   img {
-    position: absolute;
+    /* position: absolute;
     object-fit: cover;
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
+    left: 0; */
     
     /* transition: opacity 0.2s ease-out; */
   }
@@ -293,95 +209,19 @@ $color-background-odd: rgb(240, 240, 240); /* Warna latar belakang untuk baris g
   }
 }
 .logo-informatika {
-    width: 100vh; /* Mengatur lebar gambar menjadi 100% dari kartu */
-    height: 50px; /* Tinggi otomatis untuk menjaga proporsi */
+    width: 80%; /* Mengatur lebar gambar menjadi 100% dari kartu */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+    margin: 0 auto;
+    margin-bottom: auto;
+    margin-top: auto;
   }
   
   .logo-teknik-industri {
-    width: 80%; /* Mengatur lebar gambar menjadi 80% dari kartu */
+    width: 110%; /* Mengatur lebar gambar menjadi 80% dari kartu */
     height: auto; /* Tinggi otomatis untuk menjaga proporsi */
     margin: 0 auto; /* Memusatkan gambar */
   }
   
-
-  /* PRODI END */
-  
-  /* styel footer */
-  /* Style for the container */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Style for the row */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-  
-  
-  /* Style for the header */
-  h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color:red;
-  }
-  
-  /* Style for the links */
-  a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  a:hover {
-    color: #37d81b;
-  }
-  .col {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .col h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .col a {
-    font-size: 16px;
-    color: #ff0000;
-  }
-  
-  
-  .col a:hover {
-    color: #347928;
-  }
-  
-  /* Style for the footer */
-  .footer-left {
-    margin-right: auto;
-  }
-  
-  .footer-right {
-    margin-left: auto;
-  }
-  
-  /* Style for the horizontal rule */
-  hr {
-    border: 1px solid #ccc;
-    width: 90%;
-    margin: auto;
-  }
-  
-  /* Style for the social media icons */
-  .fab {
-    font-size: 1.5rem;
-  }
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -390,9 +230,58 @@ $color-background-odd: rgb(240, 240, 240); /* Warna latar belakang untuk baris g
       opacity: 1;
     }
   }
-  footer {
-    margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
+  /* konten 9 */
+.daftar {
+  background-image: url('asset/img/ktmb.jpeg');
+  background-size:inherit;
+  background-position: center;
+  padding: 20px;
+}
+.vignette {
+  position: relative;
+  color: white;
+  padding: 20px;
+}
+.vignette::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+  z-index: 1;
+}
+.vignette h2,
+.vignette p,
+.vignette button {
+  position: relative;
+  z-index: 2;
+}
+.long-paragraph {
+  max-width: 600px; /* Atur lebar maksimum untuk paragraf */
+  line-height: 1.6; /* Jarak antar baris untuk keterbacaan */
+  margin-bottom: 20px; /* Ruang bawah untuk pemisahan */
+  overflow-wrap: break-word; /* Memastikan teks tidak meluap dari batas */
+}
+
+  /* link samar */
+.do {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+.do:focus {
+  color: crimson;
+}
+.do:hover {
+  border: 5px;
+  border-color: violet;
+  color: black;
+}
+ /* footer 4 */
+.paling-bawah {
+  position: absolute;
+  margin-top: 33px;
+  background-color: white;
+  z-index: 0;
+}
