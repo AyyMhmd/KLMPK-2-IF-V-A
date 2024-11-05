@@ -233,7 +233,7 @@
   }
   .informatika .row .informatika-img {
     width: 100%;
-    -webkit-mask-image: url('../img/INFORMATIKA\ \(1\).png');
+    -webkit-mask-image: url('../img/INFORMATIKA(1).png');
   -webkit-mask-size: 50%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -273,3 +273,77 @@
       opacity: 1;
     }
   }
+
+  /* link samar */
+.do {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+.do:focus {
+  color: crimson;
+}
+.do:hover {
+  border: 5px;
+  border-color: violet;
+  color: black;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: crimson;
+}
+
+.semua-nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow lebih gelap dan lebih kabur */
+}
+
+@media (max-width: 425px) {
+  .offcanvas.offcanvas-end {
+    width: 50vw; /* Atur lebar offcanvas menjadi 50% dari lebar viewport */
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    display: none; /* top hilang */
+  }
+  .semua-nav {
+    margin-top: 0px; /*navbar */
+    top: 0;
+  }
+  main {
+    margin-top: 50px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .semua-nav {
+    margin-top: 40px;
+    position: fixed;
+    z-index: 5;
+  }
+  main {
+    margin-top: 95px;
+  }
+}
+
+  /* top */
+.haha {
+  color: white;
+}
+.haha::after,
+.dropdown-toggle::after {
+  display: none; /* Menghilangkan caret pada tombol dropdown dan elemen lain dengan kelas yang ditentukan */
+}
+
+  /* footer 4 */
+.paling-bawah {
+  position: absolute;
+  margin-top: 33px;
+  background-color: white;
+  z-index: 0;
+}
