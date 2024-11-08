@@ -80,7 +80,150 @@ h1 {
 .dropdown-toggle::after {
   display: none; /* Menghilangkan caret pada tombol dropdown dan elemen lain dengan kelas yang ditentukan */
 }
+/* corousel start */
+.carousel-inner .carousel-item active .carousel-item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* max-width: auto;
+  height: 500px; */
+  background-color: rgba(0, 0, 0, 0);
+}
+/* corousel end */
 
+/* konten 2 start */
+$color-background-even: rgb(0, 35, 116); /* Warna latar belakang untuk baris genap */
+$color-background-odd: rgb(240, 240, 240); /* Warna latar belakang untuk baris ganjil */
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Mengatur agar kartu bisa membungkus */
+  gap: 20px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.card-faculty {
+  width: 35rem; /* Anda bisa menyesuaikan lebar ini */
+  height: 36rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 45px; /* Menghapus margin default */
+  animation: fadeIn 2s ease-in-out;
+
+  img {
+    /* position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; */
+    
+    /* transition: opacity 0.2s ease-out; */
+  }
+  &:hover img {
+    opacity: 40%; /* Ubah opacity gambar saat hover */
+}
+  .if{
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #ffffff; /* Warna teks */
+  }
+
+  h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin-top: 10%;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #347928; /* Warna teks */
+    
+  }
+.Informatika{
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+    color: #ffffff;
+}
+  p,
+  a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+    color: #050505;
+  }
+
+  p {
+    inset: auto auto 80px 30px;
+  }
+
+  a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+    color: #030303;
+  }
+
+  &:hover h2 {
+    inset: auto auto 220px 30px;
+    transition: inset 0.3s ease-out;
+  }
+
+  &:hover p,
+  &:hover a {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+  }
+
+  &:hover img {
+    transition: opacity 0.3s ease-in;
+    opacity: 20%;
+  }
+}
+
+/* Mengatur warna latar belakang untuk baris kartu */
+.col-sm-6:nth-child(odd) .card-faculty {
+  background-color: rgb(0, 35, 116, 90%); /* Warna untuk baris ganjil */
+}
+
+.col-sm-6:nth-child(even) .card-faculty {
+  background-color: rgb(172, 206, 32, 34%) /* Warna untuk baris genap */
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  .card {
+    width: 80%; /* Mengatur lebar kartu pada layar kecil */
+  }
+}
+.logo-informatika {
+    width: 80%; /* Mengatur lebar gambar menjadi 100% dari kartu */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+    margin: 0 auto;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  
+  .logo-teknik-industri {
+    width: 110%; /* Mengatur lebar gambar menjadi 80% dari kartu */
+    height: auto; /* Tinggi otomatis untuk menjaga proporsi */
+    margin: 0 auto; /* Memusatkan gambar */
+  }
+  
+/* konten 2 end */
 /* semua konten  */
 .konten-1,
 .container .card {
@@ -202,7 +345,7 @@ h1 {
 
 /* konten 9 */
 .daftar {
-  background-image: url('img/ktmb.jpeg');
+  background-image: url('img/papermob.jpg');
   background-size:inherit;
   background-position: center;
   padding: 20px;
