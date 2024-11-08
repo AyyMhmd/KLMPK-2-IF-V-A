@@ -22,24 +22,24 @@
   
   
   
-  /* informatika */
-  .informatika{
+  /* industri */
+  .industri{
     padding: 8rem 7% 1.4rem;
   }
-  .informatika h2 {
+  .industri h2 {
     text-align: center;
     font-size: 2.6rem;
     margin-bottom: 3rem;
     color: #000;
     animation: fadeIn 2s ease-in-out;
   }
-  .informatika .row{
+  .industri .row{
     display: flex;
   }
-  .informatika .row .informatika-img{
+  .industri .row .industri-img{
     flex: 1 1 45rem;
   }
-  .informatika-img{
+  .industri-img{
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -49,16 +49,16 @@
   }
   
   
-  .informatika .row .content{
+  .industri .row .content{
     flex: 1 1 35rem;
     padding: 0 1rem;
   }
-  .informatika .row .content h3{
+  .industri .row .content h3{
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #000;
   }
-  .informatika .row .content p{
+  .industri .row .content p{
     margin-bottom: 0.8rem;
   font-size: 1.3rem;
   font-weight: 100;
