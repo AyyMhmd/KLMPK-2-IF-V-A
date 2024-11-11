@@ -8,10 +8,38 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
 }
+
+.container{
+  max-width: 1400px;
+}
+
 h1 {
   font-size: 20px;
 }
 
+/* top */
+.haha {
+  color: white;
+}
+
+.haha:hover,
+.haha:active,
+.haha:focus {
+  color: green;
+  background-color: white;
+}
+.haha::after,
+.dropdown-toggle::after {
+  display: none; /* Menghilangkan caret pada tombol dropdown dan elemen lain dengan kelas yang ditentukan */
+}
+.form-control {
+  color: red;
+}
+.form-control:focus {
+  color: green;
+  border-color: #86b7fe;
+
+}
 .semua-nav {
   position: fixed;
   top: 0;
@@ -21,12 +49,30 @@ h1 {
 }
 .dropdown-item {
   color: white;
-
 }
 
 .dropdown-item:hover {
   color: green;
-
+}
+/* link samar */
+.do {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+.do:focus {
+  color: purple;
+}
+.do:hover {
+  border: 5px;
+  border-color: violet;
+  color: green;
+}
+/* footer 4 */
+.paling-bawah {
+  position: absolute;
+  margin-top: 33px;
+  background-color: white;
+  z-index: 0;
 }
 
 @media (max-width: 425px) {
@@ -58,39 +104,22 @@ h1 {
     margin-top: 95px;
   }
 }
-.container{
-  max-width: 1400px;
-}
 
-/* link samar */
-.do {
-  color: rgba(0, 0, 0, 0.65);
-  text-decoration: none;
-}
-/* .do:focus {
-  color: purple;
-}
-.do:hover {
-  border: 5px;
-  border-color: violet;
-  color: black;
-} */
 
-.navbar-nav .nav-link.active,
+
+
+/* .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity));
 }
 .nav-link:focus, .nav-link:hover {
   color: #000;
-}
-/* top */
-.haha {
-  color: white;
-}
-.haha::after,
-.dropdown-toggle::after {
-  display: none; /* Menghilangkan caret pada tombol dropdown dan elemen lain dengan kelas yang ditentukan */
-}
+} */
+
+
+
+
+
 /* corousel start */
 .carousel-inner .carousel-item active .carousel-item{
   position: absolute;
@@ -116,13 +145,14 @@ h1 {
   background-color: var(--color-background-odd);
 }
 
-.row {
+/* .row {
   display: flex;
   flex-wrap: wrap; /* Mengatur agar kartu bisa membungkus */
-  gap: 20px;
-  justify-content: center;
-  padding: 50px;
-}
+  /* gap: 20px; */
+  /* justify-content: center; */
+  /* padding: 50px;   */
+  /* background-color: red; */
+/* } */ 
 
 .card-faculty {
   width: 35rem; /* Anda bisa menyesuaikan lebar ini */
@@ -182,6 +212,7 @@ h1 {
   p,
   a {
     position: absolute;
+    text-align: start;
     opacity: 0;
     max-width: 80%;
     transition: opacity 0.3s ease-out;
@@ -217,11 +248,11 @@ h1 {
 }
 
 /* Mengatur warna latar belakang untuk baris kartu */
-.col-sm-6:nth-child(odd) .card-faculty {
+.col-xl-6:nth-child(odd) .card-faculty {
   background-color: rgb(0, 35, 116, 90%); /* Warna untuk baris ganjil */
 }
 
-.col-sm-6:nth-child(even) .card-faculty {
+.col-xl-6:nth-child(even) .card-faculty {
   background-color: rgb(172, 206, 32, 34%) /* Warna untuk baris genap */
 }
 
@@ -258,9 +289,8 @@ h1 {
   margin: 0 auto;
   width: clamp(320px, 400px, 90%);
   padding: 1rem;
-  background: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
 }
 .calendar header {
@@ -323,7 +353,7 @@ h1 {
   font-weight: 600;
 }
 .dates li.today {
-  color: #fff;
+  color: #198754;
 }
 .dates li.today::before {
   content: "";
@@ -333,12 +363,12 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: red;
+  background: white;
   border-radius: 50%;
   z-index: -1;
 }
 .dates li.inactive {
-  color: #ccc;
+  color: rgba(0, 0, 0, 0.2);
 }
 /* Media query untuk layar sempit */
 @media (max-width: 600px) {
@@ -364,35 +394,25 @@ h1 {
     height: 1.5rem;
   }
 }
+.accordion-button::after {
+  display: none;
+}
+
+.turun-naik {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden; /* Supaya border-radius diterapkan dengan benar */
+}
 
 /* konten 9 */
-.daftar {
-  background-image: url('img/papermob.jpg');
-  background-size:inherit;
-  background-position: center;
-  padding: 20px;
-}
-.vignette {
-  position: relative;
-  color: white;
-  padding: 20px;
-}
-.vignette::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.vignette{
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
-  z-index: 1;
+
 }
-.vignette h2,
-.vignette p,
-.vignette button {
-  position: relative;
-  z-index: 2;
-}
+/* .papermob{
+  width: auto;
+  height: 30vw;
+} */
 .long-paragraph {
   max-width: 600px; /* Atur lebar maksimum untuk paragraf */
   line-height: 1.6; /* Jarak antar baris untuk keterbacaan */
@@ -400,10 +420,3 @@ h1 {
   overflow-wrap: break-word; /* Memastikan teks tidak meluap dari batas */
 }
 
-/* footer 4 */
-.paling-bawah {
-  position: absolute;
-  margin-top: 33px;
-  background-color: white;
-  z-index: 0;
-}

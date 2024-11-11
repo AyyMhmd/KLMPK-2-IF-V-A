@@ -12,10 +12,15 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"/>
     <title>home</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  
   <body>
+
     <!-- top -->
     <div>
       <ul class="nav justify-content-end fixed-top bg-success">
@@ -31,17 +36,18 @@
             <!-- Ikon pencarian -->
           </a>
           <!-- Dropdown dengan form pencarian -->
-          <ul class="dropdown-menu p-3">
+          <ul class="dropdown-menu p-3 bg-success">
             <li>
+              <p class="haha text-center">what do you want to know about us, bro?</p>
               <form class="d-flex" role="search">
                 <input
-                  class="form-control me-2"
+                  class="form-control me-2 "
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
                   style="width: 300px"
                 />
-                <button class="btn btn-outline-success" type="submit">
+                <button class="btn btn-outline-light" type="submit">
                   Search
                 </button>
               </form>
@@ -61,41 +67,29 @@
           </a>
 
           <!-- Dropdown untuk link sosial media -->
-          <ul class="dropdown-menu p-3">
+          <ul class="dropdown-menu p-3 bg-success">
             <li>
               <!-- Tautan Facebook -->
-              <a
-                href="https://www.facebook.com/sttcipasung"
-                target="_blank"
-                class="dropdown-item">
-                Facebook
+              <a href="https://www.facebook.com/sttcipasung" target="_blank" class="dropdown-item">
+                <i class="bi bi-facebook me-2"></i> Facebook
               </a>
             </li>
             <li>
               <!-- Tautan Twitter -->
-              <a
-                href="https://twitter.com/stt_cipasung"
-                target="_blank"
-                class="dropdown-item">
-                Twitter
+              <a href="https://twitter.com/stt_cipasung" target="_blank" class="dropdown-item">
+                <i class="bi bi-twitter me-2"></i> Twitter
               </a>
             </li>
             <li>
               <!-- Tautan Instagram -->
-              <a
-                href="https://www.instagram.com/sttcipasung_official"
-                target="_blank"
-                class="dropdown-item">
-                Instagram
+              <a href="https://www.instagram.com/sttcipasung_official" target="_blank" class="dropdown-item">
+                <i class="bi bi-instagram me-2"></i> Instagram
               </a>
             </li>
             <li>
               <!-- Tautan LinkedIn -->
-              <a
-                href="https://id.linkedin.com/school/sttcipasung/"
-                target="_blank"
-                class="dropdown-item">
-                LinkedIn
+              <a href="https://id.linkedin.com/school/sttcipasung/" target="_blank" class="dropdown-item">
+                <i class="bi bi-linkedin me-2"></i> LinkedIn
               </a>
             </li>
           </ul>
@@ -113,7 +107,7 @@
           </a>
 
           <!-- Dropdown untuk link Career -->
-          <ul class="dropdown-menu p-3">
+          <ul class="dropdown-menu p-3 bg-success">
             <li>
               <!-- Tautan Lowongan Pekerjaan -->
               <a
@@ -161,7 +155,7 @@
           </a>
           <a
             href="src/login.html"
-            class="btn btn-danger btn-sm align-items-center"
+            class="btn btn-warning btn-sm align-items-center"
             style="margin-top: 5px; margin-right: 5px">
             Sign up
           </a>
@@ -209,7 +203,7 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle do"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -233,7 +227,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle do"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -263,7 +257,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle do"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -287,7 +281,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle do"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -328,8 +322,9 @@
 
     <!-- end navbar -->
 
+    <!-- main -->
     <main>
-      <! -- slide -->
+      <!-- slide -->
       <div class="container-fluid-custom">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
@@ -445,297 +440,407 @@
       <!-- end slide -->
 
       <!-- content -->
-    <div class="container text-center konten-main">
-      <!-- content 1 -->
-      <div class="container text-center konten-1 mt-3 mb-5">
-        <h2>Sejarah STT CIPASUNG</h2>
-        <a>
-          Didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian. <a href="src/sejarah.html">Baca lebih lanjut...</a>
-        </a>
-      </div>
-      <!-- end content 1 -->
+      <div class="container text-center konten-main">
+        
+        <!-- content 1 -->
+        <div class="container text-center konten-1 mt-3 mb-5">
+          <h2 class="text-success">
+            Sejarah STT CIPASUNG
+          </h2>
+          <a>
+            Didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian. <a href="src/sejarah.html">Baca lebih lanjut...</a>
+          </a>
+        </div>
+        <!-- end content 1 -->
 
-      <!-- content 2 -->
-      <div class="container">
-        <!-- pa chobir -->
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-4 order-md-2 d-flex align-items-center justify-content-center">
-              <img
-                src="img/pak chobir.JPG"
-                class="img-fluid rounded-start"
-                alt="..."
-              />
-            </div>
-            <div class="col-md-8 order-md-1">
-              <div class="card-body pak ade">
-                <h2 class="card-title">DRS. KH ABDUL CHOBIR, M.T.</h2>
-                <p class="card-text">
-                  Sekolah Tinggi Teknologi Cipasung (STT Cipasung) didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian. <a href="src/bio_pa_chobir.html">Baca lebih lanjut...</a>
-                </p>
-                <!-- <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago
-                  </small>
-                </p> -->
+        <!-- content 2 -->
+        <div class="container">
+          <!-- pa chobir -->
+          <div class="card mb-3 ">
+            <div class="row g-0 ">
+              <div class="col-md-4 order-sm-1 order-md-2 d-flex align-items-center justify-content-center">
+                <img
+                  src="img/pak chobir.JPG"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 order-sm-2 order-md-1">
+                <div class="card-body pak ade">
+                  <h2 class="card-title">DRS. KH ABDUL CHOBIR, M.T.</h2>
+                  <p class="card-text">
+                    Sekolah Tinggi Teknologi Cipasung (STT Cipasung) didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian. <a href="src/bio_pa_chobir.html">Baca lebih lanjut...</a>
+                  </p>
+                  <!-- <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago
+                    </small>
+                    </p> -->
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- end pa chobir -->
+          <!-- end pa chobir -->
 
-        <!-- pa ade -->
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-4 d-flex align-items-center justify-content-center">
-              <img
-                src="img/pak ade.JPG"
-                class="img-fluid rounded-start"
-                alt="..."
-              />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h2 class="card-title">AHMAD ZAMAKHSYARI SIDIQ, M.T</h2>
-                <p class="card-text">Sekolah Tinggi Teknologi Cipasung (STT Cipasung) didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian. <a href="src/bio_pa_ade.html">Baca lebih lanjut...</a>
-                </p>
-                <!-- <p class="card-text">
-                  <small class="text-body-secondary"
-                    >Last updated 3 mins ago
-                  </small>
-                </p> -->
+          <!-- pa ade -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <img
+                  src="img/pak ade.JPG"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h2 class="card-title">AHMAD ZAMAKHSYARI SIDIQ, M.T</h2>
+                  <p class="card-text">Sekolah Tinggi Teknologi Cipasung (STT Cipasung) didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian. <a href="src/bio_pa_ade.html">Baca lebih lanjut...</a>
+                  </p>
+                  <!-- <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Last updated 3 mins ago
+                    </small>
+                  </p> -->
+                </div>
               </div>
             </div>
           </div>
+          <!-- end pa ade -->
         </div>
-        <!-- end pa ade -->
-      </div>
-      <!-- end content 2 -->
+        <!-- end content 2 -->
 
-      <!-- content 3 -->
-      <div class="container text-center mb-5">
-        <!-- content split -->
-        <div class="row align-items-center mt-5">
-          <!-- content 2 Left -->
-          <main class="row">
-            <div class="col-sm-6 mb-3 mb-sm-0 row-one">
+        <!-- content 3 -->
+        <div class="container text-center mb-5">
+          <!-- content split -->
+          <div class="row align-items-center mt-5">
+            <!-- content 3 Left -->
+            <div class="row">
+              <div class="col-xl-6 mb-3 mb-sm-0 row-one">
                 <div class="card-faculty">
-                    <img src="../img/INFORMATIKA (1).png"alt="LOGO INFORMATIKA" class="logo-informatika"/>
-                         <div class="card-content">
-                            <h2 class="if">INFORMATIKA</h2></div>
-                                <p class="Informatika">Di Jurusan Informatika kamu akan mempelajari berbagai prinsip terkait ilmu komputer mulai dari proses perancangan, pengembangan, pengujian, hingga evaluasi sistem operasi perangkat lunak.</p>
-                                    <a href="/src/if.html" class="button">
-                                        Find out more
-                                            <span class="material-symbols-outlined"> arrow_right_alt </span>
-                                    </a>
-                 </div>
-            </div>
-            <div class="col-sm-6 row-two">
+                  <img src="../img/INFORMATIKA (1).png"alt="LOGO INFORMATIKA" class="logo-informatika"/>
+                  <div class="card-content">
+                    <h2 class="if">INFORMATIKA</h2>
+                  </div>
+                  <p class="Informatika">Di Jurusan Informatika kamu akan mempelajari berbagai prinsip terkait ilmu komputer mulai dari proses perancangan, pengembangan, pengujian, hingga evaluasi sistem operasi perangkat lunak.</p>
+                  <a href="/src/if.html" class="button">
+                    Find out more
+                    <span class="material-symbols-outlined"> arrow_right_alt </span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-xl-6 row-two">
                 <div class="card-faculty">
                   <img src="../img/TEKNIK INDUSRTRI.png" alt="LOGO TEKNIK INDUSTRI" class="logo-teknik-industri"/>
-                    <div class="card-content">
-                        <h2>TEKNIK INDUSTRI</h2>
-                            <p>Keilmuan Teknik Industri lahir dari keinginan untuk memperbaiki system pekerjaan yang sudah ada. Itu dibuktikan dengan salah satu bahasan dalam keilmuan Teknik Industri yang menerapkan Plan, Do, Check, Action.</p>
-                            <a href="/src/ti.html" class="button">
-                             Find out more
-                             <span class="material-symbols-outlined"> arrow_right_alt </span>
-                            </a>
-                    </div>
+                  <div class="card-content">
+                    <h2>TEKNIK INDUSTRI</h2>
+                    <p>Keilmuan Teknik Industri lahir dari keinginan untuk memperbaiki system pekerjaan yang sudah ada. Itu dibuktikan dengan salah satu bahasan dalam keilmuan Teknik Industri yang menerapkan Plan, Do, Check, Action.</p>
+                    <a href="/src/ti.html" class="button">
+                      Find out more
+                      <span class="material-symbols-outlined"> arrow_right_alt </span>
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </main>
-          <!-- end content 3 Right -->
+            <!-- end content 3 Right -->
+          </div>
+          <!-- end content 3 split -->
         </div>
-        <!-- end content 3 split -->
-      </div>
-      <!-- end content 3 -->
+        <!-- end content 3 -->
 
-      <!-- content 4&5 -->
-      <div class="container text-center mb-5">
-        <h2>Prestasi Mahasiswa</h2>
-        <div class="row align-items-start">
-          <div class="col">Prestasi Mahasiswa 1</div>
-          <div class="col">Prestasi Mahasiswa 2</div>
-          <div class="col">Prestasi Mahasiswa 3</div>
-          <div class="col">Prestasi Mahasiswa 4</div>
-        </div>
-      </div>
-      <!-- end content 4&5 -->
-
-      <!-- content 6 -->
-      <div class="container text-center mb-5">
-        <h2>Events and Academic Calendar</h2>
-        <div class="calendar sm">
-          <header>
-            <h1></h1>
-            <nav>
-              <button id="prev"></button>
-              <button id="next"></button>
-            </nav>
-          </header>
-          <section>
-            <ul class="days">
-              <li>Sun</li>
-              <li>Mon</li>
-              <li>Tue</li>
-              <li>Wed</li>
-              <li>Thu</li>
-              <li>Fri</li>
-              <li>Sat</li>
-            </ul>
-            <ul class="dates"></ul>
-          </section>
-        </div>
-        <a
-          href="src/calendar.html"
-          class="btn btn-primary btn-sm align-items-center"
-          style="margin-top: 5px"
-        >
-          view more
-        </a>
-      </div>
-      <!-- end content 6 -->
-
-      <!-- content 7 -->
-      <div class="container text-start mb-5">
-        <h2>Acara Terdekat</h2>
-        <a href="https://example.com"> lihat lebih lanjut </a>
-      </div>
-      <!-- end content 7 -->
-
-      <!-- content 8 -->
-      <div class="container text-center mb-5">
-        <h2>Unit Kegiatan Mahasiswa</h2>
-        <div class="container text-center">
+        <!-- content 4 -->
+        <div class="container text-center mb-5">
+          <h2 class="text-success">
+            Prestasi Mahasiswa
+          </h2>
           <div class="row align-items-start">
-            <div class="col">
-              <H2>HMIF</H2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
-              />
-              <P style="text-align: justify;">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.<a href="https://example.com">Baca lebih lanjut...</a>
-              </P>
-            </div>
-            <div class="col">
-              <h2>BEM</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
-              />
-              <P style="text-align: justify;">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>
-              </P>
-            </div>
-            <div class="col">
-              <h2>HMTI</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
-              />
-              <P style="text-align: justify;">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>
-              </P>
-            </div>
+            <div class="col">Prestasi Mahasiswa 1</div>
+            <div class="col">Prestasi Mahasiswa 2</div>
+            <div class="col">Prestasi Mahasiswa 3</div>
+            <div class="col">Prestasi Mahasiswa 4</div>
           </div>
         </div>
-        <div class="container text-center">
-          <div class="row align-items-start">
-            <div class="col">
-              <h2>KELAPA</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
-              />
-              <P style="text-align: justify;">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+        <!-- end content 4 -->
+
+        <!-- content 5 -->
+        <div class="container text-center mb-5">
+          <h2 class="text-success">
+            Events and Academic Calendar
+          </h2>
+          <div class="row">
+            <!-- content 5 split Left -->
+            <div class="col-lg-6 mt-3">
+              <div class="calendar sm bg-success text-light">
+                <header>
+                  <h1></h1>
+                  <nav>
+                    <button id="prev"></button>
+                    <button id="next"></button>
+                  </nav>
+                </header>
+                <section>
+                  <ul class="days text-light">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                  </ul>
+                  <ul class="dates text-light"></ul>
+                </section>
+              </div>
             </div>
-            <div class="col">
-              <h2>PROCLUB</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
-              />
-              <P style="text-align: justify;">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+            <!-- end content 5 split Left -->
+
+            <!-- content 5 split Right -->
+            <div class="col-lg-6 mt-3">
+              <!-- Card Pertama -->
+              <div class="accordion accordion-flush turun-naik" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button 
+                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#flush-collapseOne" 
+                      aria-expanded="false" 
+                      aria-controls="flush-collapseOne">
+                      <!-- Kolom Kiri: Judul -->
+                      <span>
+                        Seleksi Gelombang 1
+                      </span>
+                      <!-- Kolom Kanan: Tanggal -->
+                      <span class="ms-auto">
+                        30 Februari 2025
+                      </span>
+                    </button>
+                  </h2>
+                  <div 
+                    id="flush-collapseOne" 
+                    class="accordion-collapse collapse" 
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body border border-success text-success">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button 
+                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#flush-collapseTwo" 
+                      aria-expanded="false" 
+                      aria-controls="flush-collapseTwo">
+                      <!-- Kolom Kiri: Judul -->
+                      <span>
+                        Seleksi Gelombang 2
+                      </span>
+                      <!-- Kolom Kanan: Tanggal -->
+                      <span class="ms-auto">
+                        31 Februari 2025
+                      </span>
+                    </button>
+                  </h2>
+                  <div 
+                    id="flush-collapseTwo" 
+                    class="accordion-collapse collapse" 
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body border border-success text-success">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button 
+                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#flush-collapseThree" 
+                      aria-expanded="false" 
+                      aria-controls="flush-collapseThree">
+                      <!-- Kolom Kiri: Judul -->
+                      <span>
+                        Seleksi Gelombang 3
+                      </span>
+                      <!-- Kolom Kanan: Tanggal -->
+                      <span class="ms-auto">
+                        32 Februari 2025
+                      </span>
+                    </button>
+                  </h2>
+                  <div 
+                    id="flush-collapseThree" 
+                    class="accordion-collapse collapse" 
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body border border-success text-success">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <H2>KDD</H2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
-              />
-              <P style="text-align: justify;">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
-            </div>
+            <!-- end content 5 split Right -->
           </div>
         </div>
-        <div class="container text-center">
-          <div class="row align-items-start">
-            <div class="col">
-              <h2>RILIS</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
-              />
-              <P style="text-align: justify;">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
-            </div>
-            <div class="col">
-              <h2>SANGGAR</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
-              />
-              <P style="text-align: justify;">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
-            </div>
-            <div class="col">
-              <h2>OLAHRAGA</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
-              />
-              <P style="text-align: justify;">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+        <!-- end content 5 -->
+
+        <!-- content 6 -->
+        <div class="container text-center mb-5">
+          <h2 class="text-success">
+            Unit Kegiatan Mahasiswa
+          </h2>
+          <!-- content 6 baris row 1 -->
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <H2>HMIF</H2>
+                <img
+                  src="img/wotb.jpeg"
+                  alt="..."
+                  style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+                />
+                <P style="text-align: justify;">
+                  Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.<a href="https://example.com">Baca lebih lanjut...</a>
+                </P>
+              </div>
+              <div class="col">
+                <h2>BEM</h2>
+                <img
+                  src="img/wotb.jpeg"
+                  alt="..."
+                  style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+                />
+                <P style="text-align: justify;">
+                  Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>
+                </P>
+              </div>
+              <div class="col">
+                <h2>HMTI</h2>
+                <img
+                  src="img/wotb.jpeg"
+                  alt="..."
+                  style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+                />
+                <P style="text-align: justify;">
+                  Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>
+                </P>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- <div class="container text-center">
-          <div class="row align-items-start">
-            <div class="col">if</div>
-            <div class="col">bem</div>
-            <div class="col">ti</div>
+          <!-- end content 6 baris row 1 -->
+
+          <!-- content 6 baris row 2 -->
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <h2>KELAPA</h2>
+                <img
+                  src="img/wotb.jpeg"
+                  alt="..."
+                  style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+                />
+                <P style="text-align: justify;">
+                  Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+              </div>
+              <div class="col">
+                <h2>PROCLUB</h2>
+                <img
+                  src="img/wotb.jpeg"
+                  alt="..."
+                  style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+                />
+                <P style="text-align: justify;">
+                  Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+              </div>
+              <div class="col">
+                <H2>KDD</H2>
+                <img
+                  src="img/wotb.jpeg"
+                  alt="..."
+                  style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+                />
+                <P style="text-align: justify;">
+                  Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+              </div>
+            </div>
           </div>
+          <!-- end content 6 baris row 2 -->
+
+          <!-- end content 6 baris row 3 -->
+          <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <h2>RILIS</h2>
+                <img
+                  src="img/wotb.jpeg"
+                  alt="..."
+                  style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+                />
+                <P style="text-align: justify;">
+                  Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+              </div>  
+              <div class="col">
+                <h2>SANGGAR</h2>
+                <img
+                  src="img/wotb.jpeg"
+                  alt="..."
+                  style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+                />
+                <P style="text-align: justify;">
+                  Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+              </div>
+              <div class="col">
+                <h2>OLAHRAGA</h2>
+                <img
+                  src="img/wotb.jpeg"
+                  alt="..."
+                  style="background-color: black; margin-top: 5px; margin-bottom: 10px; height: auto; width: auto"
+                />
+                <P style="text-align: justify;">
+                  Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing. <a href="https://example.com">Baca lebih lanjut...</a>              </P>
+              </div>
+            </div>
+          </div>
+          <!-- end content 6 baris row 3 -->
+          <!-- <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">if</div>
+              <div class="col">bem</div>
+              <div class="col">ti</div>
+            </div>
+          </div>
+          </div> -->
         </div>
-      </div> -->
-    </div>
-    <!-- end content 8 -->
+        <!-- end content 6 -->
     
-    <!-- content 9 -->
-      <div class="container text-start mb-5 daftar vignette">
-        <h2>AYO DAFTAR!!</h2>
-        <!-- <p class="isi-daftar">daftar</p> -->
-        <button
-          type="button"
-          class="btn btn-secondary btn-lg align-items-center"
-        >
-          Daftar
-        </button>
+        <!-- content 7 -->
+        <div class="justify-content-center">
+          <div class="card text-bg-dark">
+            <img src="img/papermob.jpg" class="card-img papermob" alt="...">
+            <div class="card-img-overlay text-start vignette">
+              <h2 class="card-title">AYO DAFTAR!!</h2>
+              <p class="card-text long-paragraph">
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              </p>
+              <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+              <button type="button" class="btn btn-success btn-lg">
+                Daftar
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- end content 7 -->
+
       </div>
-      <!-- end content 9 -->
-    <!-- end content -->
+      <!-- end content -->
     </main>
+    <!-- end main -->
 
     <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
 
@@ -755,9 +860,48 @@
           <!-- Teks dan Tombol di sebelah kanan gambar -->
           <div class="ms-auto d-flex align-items-center">
             <a class="me-3 do">Get STT Cipasung News Delivered to Your Email</a>
-            <button type="button" class="btn btn-secondary">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-whatever="Email">
               Sign Up for Email
             </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header bg-success text-light">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Subscribe for
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close">
+                    </button>
+                    </div>
+                    <div class="modal-body bg-success text-light">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Recipient:</label>
+                          <input type="text" class="form-control" id="recipient-name" />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer bg-success text-light">
+                    <button type="button" class="btn btn-primary">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -773,8 +917,7 @@
           <h3>About</h3>
           <a 
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            >
+            class="d-block mt-2 do">
             Accreditation
           </a>
           <a 

@@ -80,3 +80,18 @@ console.log('Hello!');
   });
   
   renderCalendar();
+
+  const exampleModal = document.getElementById('exampleModal')
+if (exampleModal) {
+  exampleModal.addEventListener('show.bs.modal', event => {
+    const button = event.relatedTarget // Tombol yang memicu modal
+    const recipient = button.getAttribute('data-bs-whatever') // Ambil nilai dari data-bs-whatever
+
+    const modalTitle = exampleModal.querySelector('.modal-title') // Judul modal
+    const modalBodyInput = exampleModal.querySelector('.modal-body input') // Input field dalam modal
+
+    // Menyesuaikan konten modal berdasarkan tombol yang dipilih
+    modalTitle.textContent = `Subscribe for ${recipient}`
+    modalBodyInput.value = recipient
+  })
+}
