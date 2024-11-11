@@ -859,15 +859,17 @@
 
           <!-- Teks dan Tombol di sebelah kanan gambar -->
           <div class="ms-auto d-flex align-items-center">
+            <!-- Teks dan tombol Sign Up -->
             <a class="me-3 do">Get STT Cipasung News Delivered to Your Email</a>
             <button
               type="button"
               class="btn btn-secondary"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
-              data-bs-whatever="Email">
+              data-bs-whatever="">
               Sign Up for Email
             </button>
+          
             <!-- Modal -->
             <div
               class="modal fade"
@@ -877,6 +879,8 @@
               aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
+                  
+                  <!-- Modal Header -->
                   <div class="modal-header bg-success text-light">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">
                       Subscribe for
@@ -887,22 +891,28 @@
                       data-bs-dismiss="modal"
                       aria-label="Close">
                     </button>
-                    </div>
-                    <div class="modal-body bg-success text-light">
-                      <form>
-                        <div class="mb-3">
-                          <label for="recipient-name" class="col-form-label">Recipient:</label>
-                          <input type="text" class="form-control" id="recipient-name" />
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer bg-success text-light">
+                  </div>
+                  
+                  <!-- Modal Body -->
+                  <div class="modal-body bg-success text-light">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Enter your email">
+                      </div>
+                    </form>
+                  </div>
+                  
+                  <!-- Modal Footer -->
+                  <div class="modal-footer bg-success text-light">
                     <button type="button" class="btn btn-primary">Send</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          
+
         </div>
       </div>
     </div>

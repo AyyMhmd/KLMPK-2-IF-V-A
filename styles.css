@@ -33,7 +33,7 @@ h1 {
   display: none; /* Menghilangkan caret pada tombol dropdown dan elemen lain dengan kelas yang ditentukan */
 }
 .form-control {
-  color: red;
+  color: green;
 }
 .form-control:focus {
   color: green;
