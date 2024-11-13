@@ -33,7 +33,7 @@ h1 {
   display: none; /* Menghilangkan caret pada tombol dropdown dan elemen lain dengan kelas yang ditentukan */
 }
 .form-control {
-  color: red;
+  color: green;
 }
 .form-control:focus {
   color: green;
@@ -70,7 +70,7 @@ h1 {
 /* footer 4 */
 .paling-bawah {
   position: absolute;
-  margin-top: 33px;
+  /* margin-top: 33px; */
   background-color: white;
   z-index: 0;
 }
@@ -80,7 +80,6 @@ h1 {
     width: 50vw; /* Atur lebar offcanvas menjadi 50% dari lebar viewport */
   }
 }
-
 @media (max-width: 767px) {
   .nav {
     display: none; /* top hilang */
@@ -181,7 +180,7 @@ h1 {
 
   &:hover img {
     opacity: 40%; /* Ubah opacity gambar saat hover */
-}
+  }
   .if{
     position: absolute;
     inset: auto auto 30px 30px;
@@ -202,13 +201,13 @@ h1 {
     color: #347928; /* Warna teks */
     
   }
-.Informatika{
+  .Informatika{
     position: absolute;
     opacity: 0;
     max-width: 80%;
     transition: opacity 0.3s ease-out;
     color: #ffffff;
-}
+  }
   p,
   a {
     position: absolute;

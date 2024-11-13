@@ -12,10 +12,15 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <title>informatika</title>
-    <link rel="stylesheet" href="if.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"/>
+    <title>Biography</title>
+    <link rel="stylesheet" href="bio_pa_chobir.css" />
   </head>
+  
   <body>
+
     <!-- top -->
     <div>
       <ul class="nav justify-content-end fixed-top bg-success">
@@ -31,17 +36,18 @@
             <!-- Ikon pencarian -->
           </a>
           <!-- Dropdown dengan form pencarian -->
-          <ul class="dropdown-menu p-3">
+          <ul class="dropdown-menu p-3 bg-success">
             <li>
+              <p class="haha text-center">what do you want to know about us, bro?</p>
               <form class="d-flex" role="search">
                 <input
-                  class="form-control me-2"
+                  class="form-control me-2 "
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
                   style="width: 300px"
                 />
-                <button class="btn btn-outline-success" type="submit">
+                <button class="btn btn-outline-light" type="submit">
                   Search
                 </button>
               </form>
@@ -59,47 +65,48 @@
             aria-expanded="false">
             Social Media
           </a>
-
+        
           <!-- Dropdown untuk link sosial media -->
-          <ul class="dropdown-menu p-3">
+          <ul class="dropdown-menu p-3 bg-success">
             <li>
               <!-- Tautan Facebook -->
-              <a
-                href="https://www.facebook.com/sttcipasung"
-                target="_blank"
-                class="dropdown-item">
-                Facebook
+              <a href="https://www.facebook.com/sttcipasung" target="_blank" class="dropdown-item">
+                <i class="bi bi-facebook me-2"></i> Facebook
               </a>
             </li>
             <li>
               <!-- Tautan Twitter -->
-              <a
-                href="https://twitter.com/stt_cipasung"
-                target="_blank"
-                class="dropdown-item">
-                Twitter
+              <a href="https://twitter.com/stt_cipasung" target="_blank" class="dropdown-item">
+                <i class="bi bi-twitter me-2"></i> Twitter
               </a>
             </li>
             <li>
               <!-- Tautan Instagram -->
-              <a
-                href="https://www.instagram.com/sttcipasung_official"
-                target="_blank"
-                class="dropdown-item">
-                Instagram
+              <a href="https://www.instagram.com/sttcipasung_official" target="_blank" class="dropdown-item">
+                <i class="bi bi-instagram me-2"></i> Instagram
               </a>
             </li>
             <li>
               <!-- Tautan LinkedIn -->
-              <a
-                href="https://id.linkedin.com/school/sttcipasung/"
-                target="_blank"
-                class="dropdown-item">
-                LinkedIn
+              <a href="https://id.linkedin.com/school/sttcipasung/" target="_blank" class="dropdown-item">
+                <i class="bi bi-linkedin me-2"></i> LinkedIn
+              </a>
+            </li>
+            <li>
+              <!-- Tautan YouTube -->
+              <a href="https://www.youtube.com/channel/UCfMqh9VkAU2q_C-fPNKksiQ" target="_blank" class="dropdown-item">
+                <i class="bi bi-youtube me-2"></i> YouTube
+              </a>
+            </li>
+            <li>
+              <!-- Tautan TikTok -->
+              <a href="https://www.tiktok.com/@sttcipasung" target="_blank" class="dropdown-item">
+                <i class="bi bi-tiktok me-2"></i> TikTok
               </a>
             </li>
           </ul>
         </li>
+        
 
         <li class="nav-item dropdown">
           <!-- Tombol dropdown untuk Career -->
@@ -113,7 +120,7 @@
           </a>
 
           <!-- Dropdown untuk link Career -->
-          <ul class="dropdown-menu p-3">
+          <ul class="dropdown-menu p-3 bg-success">
             <li>
               <!-- Tautan Lowongan Pekerjaan -->
               <a
@@ -159,12 +166,12 @@
             style="margin-top: 5px">
             Login
           </a>
-          <button
-            type="button"
-            class="btn btn-danger btn-sm align-items-center"
+          <a
+            href="src/login.html"
+            class="btn btn-warning btn-sm align-items-center"
             style="margin-top: 5px; margin-right: 5px">
-              Sign up
-          </button>
+            Sign up
+          </a>
         </li>
       </ul>
     </div>
@@ -174,7 +181,7 @@
     <nav class="navbar navbar-expand-md bg-light">
       <div class="container-fluid semua-nav">
         <!-- Navbar Brand -->
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="../index.html">
           <img
             src="https://sttcipasung.ac.id/wp-content/uploads/2023/07/STT-CIPASUNG-2-e1688823058980.png"
             alt="Logo"
@@ -209,7 +216,7 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle do"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -233,7 +240,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle do"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -243,7 +250,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
                   <li>
-                    <a class="dropdown-item" href="faculty.html">Faculty</a>
+                    <a class="dropdown-item" href="src/faculty.html">Faculty</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">Academics</a>
@@ -263,7 +270,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle do"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -287,7 +294,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle do"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -328,38 +335,535 @@
 
     <!-- end navbar -->
 
-    <! -- slide -->
-    
-    <!-- end slide -->
-    <!-- content -->
-    <section id="informatika" class="informatika">
-      <h2>INFORMATIKA</h2>
-  
-      <div class="row">
-        <div class="informatika-img">
-          <img src="../img/INFORMATIKA (1).png" alt="INFORMATIKA">
-        </div>
-        <div class="content">
-          <h3>Kenapa memilih informatika?</h3>
-          <p>Program Studi Informatika adalah salah satu disiplin ilmu yang mengkaji teknologi informasi dan sistem komputer. Dengan fokus pada pengembangan perangkat lunak, pemrograman, dan pengelolaan data, program ini membekali mahasiswa dengan keterampilan teknis dan analitis yang diperlukan untuk merancang, mengimplementasikan, dan mengelola solusi teknologi. Mahasiswa akan mempelajari berbagai topik, termasuk algoritma, struktur data, rekayasa perangkat lunak, dan keamanan siber, serta memperdalam pengetahuan tentang basis data dan jaringan komputer. Selain aspek teknis, program ini juga menekankan pentingnya pemikiran kritis dan etika dalam penggunaan teknologi, sehingga lulusan dapat berkontribusi secara positif dalam masyarakat yang semakin terdigitalisasi. Dengan bimbingan dari pengajar yang berpengalaman dan fasilitas modern, Program Studi Informatika mempersiapkan mahasiswa untuk menghadapi tantangan industri dan menjawab kebutuhan pasar kerja di era digital.</p>
-        </div>
+    <!-- main -->
+    <main>
+
+  <!-- Main Content Section -->
+  <div class="container my-5">
+    <!-- Profile Image Centered -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-6 col-md-4 text-center">
+        <img src="../img/pak chobir.JPG" alt="Profile Picture" class="img-fluid shadow profile-image">
       </div>
-    </section>
-      <!-- content 9 -->
-      <div class="container text-start mb-5 daftar vignette">
-        <h2>AYO DAFTAR!!</h2>
-        <!-- <p class="isi-daftar">daftar</p> -->
-        <button
-          type="button"
-          class="btn btn-secondary btn-lg align-items-center"
-        >
-          Daftar
-        </button>
-      </div>
-      <!-- end content 9 -->
     </div>
-    <!-- end content -->
+
+    <div class="text-center py-4 ">
+      <h1 class="display-6">
+        DRS. KH ABDUL CHOBIR, M.T.
+      </h1>
+      <h2 class="fs-3 text-success">Pendiri STT CIPASUNG</h2>
+    </div>
+
+    <!-- Biography Text -->
+    
+    
+
+      <!-- content -->
+      <div class="container konten-main">
+        
+        <!-- content 1 -->
+        <div class="row justify-content-center text-justify">
+          <div class="col-md-6">
+            <p>
+              <strong>
+                Drs. KH. Abdul Chobir, M.T.
+              </strong>
+               adalah tokoh penting di balik pendirian Sekolah Tinggi Teknologi (STT) Cipasung, Tasikmalaya. Beliau adalah salah satu pemrakarsa utama lembaga pendidikan ini, yang didirikan pada tahun 1997 sebagai bagian dari upaya meningkatkan pendidikan teknologi di lingkungan Pondok Pesantren Cipasung. Inisiatif ini dilaksanakan atas arahan dari pimpinan Pondok Pesantren saat itu, KH. Moh. Ilyas Ruhiat, serta didukung oleh tokoh nasional seperti Prof. Dr. Ginanjar Kartasasmita dan Ir. Fadel Muhammad yang turut memberikan dorongan bagi realisasi kampus tersebut.
+            </p>
+            <p>
+              Selain memegang peran sebagai pendiri, KH. Abdul Chobir juga telah menjabat beberapa kali sebagai ketua STT Cipasung, yaitu dari tahun 2006 hingga 2014 dan kembali menjabat sejak tahun 2018 hingga saat ini. Sebagai pendidik dan pemimpin, beliau dikenal karena upayanya dalam memajukan pendidikan di bidang keteknikan dan menjadikan STT Cipasung sebagai institusi pendidikan yang unggul, terutama dalam mempersiapkan lulusan dengan jiwa kewirausahaan dan kepedulian terhadap lingkungan.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              Peran KH. Abdul Chobir dalam mendirikan dan mengembangkan STT Cipasung adalah bukti komitmennya dalam meningkatkan mutu pendidikan tinggi di daerah Priangan Timur, dengan harapan lembaga ini dapat mencetak generasi muda yang kompeten dalam teknologi serta memiliki semangat pengabdian kepada masyarakat.
+            </p>
+            <p>
+              Sebagai bagian dari visinya, KH. Abdul Chobir menekankan pendidikan berbasis teknologi dan kewirausahaan, bertujuan membekali generasi muda dengan keterampilan praktis dan semangat inovatif di bidang industri. Berkat dukungan dari Institut Teknologi Bandung (ITB), STT Cipasung mampu membangun kurikulum yang kuat dan relevan dengan kebutuhan lokal, suatu langkah penting yang turut diperjuangkan oleh KH. Abdul Chobir sejak awal pendiriannya.
+            </p>
+          </div>
+        </div>
+        <div class="text-justify">
+          <p>
+            Di samping itu, beliau berhasil membentuk lingkungan belajar Islami di STT Cipasung yang mengintegrasikan pengetahuan dengan nilai-nilai keislaman, sehingga mahasiswa tidak hanya memperoleh ilmu teknis tetapi juga pembentukan karakter. Pada masa kepemimpinannya, STT Cipasung mengalami peningkatan akreditasi dan pengembangan program studi yang membuktikan komitmen KH. Abdul Chobir dalam menjadikan STT Cipasung sebagai lembaga pendidikan berkualitas.
+          </p>
+          <p>
+            KH. Abdul Chobir juga berperan aktif dalam mendukung kegiatan penelitian dan pengabdian masyarakat yang relevan dengan kebutuhan masyarakat lokal, terutama di Tasikmalaya dan wilayah Priangan Timur. Hal ini meliputi proyek-proyek sosial di mana mahasiswa didorong untuk berkontribusi dalam pembangunan daerah, selaras dengan nilai-nilai pengabdian dan tanggung jawab sosial yang beliau tanamkan.
+          </p>
+        </div>
+        <!-- end content 1 -->
+
+       
+        <!-- end news -->
+        <!-- content 7 -->
+        <div class="justify-content-center">
+          <div class="card text-bg-dark">
+            <img src="../img/papermob.jpg" class="card-img papermob" alt="...">
+            <div class="card-img-overlay text-start vignette">
+              <h2 class="card-title">AYO DAFTAR!!</h2>
+              <p class="card-text long-paragraph">
+                This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              </p>
+              <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
+              <button type="button" class="btn btn-success btn-lg">
+                Daftar
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- end content 7 -->
+
+        <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
+
+        <!-- news -->
+        <div class="news-container">
+          <div class="header">
+            <h2>
+              Latest News
+            </h2>
+            <div class="navigation">
+              <button 
+              class="nav-btn prev" 
+              aria-label="Previous">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  stroke-width="2" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6"/>
+              </svg>
+              </button>
+              <button class="nav-btn next" aria-label="Next">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  stroke-width="2" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round">
+                  <path d="m9 18 6-6-6-6"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="slider-wrapper">
+            <div class="slider">
+              
+              <!-- news 1 -->
+              <article class="news-card">
+                <div class="image-container">
+                  <img 
+                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80" 
+                  alt="Solar Technology">
+                  <span class="category">
+                    Technology
+                  </span>
+                </div>
+                <div class="content">
+                  <div class="meta">
+                    <span class="date">
+                      Mar 15, 2024
+                    </span>
+                    <svg class="arrow-icon" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round">
+                      <path d="M7 17L17 7"/>
+                      <path d="M7 7h10v10"/>
+                    </svg>
+                  </div>
+                  <h3>
+                    The Future of Sustainable Energy: Breakthrough in Solar Technology
+                  </h3>
+                  <p>
+                    Scientists discover new material that could revolutionize solar panel efficiency, promising a greener future for energy production.
+                  </p>
+                </div>
+              </article>
+              <!-- end news 1 -->
+    
+              <!-- news 2 -->
+              <article class="news-card">
+                <div class="image-container">
+                  <img 
+                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" 
+                  alt="AI Summit">
+                  <span class="category">
+                    Business
+                  </span>
+                </div>
+                <div class="content">
+                  <div class="meta">
+                    <span class="date">
+                      Mar 14, 2024
+                    </span>
+                    <svg 
+                      class="arrow-icon" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round">
+                      <path d="M7 17L17 7"/>
+                      <path d="M7 7h10v10"/>
+                    </svg>
+                  </div>
+                  <h3>
+                    Global Economic Summit Addresses AI Integration
+                  </h3>
+                  <p>
+                    World leaders gather to discuss the impact of artificial intelligence on global economies and workforce transformation.
+                  </p>
+                </div>
+              </article>
+              <!-- end news 2 -->
+    
+              <!-- news 3 -->
+              <article class="news-card">
+                <div class="image-container">
+                  <img 
+                  src="https://images.unsplash.com/photo-1597239450996-ea7c2c564412?w=800&q=80" 
+                  alt="Amazon Discovery">
+                  <span class="category">
+                    Science
+                  </span>
+                </div>
+                <div class="content">
+                  <div class="meta">
+                    <span class="date">
+                      Mar 13, 2024
+                    </span>
+                    <svg 
+                      class="arrow-icon" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round">
+                      <path d="M7 17L17 7"/>
+                      <path d="M7 7h10v10"/>
+                    </svg>
+                  </div>
+                  <h3>
+                    Revolutionary Health Discovery in Amazon Rainforest
+                  </h3>
+                  <p>
+                    Researchers identify new plant species with potential breakthrough applications in medicine.
+                  </p>
+                </div>
+              </article>
+              <!-- end news 3 -->
+    
+              <!-- news 4 -->
+              <article class="news-card">
+                <div class="image-container">
+                  <img 
+                  src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&q=80" 
+                  alt="Space Tourism">
+                  <span class="category">
+                    Space
+                  </span>
+                </div>
+                <div class="content">
+                  <div class="meta">
+                    <span class="date">
+                      Mar 12, 2024
+                    </span>
+                    <svg 
+                      class="arrow-icon" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round">
+                      <path d="M7 17L17 7"/>
+                      <path d="M7 7h10v10"/>
+                    </svg>
+                  </div>
+                  <h3>
+                    Space Tourism Takes Off: First Commercial Flight Success
+                  </h3>
+                  <p>
+                    Private space company achieves milestone with successful civilian space tourism mission.
+                  </p>
+                </div>
+              </article>
+              <!-- end news 4 -->
+    
+              <!-- news 5 -->
+              <article class="news-card">
+                <div class="image-container">
+                  <img 
+                  src="https://images.unsplash.com/photo-1561740331-0bdf176a7878?w=800&q=80" 
+                  alt="Digital Art">
+                  <span class="category">
+                    Arts
+                  </span>
+                </div>
+                <div class="content">
+                  <div class="meta">
+                    <span class="date">
+                      Mar 11, 2024
+                    </span>
+                    <svg 
+                      class="arrow-icon" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round">
+                      <path d="M7 17L17 7"/>
+                      <path d="M7 7h10v10"/>
+                    </svg>
+                  </div>
+                  <h3>
+                    Cultural Renaissance: Digital Art Movement Explodes
+                  </h3>
+                  <p>
+                    NFT art market reaches new heights as traditional galleries embrace digital exhibitions.
+                  </p>
+                </div>
+              </article>
+              <!-- end news 5 -->
+    
+              <!-- news 6 -->
+              <article class="news-card">
+                <div class="image-container">
+                  <img 
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" 
+                    alt="Quantum Computing">
+                  <span class="category">
+                    Technology
+                  </span>
+                </div>
+                <div class="content">
+                  <div class="meta">
+                    <span class="date">
+                      Mar 10, 2024
+                    </span>
+                    <svg 
+                      class="arrow-icon" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round">
+                      <path d="M7 17L17 7"/>
+                      <path d="M7 7h10v10"/>
+                    </svg>
+                  </div>
+                  <h3>
+                    Breakthrough in Quantum Computing Achievement
+                  </h3>
+                  <p>
+                    Tech giant announces major quantum computing milestone, solving complex problems in seconds.
+                  </p>
+                </div>
+              </article>
+              <!-- end news 6 -->
+    
+              <!-- news 7 -->
+              <article class="news-card">
+                <div class="image-container">
+                  <img 
+                    src="https://images.unsplash.com/photo-1484291470158-b8f8d608850d?w=800&q=80" 
+                    alt="Ocean Cleanup">
+                  <span class="category">
+                    Environment
+                  </span>
+                </div>
+                <div class="content">
+                  <div class="meta">
+                    <span class="date">
+                      Mar 9, 2024
+                    </span>
+                    <svg 
+                      class="arrow-icon" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round">
+                      <path d="M7 17L17 7"/>
+                      <path d="M7 7h10v10"/>
+                    </svg>
+                  </div>
+                  <h3>
+                    Ocean Cleanup Initiative Shows Promising Results
+                  </h3>
+                  <p>
+                    Innovative ocean cleaning technology removes 100,000 tons of plastic in pioneering mission.
+                  </p>
+                </div>
+              </article>
+              <!-- end news 7 -->
+    
+              <!-- news 8 -->
+              <article class="news-card">
+                <div class="image-container">
+                  <img 
+                  src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=800&q=80" 
+                  alt="Transportation">
+                  <span class="category">
+                    Innovation
+                  </span>
+                </div>
+                <div class="content">
+                  <div class="meta">
+                    <span class="date">
+                      Mar 8, 2024
+                    </span>
+                    <svg 
+                      class="arrow-icon" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round">
+                      <path d="M7 17L17 7"/>
+                      <path d="M7 7h10v10"/>
+                    </svg>
+                  </div>
+                  <h3>
+                    Revolutionary Transportation System Unveiled
+                  </h3>
+                  <p>
+                    New high-speed transport system promises to revolutionize intercity travel.
+                  </p>
+                </div>
+              </article>
+              <!-- end news 8 -->
+    
+              <!-- news 9 -->
+              <article class="news-card">
+                <div class="image-container">
+                  <img 
+                  src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&q=80" 
+                  alt="Energy Storage">
+                  <span class="category">
+                    Energy
+                  </span>
+                </div>
+                <div class="content">
+                  <div class="meta">
+                    <span class="date">
+                      Mar 7, 2024
+                    </span>
+                    <svg 
+                      class="arrow-icon" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round">
+                      <path d="M7 17L17 7"/>
+                      <path d="M7 7h10v10"/>
+                    </svg>
+                  </div>
+                  <h3>
+                    Breakthrough in Renewable Energy Storage
+                  </h3>
+                  <p>
+                    Scientists develop new battery technology that could solve renewable energy storage challenges.
+                  </p>
+                </div>
+              </article>
+              <!-- end news 9 -->
+    
+              <!-- news 10 -->
+              <article class="news-card">
+                <div class="image-container">
+                  <img 
+                  src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=800&q=80" 
+                  alt="Digital Education">
+                  <span class="category">
+                    Education
+                  </span>
+                </div>
+                <div class="content">
+                  <div class="meta">
+                    <span class="date">
+                      Mar 6, 2024
+                    </span>
+                    <svg 
+                      class="arrow-icon" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      width="20" 
+                      height="20" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round">
+                      <path d="M7 17L17 7"/>
+                      <path d="M7 7h10v10"/>
+                    </svg>
+                  </div>
+                  <h3>
+                    Global Initiative for Digital Education Access
+                  </h3>
+                  <p>
+                    Worldwide program launches to provide digital education resources to remote communities.
+                  </p>
+                </div>
+              </article>
+              <!-- end news 10 -->
+            </div>
+          </div>
+        </div>
+        <!-- end news -->
+
+      </div>
+      <!-- end content -->
     </main>
+    <!-- end main -->
 
     <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
 
@@ -378,11 +882,60 @@
 
           <!-- Teks dan Tombol di sebelah kanan gambar -->
           <div class="ms-auto d-flex align-items-center">
+            <!-- Teks dan tombol Sign Up -->
             <a class="me-3 do">Get STT Cipasung News Delivered to Your Email</a>
-            <button type="button" class="btn btn-secondary">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-whatever="">
               Sign Up for Email
             </button>
+          
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  
+                  <!-- Modal Header -->
+                  <div class="modal-header bg-success text-light">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Subscribe for
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close">
+                    </button>
+                  </div>
+                  
+                  <!-- Modal Body -->
+                  <div class="modal-body bg-success text-light">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="Enter your email">
+                      </div>
+                    </form>
+                  </div>
+                  
+                  <!-- Modal Footer -->
+                  <div class="modal-footer bg-success text-light">
+                    <button type="button" class="btn btn-primary">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          
+
         </div>
       </div>
     </div>
@@ -578,7 +1131,6 @@
     <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
 
     <!-- footer 3 -->
-
     <div class="container text-center">
       <div class="row g-2">
         <div class="col-6">
@@ -636,11 +1188,27 @@
     </footer>
     <!-- end footer 4 -->
 
-    <script src="bio.js"></script>
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const slider = document.querySelector('.slider');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        const scrollAmount = 370;
+
+        prevBtn.addEventListener('click', () => {
+          slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+          slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+      });
+    </script>
   </body>
 </html>
