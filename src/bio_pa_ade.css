@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.container{
+  max-width: 1400px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+/* top */
+.haha {
+  color: white;
+}
+
+.haha:hover,
+.haha:active,
+.haha:focus {
+  color: green;
+  background-color: white;
+}
+.haha::after,
+.dropdown-toggle::after {
+  display: none; /* Menghilangkan caret pada tombol dropdown dan elemen lain dengan kelas yang ditentukan */
+}
+.form-control {
+  color: green;
+}
+.form-control:focus {
+  color: green;
+  border-color: #86b7fe;
+
+}
+.semua-nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow lebih gelap dan lebih kabur */
+}
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: green;
+}
+/* link samar */
+.do {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+}
+.do:focus {
+  color: purple;
+}
+.do:hover {
+  border: 5px;
+  border-color: violet;
+  color: green;
+}
+/* footer 4 */
+.paling-bawah {
+  position: absolute;
+  margin-top: 33px;
+  background-color: white;
+  z-index: 0;
+}
+
+@media (max-width: 425px) {
+  .offcanvas.offcanvas-end {
+    width: 50vw; /* Atur lebar offcanvas menjadi 50% dari lebar viewport */
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    display: none; /* top hilang */
+  }
+  .semua-nav {
+    margin-top: 0px; /*navbar */
+    top: 0;
+  }
+  main {
+    margin-top: 50px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .semua-nav {
+    margin-top: 40px;
+    position: fixed;
+    z-index: 5;
+  }
+  main {
+    margin-top: 95px;
+  }
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  .card {
+    width: 80%; /* Mengatur lebar kartu pada layar kecil */
+  }
+}
+/* konten 2 end */
+/* semua konten  */
+.konten-1,
+.container .card {
+  position: relative;
+  z-index: 0; /* Pastikan lebih tinggi dari carousel */
+}
+
+.accordion-button::after {
+  display: none;
+}
+/* konten 7 */
+.vignette{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+
+}
+
+.long-paragraph {
+  max-width: 600px; /* Atur lebar maksimum untuk paragraf */
+  line-height: 1.6; /* Jarak antar baris untuk keterbacaan */
+  margin-bottom: 20px; /* Ruang bawah untuk pemisahan */
+  overflow-wrap: break-word; /* Memastikan teks tidak meluap dari batas */
+}
