@@ -25,4 +25,5 @@ Ini perubahan oleh anggota team lainnya pada tanggal 18 November 2024
 
 Perubahan pada branch feature/login
 
+Perubahan oleh teman
 Perubahan oleh zeni
