@@ -118,10 +118,10 @@ h1 {
 
 
 /* corousel start */
-.carousel-inner .carousel-item active .carousel-item{
+/* .carousel-inner .carousel-item active .carousel-item{
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   /* max-width: auto;
   height: 500px; */
   background-color: rgba(0, 0, 0, 0);
@@ -268,6 +268,7 @@ h1 {
   }
   
   .logo-teknik-industri {
+    margin: auto;
     width: 110%; /* Mengatur lebar gambar menjadi 80% dari kartu */
     height: auto; /* Tinggi otomatis untuk menjaga proporsi */
     margin: 0 auto; /* Memusatkan gambar */
