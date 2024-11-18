@@ -18,3 +18,5 @@ NAMA: Abdul Halim
 KELAS: IF V A
 NIM: 10222143
 KELOMPOK 2 IF V A
+
+Perubahan tanggal 18 November 2024
