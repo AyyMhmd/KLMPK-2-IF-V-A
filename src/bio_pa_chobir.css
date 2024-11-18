@@ -287,3 +287,7 @@ h1 {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.center {
+  text-align: justify;
+}

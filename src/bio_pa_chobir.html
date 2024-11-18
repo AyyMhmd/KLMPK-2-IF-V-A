@@ -36,25 +36,31 @@
             <!-- Ikon pencarian -->
           </a>
           <!-- Dropdown dengan form pencarian -->
-          <ul class="dropdown-menu p-3 bg-success">
+          <ul class="dropdown-menu p-3 bg-success" onclick="event.stopPropagation();">
             <li>
-              <p class="haha text-center">what do you want to know about us, bro?</p>
+              <!-- Tambahkan onclick untuk fokus pada form input -->
+              <p
+                class="haha text-center"
+                onclick="document.getElementById('searchInput').focus();"
+                style="cursor: pointer;">
+                what do you want to know about us, bro?
+              </p>
               <form class="d-flex" role="search">
+                <!-- Tambahkan ID pada input untuk diakses dari JavaScript -->
                 <input
-                  class="form-control me-2 "
+                  id="searchInput"
+                  class="form-control me-2"
                   type="search"
-                  placeholder="Search"
+                  placeholder="Type something bruh..."
                   aria-label="Search"
-                  style="width: 300px"
-                />
+                  style="width: 300px"/>
                 <button class="btn btn-outline-light" type="submit">
                   Search
                 </button>
               </form>
             </li>
           </ul>
-        </li>
-
+        </li>        
         <li class="nav-item dropdown">
           <!-- Tombol dropdown untuk sosial media -->
           <a
@@ -71,37 +77,43 @@
             <li>
               <!-- Tautan Facebook -->
               <a href="https://www.facebook.com/sttcipasung" target="_blank" class="dropdown-item">
-                <i class="bi bi-facebook me-2"></i> Facebook
+                <i class="bi bi-facebook me-2"></i>
+                 Facebook
               </a>
             </li>
             <li>
               <!-- Tautan Twitter -->
               <a href="https://twitter.com/stt_cipasung" target="_blank" class="dropdown-item">
-                <i class="bi bi-twitter me-2"></i> Twitter
+                <i class="bi bi-twitter me-2"></i>
+                 Twitter
               </a>
             </li>
             <li>
               <!-- Tautan Instagram -->
               <a href="https://www.instagram.com/sttcipasung_official" target="_blank" class="dropdown-item">
-                <i class="bi bi-instagram me-2"></i> Instagram
+                <i class="bi bi-instagram me-2"></i>
+                 Instagram
               </a>
             </li>
             <li>
               <!-- Tautan LinkedIn -->
               <a href="https://id.linkedin.com/school/sttcipasung/" target="_blank" class="dropdown-item">
-                <i class="bi bi-linkedin me-2"></i> LinkedIn
+                <i class="bi bi-linkedin me-2"></i>
+                 LinkedIn
               </a>
             </li>
             <li>
               <!-- Tautan YouTube -->
               <a href="https://www.youtube.com/channel/UCfMqh9VkAU2q_C-fPNKksiQ" target="_blank" class="dropdown-item">
-                <i class="bi bi-youtube me-2"></i> YouTube
+                <i class="bi bi-youtube me-2"></i>
+                 YouTube
               </a>
             </li>
             <li>
               <!-- Tautan TikTok -->
               <a href="https://www.tiktok.com/@sttcipasung" target="_blank" class="dropdown-item">
-                <i class="bi bi-tiktok me-2"></i> TikTok
+                <i class="bi bi-tiktok me-2"></i>
+                 TikTok
               </a>
             </li>
           </ul>
@@ -159,17 +171,24 @@
             </li>
           </ul>
         </li>
-        <li>
+
+        <li class="nav-item">
+          <!-- Tombol dropdown untuk Career -->
           <a
-            href="src/login.html"
-            class="btn btn-primary btn-sm align-items-center"
-            style="margin-top: 5px">
+            class="nav-link haha"
+            href="login.html"
+            role="button"
+            aria-expanded="false">
             Login
           </a>
+        </li>
+        <li class="nav-item">
+          <!-- Tombol dropdown untuk Career -->
           <a
-            href="src/login.html"
-            class="btn btn-warning btn-sm align-items-center"
-            style="margin-top: 5px; margin-right: 5px">
+            class="nav-link haha"
+            href="#"
+            role="button"
+            aria-expanded="false">
             Sign up
           </a>
         </li>
@@ -181,7 +200,7 @@
     <nav class="navbar navbar-expand-md bg-light">
       <div class="container-fluid semua-nav">
         <!-- Navbar Brand -->
-        <a class="navbar-brand" href="../index.html">
+        <a class="navbar-brand" title="home" href="../index.html">
           <img
             src="https://sttcipasung.ac.id/wp-content/uploads/2023/07/STT-CIPASUNG-2-e1688823058980.png"
             alt="Logo"
@@ -199,12 +218,14 @@
         </button>
         <!-- Offcanvas Menu -->
         <div
-          class="offcanvas offcanvas-end bg-success"
+          class="offcanvas offcanvas-end bg-light"
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <div class="offcanvas-header bg-success text-light">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Menu
+            </h5>
             <button
               type="button"
               class="btn-close text-reset"
@@ -214,6 +235,10 @@
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <form class="d-flex mb-2 d-md-none order-xs-1" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle do"
@@ -225,16 +250,24 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
                   <li>
-                    <a class="dropdown-item" href="target_page.html">About</a>
+                    <a class="dropdown-item" href="#">
+                      About
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Accreditation</a>
+                    <a class="dropdown-item" href="#">
+                      Accreditation
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Student Achievements</a>
+                    <a class="dropdown-item" href="#">
+                      Student Achievements
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Contact</a>
+                    <a class="dropdown-item" href="#">
+                      Contact
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -244,27 +277,34 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                  aria-expanded="false">
                   Academics
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
                   <li>
-                    <a class="dropdown-item" href="src/faculty.html">Faculty</a>
+                    <a class="dropdown-item" href="src/faculty.html">
+                      Faculty
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Academics</a>
+                    <a class="dropdown-item" href="#">
+                      Academics
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
-                      >Bachelor of Arts Degree</a
-                    >
+                    <a class="dropdown-item" href="#">
+                      Bachelor of Arts Degree
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Master of Arts Degree</a>
+                    <a class="dropdown-item" href="#">
+                      Master of Arts Degree
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Experiential Learning</a>
+                    <a class="dropdown-item" href="#">
+                      Experiential Learning
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -274,21 +314,24 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                  aria-expanded="false">
                   Admissions & Aid
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
                   <li>
-                    <a class="dropdown-item" href="#">How to Apply</a>
+                    <a class="dropdown-item" href="#">
+                      How to Apply
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#"
-                      >Tuition & Financial Aid</a
-                    >
+                    <a class="dropdown-item" href="#">
+                      Tuition & Financial Aid
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">International Students</a>
+                    <a class="dropdown-item" href="#">
+                      International Students
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -298,22 +341,29 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                  aria-expanded="false">
                   Campus Life
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
+                <ul class="dropdown-menu dropdown-menu-end mt-3 mb-3 bg-success">
                   <li>
-                    <a class="dropdown-item" href="#">Campus Life</a>
+                    <a class="dropdown-item" href="#">
+                      Campus Life
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Residential Life</a>
+                    <a class="dropdown-item" href="#">
+                      Residential Life
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Honor Code</a>
+                    <a class="dropdown-item" href="#">
+                      Honor Code
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Parents</a>
+                    <a class="dropdown-item" href="#">
+                      Parents
+                    </a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">
@@ -322,41 +372,41 @@
                   </li>
                 </ul>
               </li>
-              <li>
-                <a class="btn btn-outline-success" href="#" role="button"
-                  >PMB</a
-                >
+              <li class="row gap-2 ms-0 me-0 mb-2 order-xs-2">
+                <a class="col btn btn-success w-100" href="#" role="button">
+                  PMB
+                </a>
+                <a class="col btn btn-primary w-100 d-md-none" href="#" role="button">
+                  login
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-
     <!-- end navbar -->
 
     <!-- main -->
     <main>
 
-  <!-- Main Content Section -->
-  <div class="container my-5">
-    <!-- Profile Image Centered -->
-    <div class="row justify-content-center mb-4">
-      <div class="col-6 col-md-4 text-center">
-        <img src="../img/pak chobir.JPG" alt="Profile Picture" class="img-fluid shadow profile-image">
+      <!-- Main Content Section -->
+      <div class="container my-5">
+        <!-- Profile Image Centered -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-6 col-md-4 text-center">
+            <img src="../img/pak chobir.JPG" alt="Profile Picture" class="img-fluid shadow profile-image">
+          </div>
+        </div>
+
+        <div class="text-center py-4 ">
+          <h1 class="display-6">
+            DRS. KH ABDUL CHOBIR, M.T.
+          </h1>
+          <h2 class="fs-3 text-success">Pendiri STT CIPASUNG</h2>
+        </div>
       </div>
-    </div>
-
-    <div class="text-center py-4 ">
-      <h1 class="display-6">
-        DRS. KH ABDUL CHOBIR, M.T.
-      </h1>
-      <h2 class="fs-3 text-success">Pendiri STT CIPASUNG</h2>
-    </div>
-
-    <!-- Biography Text -->
-    
-    
+      <!-- Biography Text -->
 
       <!-- content -->
       <div class="container konten-main">
@@ -364,37 +414,35 @@
         <!-- content 1 -->
         <div class="row justify-content-center text-justify">
           <div class="col-md-6">
-            <p>
+            <p class="center">
               <strong>
                 Drs. KH. Abdul Chobir, M.T.
               </strong>
                adalah tokoh penting di balik pendirian Sekolah Tinggi Teknologi (STT) Cipasung, Tasikmalaya. Beliau adalah salah satu pemrakarsa utama lembaga pendidikan ini, yang didirikan pada tahun 1997 sebagai bagian dari upaya meningkatkan pendidikan teknologi di lingkungan Pondok Pesantren Cipasung. Inisiatif ini dilaksanakan atas arahan dari pimpinan Pondok Pesantren saat itu, KH. Moh. Ilyas Ruhiat, serta didukung oleh tokoh nasional seperti Prof. Dr. Ginanjar Kartasasmita dan Ir. Fadel Muhammad yang turut memberikan dorongan bagi realisasi kampus tersebut.
             </p>
-            <p>
+            <p class="center">
               Selain memegang peran sebagai pendiri, KH. Abdul Chobir juga telah menjabat beberapa kali sebagai ketua STT Cipasung, yaitu dari tahun 2006 hingga 2014 dan kembali menjabat sejak tahun 2018 hingga saat ini. Sebagai pendidik dan pemimpin, beliau dikenal karena upayanya dalam memajukan pendidikan di bidang keteknikan dan menjadikan STT Cipasung sebagai institusi pendidikan yang unggul, terutama dalam mempersiapkan lulusan dengan jiwa kewirausahaan dan kepedulian terhadap lingkungan.
             </p>
           </div>
           <div class="col-md-6">
-            <p>
+            <p class="center">
               Peran KH. Abdul Chobir dalam mendirikan dan mengembangkan STT Cipasung adalah bukti komitmennya dalam meningkatkan mutu pendidikan tinggi di daerah Priangan Timur, dengan harapan lembaga ini dapat mencetak generasi muda yang kompeten dalam teknologi serta memiliki semangat pengabdian kepada masyarakat.
             </p>
-            <p>
+            <p class="center">
               Sebagai bagian dari visinya, KH. Abdul Chobir menekankan pendidikan berbasis teknologi dan kewirausahaan, bertujuan membekali generasi muda dengan keterampilan praktis dan semangat inovatif di bidang industri. Berkat dukungan dari Institut Teknologi Bandung (ITB), STT Cipasung mampu membangun kurikulum yang kuat dan relevan dengan kebutuhan lokal, suatu langkah penting yang turut diperjuangkan oleh KH. Abdul Chobir sejak awal pendiriannya.
             </p>
           </div>
         </div>
         <div class="text-justify">
-          <p>
+          <p class="center">
             Di samping itu, beliau berhasil membentuk lingkungan belajar Islami di STT Cipasung yang mengintegrasikan pengetahuan dengan nilai-nilai keislaman, sehingga mahasiswa tidak hanya memperoleh ilmu teknis tetapi juga pembentukan karakter. Pada masa kepemimpinannya, STT Cipasung mengalami peningkatan akreditasi dan pengembangan program studi yang membuktikan komitmen KH. Abdul Chobir dalam menjadikan STT Cipasung sebagai lembaga pendidikan berkualitas.
           </p>
-          <p>
+          <p class="center">
             KH. Abdul Chobir juga berperan aktif dalam mendukung kegiatan penelitian dan pengabdian masyarakat yang relevan dengan kebutuhan masyarakat lokal, terutama di Tasikmalaya dan wilayah Priangan Timur. Hal ini meliputi proyek-proyek sosial di mana mahasiswa didorong untuk berkontribusi dalam pembangunan daerah, selaras dengan nilai-nilai pengabdian dan tanggung jawab sosial yang beliau tanamkan.
           </p>
         </div>
         <!-- end content 1 -->
 
-       
-        <!-- end news -->
         <!-- content 7 -->
         <div class="justify-content-center">
           <div class="card text-bg-dark">
@@ -868,7 +916,7 @@
     <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
 
     <!-- content footer 1 -->
-    <div class="container">
+    <div class="container mt-2 mb-2">
       <div class="row align-items-center">
         <div class="col d-flex align-items-center">
           <!-- Gambar berada di paling kiri -->
@@ -876,17 +924,18 @@
             <img
               src="https://sttcipasung.ac.id/wp-content/uploads/2023/07/STT-CIPASUNG-2-e1688823058980.png"
               alt="Brand Logo"
-              style="height: 75px"
-            />
+              style="height: 75px"/>
           </a>
 
           <!-- Teks dan Tombol di sebelah kanan gambar -->
           <div class="ms-auto d-flex align-items-center">
             <!-- Teks dan tombol Sign Up -->
-            <a class="me-3 do">Get STT Cipasung News Delivered to Your Email</a>
+            <a class="me-3 do">
+              Get STT Cipasung News Delivered to Your Email
+            </a>
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-outline-success"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               data-bs-whatever="">
@@ -900,13 +949,13 @@
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
               aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   
                   <!-- Modal Header -->
                   <div class="modal-header bg-success text-light">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Subscribe for
+                      Subscription our news for
                     </h1>
                     <button
                       type="button"
@@ -920,7 +969,9 @@
                   <div class="modal-body bg-success text-light">
                     <form>
                       <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <label for="recipient-name" class="col-form-label">
+                          Recipient:
+                        </label>
                         <input type="text" class="form-control" id="recipient-name" placeholder="Enter your email">
                       </div>
                     </form>
@@ -928,7 +979,10 @@
                   
                   <!-- Modal Footer -->
                   <div class="modal-footer bg-success text-light">
-                    <button type="button" class="btn btn-primary">Send</button>
+                    <button type="button" 
+                      class="btn btn-primary">
+                      Send
+                    </button>
                   </div>
                 </div>
               </div>
@@ -944,7 +998,7 @@
     <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
 
     <!-- footer 2 -->
-    <div class="container text-start mt-5">
+    <div class="container text-start mt-2 mb-2 d-none d-md-block">
       <div class="row align-items-start">
         <div class="col">
           <h3>About</h3>
@@ -960,48 +1014,40 @@
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Careers
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Contact
           </a>
         </div>
-
         <div class="col">
           <h3>Academics</h3>
           <a 
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Faculty
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Academics
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             BA Program
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             MA Program
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Experiential Learning
           </a>
         </div>
@@ -1009,20 +1055,17 @@
           <h3>Admissions&aid</h3>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             How to Apply
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Tuition & Financial Aid
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             International Students
           </a>
         </div>
@@ -1035,26 +1078,22 @@
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Residential Life
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Honor Code
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Parents
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Center for Ethical Living and Learning (ZCELL)
           </a>
         </div>
@@ -1062,32 +1101,27 @@
           <h3>Give</h3>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Ways to Give
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             12000 Strong
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Legacy Giving
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Capital Projects
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Contact Advancement
           </a>
         </div>
@@ -1095,32 +1129,27 @@
           <h3>Resources</h3>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             College Catalog
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Features
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Calendar
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Transcript Request
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do
-            ">
+            class="d-block mt-2 do">
             Volunteer
           </a>
         </div>
@@ -1128,18 +1157,18 @@
     </div>
     <!-- end footer 2 -->
 
-    <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
+    <hr class="my-4 d-none d-md-block" style="border: 1px solid #ccc; width: 90%; margin: auto" />
 
     <!-- footer 3 -->
-    <div class="container text-center">
+    <div class="container text-center mt-2 mb-2">
       <div class="row g-2">
         <div class="col-6">
           <div class="p-3">          
             <h3>
               <a
                 href="tel:(0265)2550424"
-                class="text-decoration-none text-dark bottom"
-                >(0265) 2550424
+                class="text-decoration-none text-dark bottom">
+                (0265) 2550424
               </a>
             </h3>
           </div>
@@ -1149,8 +1178,8 @@
             <h3>
               <a
                 href="mailto:lppm@sttcipasung.ac.id"
-                class="text-decoration-none text-dark bottom"
-                >lppm@sttcipasung.ac.id
+                class="text-decoration-none text-dark bottom">
+                lppm@sttcipasung.ac.id
               </a>
             </h3>
           </div>
@@ -1161,8 +1190,8 @@
             <h1>
               <a
                 href="https://g.co/kgs/BUKhG8w"
-                class="text-decoration-none text-dark bottom"
-                >Jl. Raya Cisinga KM 01 Desa Cilampunghilir Kecamatan Padakembang Kabupaten Tasikmalaya 46466
+                class="text-decoration-none text-dark bottom">
+                Jl. Raya Cisinga KM 01 Desa Cilampunghilir Kecamatan Padakembang Kabupaten Tasikmalaya 46466
               </a>
             </h1>
           </div>
@@ -1175,15 +1204,19 @@
     <footer class="text-white w-100">
       <div
         class="container-fluid bg-dark d-flex paling-bawah justify-content-center align-items-center"
-        style="height: 50px;"
-      >
+        style="height: 50px;">
         <!-- Bagian Kiri -->
-          <span>© 2024</span> |
-          <a href="#" class="text-white text-decoration-none"
-            >Covid-19 Policy</a
-          >
-          |
-          <a href="#" class="text-white text-decoration-none">Privacy/CCPA</a>
+          <span>
+            © 2024
+          </span>
+           |
+          <a href="#" class="text-white text-decoration-none">
+            Covid-19 Policy
+          </a>
+           |
+          <a href="src/bio_pa_ade.html" class="text-white text-decoration-none">
+            Privacy/CCPA
+          </a>
       </div>
     </footer>
     <!-- end footer 4 -->
