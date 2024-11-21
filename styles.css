@@ -279,6 +279,12 @@ h1 {
   text-align: justify;
 }
 
+.my-4 {
+  border: 1px solid #ccc; 
+  width: 90%; 
+  margin: auto;
+}
+
 /* semua konten  */
 .konten-1,
 .container .card {
