@@ -7,6 +7,9 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
+  background-color: white;
+  color: black;
+  transition: background-color 1s, color 0.5s;
 }
 
 .container{
@@ -46,8 +49,10 @@ h1 {
   top: 0;
   background-color: white;
   z-index: 3;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow lebih gelap dan lebih kabur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.5s, box-shadow 0.5s;
 }
+
 .dropdown-item {
   color: white;
 }
@@ -59,11 +64,12 @@ h1 {
 .do {
   color: rgba(0, 0, 0, 0.65);
   text-decoration: none;
+  transition: color 0.5s;
 }
+
 .do:hover {
-  border: 5px;
-  border-color: violet;
-  color: green;
+  color: green; /* Warna hover tetap sama */
+  border: 5px red;
 }
 /* footer 4 */
 .paling-bawah {
@@ -72,6 +78,18 @@ h1 {
   background-color: white;
   z-index: 0;
 }
+
+.f3 {
+  font-size: 18px; /* Ukuran font default */
+  color: var(--text-color); /* Sesuaikan warna dengan tema */
+  transition: color 1s, font-size 0.5s; /* Animasi transisi untuk perubahan warna dan ukuran */
+}
+
+.f3:hover {
+  font-size: 20px; /* Efek hover: memperbesar font */
+  color: #198754; /* Efek hover: mengganti warna teks */
+}
+
 
 @media (max-width: 425px) {
   .offcanvas.offcanvas-end {
@@ -112,6 +130,21 @@ h1 {
 .nav-link:focus, .nav-link:hover {
   color: #000;
 } */
+
+#switch {
+  font-size: 16px; /* Ukuran ikon */
+  background: none; /* Hilangkan latar belakang default */
+  border: none; /* Hilangkan border default */
+  cursor: pointer; /* Ubah pointer saat hover */
+  transition: color 0.5s ease; /* Animasi transisi warna */
+  color: white;
+}
+
+#switch:hover {
+  color: gold; /* Warna saat hover */
+  background-color: white;
+}
+
 
 
 
