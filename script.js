@@ -95,3 +95,42 @@ if (exampleModal) {
     modalBodyInput.value = recipient
   })
 }
+
+let button = document.getElementById("switch");
+let body = document.querySelector("body");
+let nav = document.querySelector(".semua-nav");
+let icon = document.getElementById("icon");
+
+let isToggled = false;
+
+button.onclick = () => {
+  isToggled = !isToggled;
+
+  // Perbarui tema warna
+  body.style.backgroundColor = isToggled ? "black" : "white";
+  body.style.color = isToggled ? "white" : "black";
+
+  // Perbarui warna navbar
+  nav.style.backgroundColor = isToggled ? "black" : "white";
+  nav.style.boxShadow = isToggled
+    ? "0 4px 8px rgba(255, 255, 255, 0.3)" // Shadow terang untuk mode gelap
+    : "0 4px 8px rgba(0, 0, 0, 0.3)"; // Shadow gelap untuk mode terang
+
+    
+  // Perbarui warna .do
+  let links = document.querySelectorAll(".do");
+  links.forEach(link => {
+    link.style.color = isToggled
+      ? "rgba(255, 255, 255, 0.65)"
+      : "rgba(0, 0, 0, 0.65)";
+  });
+
+  // Perbarui ikon
+  if (isToggled) {
+    icon.classList.remove("bi-moon-fill");
+    icon.classList.add("bi-sun-fill");
+  } else {
+    icon.classList.remove("bi-sun-fill");
+    icon.classList.add("bi-moon-fill");
+  }
+};
