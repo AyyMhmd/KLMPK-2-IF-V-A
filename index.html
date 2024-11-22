@@ -8,22 +8,29 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"/>
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+    />
     <title>home</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  
-  <body>
 
+  <body>
     <!-- top -->
     <div>
       <ul class="nav justify-content-end fixed-top bg-success">
+        <li class="nav-item">
+          <button class="nav-link" id="switch">
+            <i id="icon" class="bi bi-moon-fill"></i>
+          </button>
+        </li>
         <li class="nav-item dropdown">
           <!-- Tombol dropdown dengan ikon pencarian -->
           <a
@@ -31,18 +38,23 @@
             href="#"
             role="button"
             data-bs-toggle="dropdown"
-            aria-expanded="false">
+            aria-expanded="false"
+          >
             <i class="fas fa-search"></i>
             <!-- Ikon pencarian -->
           </a>
           <!-- Dropdown dengan form pencarian -->
-          <ul class="dropdown-menu p-3 bg-success" onclick="event.stopPropagation();">
+          <ul
+            class="dropdown-menu p-3 bg-success"
+            onclick="event.stopPropagation();"
+          >
             <li>
               <!-- Tambahkan onclick untuk fokus pada form input -->
               <p
                 class="haha text-center"
                 onclick="document.getElementById('searchInput').focus();"
-                style="cursor: pointer;">
+                style="cursor: pointer"
+              >
                 what do you want to know about us, bro?
               </p>
               <form class="d-flex" role="search">
@@ -53,14 +65,15 @@
                   type="search"
                   placeholder="Type something bruh..."
                   aria-label="Search"
-                  style="width: 300px"/>
+                  style="width: 300px"
+                />
                 <button class="btn btn-outline-light" type="submit">
                   Search
                 </button>
               </form>
             </li>
           </ul>
-        </li>        
+        </li>
         <li class="nav-item dropdown">
           <!-- Tombol dropdown untuk sosial media -->
           <a
@@ -68,57 +81,81 @@
             href="#"
             role="button"
             data-bs-toggle="dropdown"
-            aria-expanded="false">
+            aria-expanded="false"
+          >
             Social Media
           </a>
-        
+
           <!-- Dropdown untuk link sosial media -->
           <ul class="dropdown-menu p-3 bg-success">
             <li>
               <!-- Tautan Facebook -->
-              <a href="https://www.facebook.com/sttcipasung" target="_blank" class="dropdown-item">
+              <a
+                href="https://www.facebook.com/sttcipasung"
+                target="_blank"
+                class="dropdown-item"
+              >
                 <i class="bi bi-facebook me-2"></i>
-                 Facebook
+                Facebook
               </a>
             </li>
             <li>
               <!-- Tautan Twitter -->
-              <a href="https://twitter.com/stt_cipasung" target="_blank" class="dropdown-item">
+              <a
+                href="https://twitter.com/stt_cipasung"
+                target="_blank"
+                class="dropdown-item"
+              >
                 <i class="bi bi-twitter me-2"></i>
-                 Twitter
+                Twitter
               </a>
             </li>
             <li>
               <!-- Tautan Instagram -->
-              <a href="https://www.instagram.com/sttcipasung_official" target="_blank" class="dropdown-item">
+              <a
+                href="https://www.instagram.com/sttcipasung_official"
+                target="_blank"
+                class="dropdown-item"
+              >
                 <i class="bi bi-instagram me-2"></i>
-                 Instagram
+                Instagram
               </a>
             </li>
             <li>
               <!-- Tautan LinkedIn -->
-              <a href="https://id.linkedin.com/school/sttcipasung/" target="_blank" class="dropdown-item">
+              <a
+                href="https://id.linkedin.com/school/sttcipasung/"
+                target="_blank"
+                class="dropdown-item"
+              >
                 <i class="bi bi-linkedin me-2"></i>
-                 LinkedIn
+                LinkedIn
               </a>
             </li>
             <li>
               <!-- Tautan YouTube -->
-              <a href="https://www.youtube.com/channel/UCfMqh9VkAU2q_C-fPNKksiQ" target="_blank" class="dropdown-item">
+              <a
+                href="https://www.youtube.com/channel/UCfMqh9VkAU2q_C-fPNKksiQ"
+                target="_blank"
+                class="dropdown-item"
+              >
                 <i class="bi bi-youtube me-2"></i>
-                 YouTube
+                YouTube
               </a>
             </li>
             <li>
               <!-- Tautan TikTok -->
-              <a href="https://www.tiktok.com/@sttcipasung" target="_blank" class="dropdown-item">
+              <a
+                href="https://www.tiktok.com/@sttcipasung"
+                target="_blank"
+                class="dropdown-item"
+              >
                 <i class="bi bi-tiktok me-2"></i>
-                 TikTok
+                TikTok
               </a>
             </li>
           </ul>
         </li>
-        
 
         <li class="nav-item dropdown">
           <!-- Tombol dropdown untuk Career -->
@@ -127,7 +164,8 @@
             href="#"
             role="button"
             data-bs-toggle="dropdown"
-            aria-expanded="false">
+            aria-expanded="false"
+          >
             Career
           </a>
 
@@ -138,7 +176,8 @@
               <a
                 href="https://yourwebsite.com/jobs"
                 target="_blank"
-                class="dropdown-item">
+                class="dropdown-item"
+              >
                 Job Openings
               </a>
             </li>
@@ -147,7 +186,8 @@
               <a
                 href="https://yourwebsite.com/internships"
                 target="_blank"
-                class="dropdown-item">
+                class="dropdown-item"
+              >
                 Internships
               </a>
             </li>
@@ -156,7 +196,8 @@
               <a
                 href="https://yourwebsite.com/graduate-program"
                 target="_blank"
-                class="dropdown-item">
+                class="dropdown-item"
+              >
                 Graduate Program
               </a>
             </li>
@@ -165,7 +206,8 @@
               <a
                 href="https://yourwebsite.com/career-tips"
                 target="_blank"
-                class="dropdown-item">
+                class="dropdown-item"
+              >
                 Career Tips & Resources
               </a>
             </li>
@@ -178,17 +220,14 @@
             class="nav-link haha"
             href="src/login.html"
             role="button"
-            aria-expanded="false">
+            aria-expanded="false"
+          >
             Login
           </a>
         </li>
         <li class="nav-item">
           <!-- Tombol dropdown untuk Career -->
-          <a
-            class="nav-link haha"
-            href="#"
-            role="button"
-            aria-expanded="false">
+          <a class="nav-link haha" href="#" role="button" aria-expanded="false">
             Sign up
           </a>
         </li>
@@ -200,11 +239,17 @@
     <nav class="navbar navbar-expand-md bg-light">
       <div class="container-fluid semua-nav">
         <!-- Navbar Brand -->
-        <a class="navbar-brand" title="home" href="index.html">
+        <a
+          class="navbar-brand align-items-center"
+          title="home"
+          style="padding: 0;"
+          href="index.html">
           <img
             src="https://sttcipasung.ac.id/wp-content/uploads/2023/07/STT-CIPASUNG-2-e1688823058980.png"
-            alt="Logo"
-            style="height: 60px; width: auto"/>
+            alt="Logo kampus"
+            class="rounded-5 rounded-top-0"
+            style="height: 71px; width: auto"
+          />
         </a>
         <!-- Toggler Button for Offcanvas -->
         <button
@@ -213,7 +258,8 @@
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Offcanvas Menu -->
@@ -221,23 +267,29 @@
           class="offcanvas offcanvas-end bg-light"
           tabindex="-1"
           id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
+          aria-labelledby="offcanvasNavbarLabel"
+        >
           <div class="offcanvas-header bg-success text-light">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              Menu
-            </h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
             <button
               type="button"
               class="btn-close text-reset"
               data-bs-dismiss="offcanvas"
-              aria-label="Close">
-            </button>
+              aria-label="Close"
+            ></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <form class="d-flex mb-2 d-md-none order-xs-1" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
               </form>
               <li class="nav-item dropdown">
                 <a
@@ -245,29 +297,23 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   About
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
+                <ul class="dropdown-menu dropdown-menu-end bg-success" 
+                    style="margin-top: 11px;">
                   <li>
-                    <a class="dropdown-item" href="#">
-                      About
-                    </a>
+                    <a class="dropdown-item" href="#"> About </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Accreditation
-                    </a>
+                    <a class="dropdown-item" href="#"> Accreditation </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Student Achievements
-                    </a>
+                    <a class="dropdown-item" href="#"> Student Achievements </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Contact
-                    </a>
+                    <a class="dropdown-item" href="#"> Contact </a>
                   </li>
                 </ul>
               </li>
@@ -277,19 +323,19 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   Academics
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
+                <ul class="dropdown-menu dropdown-menu-end bg-success" 
+                    style="margin-top: 11px;">
                   <li>
                     <a class="dropdown-item" href="src/faculty.html">
                       Faculty
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Academics
-                    </a>
+                    <a class="dropdown-item" href="#"> Academics </a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">
@@ -314,14 +360,14 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   Admissions & Aid
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end mt-3 bg-success">
+                <ul class="dropdown-menu dropdown-menu-end bg-success" 
+                    style="margin-top: 11px;">
                   <li>
-                    <a class="dropdown-item" href="#">
-                      How to Apply
-                    </a>
+                    <a class="dropdown-item" href="#"> How to Apply </a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">
@@ -341,29 +387,23 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                  aria-expanded="false"
+                >
                   Campus Life
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end mt-3 mb-3 bg-success">
+                <ul class="dropdown-menu dropdown-menu-end bg-success" 
+                    style="margin-top: 11px;">
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Campus Life
-                    </a>
+                    <a class="dropdown-item" href="#"> Campus Life </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Residential Life
-                    </a>
+                    <a class="dropdown-item" href="#"> Residential Life </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Honor Code
-                    </a>
+                    <a class="dropdown-item" href="#"> Honor Code </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
-                      Parents
-                    </a>
+                    <a class="dropdown-item" href="#"> Parents </a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">
@@ -376,7 +416,11 @@
                 <a class="col btn btn-success w-100" href="#" role="button">
                   PMB
                 </a>
-                <a class="col btn btn-primary w-100 d-md-none" href="#" role="button">
+                <a
+                  class="col btn btn-primary w-100 d-md-none"
+                  href="#"
+                  role="button"
+                >
                   login
                 </a>
               </li>
@@ -425,14 +469,15 @@
               <img
                 src="img/IMG_0040 (2).JPG"
                 class="d-block w-100"
+                Updated
+                upstream
                 alt="gambar 1"
                 style="height: auto"
                 style="max-width: 100%"
+                style="background-size: cover"
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  SU 152
-                </h5>
+                <h5>SU 152</h5>
                 <p>
                   Some representative placeholder content for the first slide.
                 </p>
@@ -447,9 +492,7 @@
                 style="max-width: 100%"
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  LEOPARD
-                </h5>
+                <h5>LEOPARD</h5>
                 <p>
                   Some representative placeholder content for the second slide.
                 </p>
@@ -464,9 +507,7 @@
                 style="max-width: 100%"
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  TIGER
-                </h5>
+                <h5>TIGER</h5>
                 <p>
                   Some representative placeholder content for the third slide.
                 </p>
@@ -481,9 +522,7 @@
                 style="max-width: 100%"
               />
               <div class="carousel-caption d-none d-md-block">
-                <h5>
-                  KV 2
-                </h5>
+                <h5>KV 2</h5>
                 <p>
                   Some representative placeholder content for the third slide.
                 </p>
@@ -494,21 +533,19 @@
             class="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">
-              Previous
-            </span>
+            <span class="visually-hidden"> Previous </span>
           </button>
           <button
             class="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">
-              Next
-            </span>
+            <span class="visually-hidden"> Next </span>
           </button>
         </div>
       </div>
@@ -516,17 +553,17 @@
 
       <!-- content -->
       <div class="container text-center konten-main">
-        
         <!-- content 1 history -->
         <div class="container text-center konten-1 mt-3 mb-5">
-          <h2 class="text-success">
-            Sejarah STT CIPASUNG
-          </h2>
+          <h2 class="text-success">Sejarah STT CIPASUNG</h2>
           <a>
-            Didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian. 
-            <a href="src/sejarah.html">
-              Baca lebih lanjut...
-            </a>
+            Didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut
+            Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab
+            tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan
+            yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar
+            pesantren dan daerah pinggiran yang selama ini kurang mendapatkan
+            perhatian.
+            <a href="src/sejarah.html"> Baca lebih lanjut... </a>
           </a>
         </div>
         <!-- end content 1 history -->
@@ -539,54 +576,58 @@
               <div class="col-md-4 order-sm-1 order-md-2 d-flex align-items-center justify-content-center">
                 <img
                   src="img/pak chobir.JPG"
-                  class="img-fluid rounded-start"
-                  alt="..."
-                />
+                  class="img-fluid rounded-1"
+                  alt="DRS. KH ABDUL CHOBIR, M.T."/>
               </div>
               <div class="col-md-8 order-sm-2 order-md-1">
                 <div class="card-body pak ade">
-                  <h2 class="card-title">
-                    DRS. KH ABDUL CHOBIR, M.T.
-                  </h2>
+                  <h2 class="card-title">DRS. KH ABDUL CHOBIR, M.T.</h2>
                   <p class="card-text">
-                    Sekolah Tinggi Teknologi Cipasung (STT Cipasung) didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian. 
-                    <a href="src/bio_pa_chobir.html">
-                      Baca lebih lanjut...
-                    </a>
+                    Sekolah Tinggi Teknologi Cipasung (STT Cipasung) didirikan
+                    tahun 1997 dengan bantuan dan arahan dari tim Institut
+                    Teknologi Bandung. Sekolah tinggi ini didirikan untuk
+                    menjawab tantangan penyediaan tenaga ahli profesional dalam
+                    bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya
+                    masyarakat di sekitar pesantren dan daerah pinggiran yang
+                    selama ini kurang mendapatkan perhatian.
+                    <a href="src/bio_pa_chobir.html"> Baca lebih lanjut... </a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <!-- end pa chobir -->
-        
+
           <!-- pa ade -->
           <div class="card mb-3 mx-auto">
             <div class="row g-0 justify-content-center">
-              <div class="col-md-4 d-flex align-items-center justify-content-center">
+              <div
+                class="col-md-4 d-flex align-items-center justify-content-center"
+              >
                 <img
                   src="img/pak ade.JPG"
-                  class="img-fluid rounded-start"
-                  alt="..."
+                  class="img-fluid rounded-1"
+                  alt="AHMAD ZAMAKHSYARI SIDIQ, M.T"
                 />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h2 class="card-title">
-                    AHMAD ZAMAKHSYARI SIDIQ, M.T
-                  </h2>
+                  <h2 class="card-title">AHMAD ZAMAKHSYARI SIDIQ, M.T</h2>
                   <p class="card-text">
-                    Sekolah Tinggi Teknologi Cipasung (STT Cipasung) didirikan tahun 1997 dengan bantuan dan arahan dari tim Institut Teknologi Bandung. Sekolah tinggi ini didirikan untuk menjawab tantangan penyediaan tenaga ahli profesional dalam bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya masyarakat di sekitar pesantren dan daerah pinggiran yang selama ini kurang mendapatkan perhatian. 
-                    <a href="src/bio_pa_ade.html">
-                      Baca lebih lanjut...
-                    </a>
+                    Sekolah Tinggi Teknologi Cipasung (STT Cipasung) didirikan
+                    tahun 1997 dengan bantuan dan arahan dari tim Institut
+                    Teknologi Bandung. Sekolah tinggi ini didirikan untuk
+                    menjawab tantangan penyediaan tenaga ahli profesional dalam
+                    bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya
+                    masyarakat di sekitar pesantren dan daerah pinggiran yang
+                    selama ini kurang mendapatkan perhatian.
+                    <a href="src/bio_pa_ade.html"> Baca lebih lanjut... </a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <!-- end pa ade -->
-
         </div>
         <!-- end content 2 biography -->
 
@@ -598,12 +639,19 @@
             <!-- content 3 Left -->
             <div class="col-xl-6 mb-3 mb-sm-0 row-one">
               <div class="card-faculty mx-auto">
-                <img src="../img/INFORMATIKA (1).png" alt="LOGO INFORMATIKA" class="logo-informatika" />
+                <img
+                  src="../img/INFORMATIKA (1).png"
+                  alt="LOGO INFORMATIKA"
+                  class="logo-informatika"
+                />
                 <div class="card-content">
                   <h2 class="if">INFORMATIKA</h2>
                 </div>
                 <p class="Informatika">
-                  Di Jurusan Informatika kamu akan mempelajari berbagai prinsip terkait ilmu komputer mulai dari proses perancangan, pengembangan, pengujian, hingga evaluasi sistem operasi perangkat lunak.
+                  Di Jurusan Informatika kamu akan mempelajari berbagai prinsip
+                  terkait ilmu komputer mulai dari proses perancangan,
+                  pengembangan, pengujian, hingga evaluasi sistem operasi
+                  perangkat lunak.
                 </p>
                 <a href="/src/if.html" class="button text-light">
                   Find out more
@@ -616,15 +664,24 @@
             <!-- content 3 Right -->
             <div class="col-xl-6 mb-3 mb-sm-0 row-two">
               <div class="card-faculty mx-auto">
-                <img src="../img/TEKNIK INDUSRTRI.png" alt="LOGO TEKNIK INDUSTRI" class="logo-teknik-industri" />
+                <img
+                  src="../img/TEKNIK INDUSRTRI.png"
+                  alt="LOGO TEKNIK INDUSTRI"
+                  class="logo-teknik-industri"
+                />
                 <div class="card-content">
                   <h2>TEKNIK INDUSTRI</h2>
                   <p>
-                    Keilmuan Teknik Industri lahir dari keinginan untuk memperbaiki sistem pekerjaan yang sudah ada. Itu dibuktikan dengan salah satu bahasan dalam keilmuan Teknik Industri yang menerapkan Plan, Do, Check, Action.
+                    Keilmuan Teknik Industri lahir dari keinginan untuk
+                    memperbaiki sistem pekerjaan yang sudah ada. Itu dibuktikan
+                    dengan salah satu bahasan dalam keilmuan Teknik Industri
+                    yang menerapkan Plan, Do, Check, Action.
                   </p>
                   <a href="/src/ti.html" class="button">
                     Find out more
-                    <span class="material-symbols-outlined">arrow_right_alt</span>
+                    <span class="material-symbols-outlined"
+                      >arrow_right_alt</span
+                    >
                   </a>
                 </div>
               </div>
@@ -637,31 +694,19 @@
 
         <!-- content 4 achievement -->
         <div class="container text-center mb-5">
-          <h2 class="text-success">
-            Prestasi Mahasiswa
-          </h2>
+          <h2 class="text-success">Prestasi Mahasiswa</h2>
           <div class="row align-items-start">
-            <div class="col">
-              Prestasi Mahasiswa 1
-            </div>
-            <div class="col">
-              Prestasi Mahasiswa 2
-            </div>
-            <div class="col">
-              Prestasi Mahasiswa 3
-            </div>
-            <div class="col">
-              Prestasi Mahasiswa 4
-            </div>
+            <div class="col">Prestasi Mahasiswa 1</div>
+            <div class="col">Prestasi Mahasiswa 2</div>
+            <div class="col">Prestasi Mahasiswa 3</div>
+            <div class="col">Prestasi Mahasiswa 4</div>
           </div>
         </div>
         <!-- end content 4 achievement -->
 
         <!-- content 5 calendar -->
         <div class="container text-center mb-5">
-          <h2 class="text-success">
-            Events and Academic Calendar
-          </h2>
+          <h2 class="text-success">Events and Academic Calendar</h2>
           <div class="row">
             <!-- content 5 split Left -->
             <div class="col-lg-6 mt-3">
@@ -692,200 +737,245 @@
             <!-- content 5 split Right -->
             <div class="col-lg-6 mt-3">
               <!-- Card Pertama -->
-              <div class="accordion accordion-flush turun-naik" id="accordionFlushExample">
+              <div
+                class="accordion accordion-flush turun-naik"
+                id="accordionFlushExample"
+              >
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button 
-                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between" 
-                      type="button" 
-                      data-bs-toggle="collapse" 
-                      data-bs-target="#flush-collapseOne" 
-                      aria-expanded="false" 
-                      aria-controls="flush-collapseOne">
+                    <button
+                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
                       <!-- Kolom Kiri: Judul -->
-                      <span>
-                        Seleksi Gelombang 1
-                      </span>
+                      <span> Seleksi Gelombang 1 </span>
                       <!-- Kolom Kanan: Tanggal -->
-                      <span class="ms-auto">
-                        30 Februari 2025
-                      </span>
+                      <span class="ms-auto"> 30 Februari 2025 </span>
                     </button>
                   </h2>
-                  <div 
-                    id="flush-collapseOne" 
-                    class="accordion-collapse collapse" 
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body border border-success text-success">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div
+                      class="accordion-body border border-success text-success"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button 
-                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between" 
-                      type="button" 
-                      data-bs-toggle="collapse" 
-                      data-bs-target="#flush-collapseTwo" 
-                      aria-expanded="false" 
-                      aria-controls="flush-collapseTwo">
+                    <button
+                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
                       <!-- Kolom Kiri: Judul -->
-                      <span>
-                        Seleksi Gelombang 2
-                      </span>
+                      <span> Seleksi Gelombang 2 </span>
                       <!-- Kolom Kanan: Tanggal -->
-                      <span class="ms-auto">
-                        31 Februari 2025
-                      </span>
+                      <span class="ms-auto"> 31 Februari 2025 </span>
                     </button>
                   </h2>
-                  <div 
-                    id="flush-collapseTwo" 
-                    class="accordion-collapse collapse" 
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body border border-success text-success">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div
+                      class="accordion-body border border-success text-success"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button 
-                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between" 
-                      type="button" 
-                      data-bs-toggle="collapse" 
-                      data-bs-target="#flush-collapseThree" 
-                      aria-expanded="false" 
-                      aria-controls="flush-collapseThree">
+                    <button
+                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
                       <!-- Kolom Kiri: Judul -->
-                      <span>
-                        Seleksi Gelombang 3
-                      </span>
+                      <span> Seleksi Gelombang 3 </span>
                       <!-- Kolom Kanan: Tanggal -->
-                      <span class="ms-auto">
-                        32 Februari 2025
-                      </span>
+                      <span class="ms-auto"> 32 Februari 2025 </span>
                     </button>
                   </h2>
-                  <div 
-                    id="flush-collapseThree" 
-                    class="accordion-collapse collapse" 
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body border border-success text-success">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div
+                      class="accordion-body border border-success text-success"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button 
-                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between" 
-                      type="button" 
-                      data-bs-toggle="collapse" 
-                      data-bs-target="#flush-collapseFour" 
-                      aria-expanded="false" 
-                      aria-controls="flush-collapseFour">
+                    <button
+                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
+                    >
                       <!-- Kolom Kiri: Judul -->
-                      <span>
-                        Seleksi Gelombang 4
-                      </span>
+                      <span> Seleksi Gelombang 4 </span>
                       <!-- Kolom Kanan: Tanggal -->
-                      <span class="ms-auto">
-                        30 Februari 2025
-                      </span>
+                      <span class="ms-auto"> 30 Februari 2025 </span>
                     </button>
                   </h2>
-                  <div 
-                    id="flush-collapseFour" 
-                    class="accordion-collapse collapse" 
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body border border-success text-success">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div
+                      class="accordion-body border border-success text-success"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button 
-                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between" 
-                      type="button" 
-                      data-bs-toggle="collapse" 
-                      data-bs-target="#flush-collapseFive" 
-                      aria-expanded="false" 
-                      aria-controls="flush-collapseFive">
+                    <button
+                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFive"
+                    >
                       <!-- Kolom Kiri: Judul -->
-                      <span>
-                        Seleksi Gelombang 5
-                      </span>
+                      <span> Seleksi Gelombang 5 </span>
                       <!-- Kolom Kanan: Tanggal -->
-                      <span class="ms-auto">
-                        30 Februari 2025
-                      </span>
+                      <span class="ms-auto"> 30 Februari 2025 </span>
                     </button>
                   </h2>
-                  <div 
-                    id="flush-collapseFive" 
-                    class="accordion-collapse collapse" 
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body border border-success text-success">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <div
+                    id="flush-collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div
+                      class="accordion-body border border-success text-success"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button 
-                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between" 
-                      type="button" 
-                      data-bs-toggle="collapse" 
-                      data-bs-target="#flush-collapseSix" 
-                      aria-expanded="false" 
-                      aria-controls="flush-collapseSix">
+                    <button
+                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSix"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseSix"
+                    >
                       <!-- Kolom Kiri: Judul -->
-                      <span>
-                        Seleksi Gelombang 6
-                      </span>
+                      <span> Seleksi Gelombang 6 </span>
                       <!-- Kolom Kanan: Tanggal -->
-                      <span class="ms-auto">
-                        30 Februari 2025
-                      </span>
+                      <span class="ms-auto"> 30 Februari 2025 </span>
                     </button>
                   </h2>
-                  <div 
-                    id="flush-collapseSix" 
-                    class="accordion-collapse collapse" 
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body border border-success text-success">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <div
+                    id="flush-collapseSix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div
+                      class="accordion-body border border-success text-success"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button 
-                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between" 
-                      type="button" 
-                      data-bs-toggle="collapse" 
-                      data-bs-target="#flush-collapseSeven" 
-                      aria-expanded="false" 
-                      aria-controls="flush-collapseSeven">
+                    <button
+                      class="accordion-button collapsed bg-success text-light d-flex justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseSeven"
+                    >
                       <!-- Kolom Kiri: Judul -->
-                      <span>
-                        Seleksi Gelombang 7
-                      </span>
+                      <span> Seleksi Gelombang 7 </span>
                       <!-- Kolom Kanan: Tanggal -->
-                      <span class="ms-auto">
-                        30 Februari 2025
-                      </span>
+                      <span class="ms-auto"> 30 Februari 2025 </span>
                     </button>
                   </h2>
-                  <div 
-                    id="flush-collapseSeven" 
-                    class="accordion-collapse collapse" 
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body border border-success text-success">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <div
+                    id="flush-collapseSeven"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div
+                      class="accordion-body border border-success text-success"
+                    >
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
                     </div>
                   </div>
                 </div>
@@ -898,146 +988,176 @@
 
         <!-- content 6 ukm -->
         <div class="container text-center mb-5">
-          <h2 class="text-success mb-4">
-            Unit Kegiatan Mahasiswa
-          </h2>
+          <h2 class="text-success mb-4">Unit Kegiatan Mahasiswa</h2>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <!-- HMIF Section -->
             <div class="col">
               <h2>HMIF</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                class="img-fluid mb-3"/>
+              <img src="img/wot.jpeg" alt="Logo HMIF" class="img-fluid mb-3 rounded-4" />
               <p class="center">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
+                yang dilakukan di luar jam pelajaran yang dilakukan baik di
+                sekolah atau di luar sekolah dengan tujuan untuk mendapatkan
+                tambahan pengetahuan, keterampilan dan wawasan serta membantu
+                membentuk karakter peserta didik sesuai dengan minat dan bakat
+                masing-masing.
                 <a href="https://example.com">Baca lebih lanjut...</a>
               </p>
             </div>
-        
+
             <!-- BEM Section -->
             <div class="col">
               <h2>BEM</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                class="img-fluid mb-3"/>
+              <img src="img/wot.jpeg" alt="Logo BEM" class="img-fluid mb-3 rounded-4" />
               <p class="center">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
+                yang dilakukan di luar jam pelajaran yang dilakukan baik di
+                sekolah atau di luar sekolah dengan tujuan untuk mendapatkan
+                tambahan pengetahuan, keterampilan dan wawasan serta membantu
+                membentuk karakter peserta didik sesuai dengan minat dan bakat
+                masing-masing.
                 <a href="https://example.com">Baca lebih lanjut...</a>
               </p>
             </div>
-        
+
             <!-- HMTI Section -->
             <div class="col">
               <h2>HMTI</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                class="img-fluid mb-3"/>
+              <img src="img/wot.jpeg" alt="Logo HMTI" class="img-fluid mb-3 rounded-4" />
               <p class="center">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
+                yang dilakukan di luar jam pelajaran yang dilakukan baik di
+                sekolah atau di luar sekolah dengan tujuan untuk mendapatkan
+                tambahan pengetahuan, keterampilan dan wawasan serta membantu
+                membentuk karakter peserta didik sesuai dengan minat dan bakat
+                masing-masing.
                 <a href="https://example.com">Baca lebih lanjut...</a>
               </p>
             </div>
-        
+
             <!-- Kelapa Section -->
             <div class="col">
               <h2>Kelapa</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                class="img-fluid mb-3"/>
+              <img src="img/wot.jpeg" alt="Logo KELAPA" class="img-fluid mb-3 rounded-4" />
               <p class="center">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
+                yang dilakukan di luar jam pelajaran yang dilakukan baik di
+                sekolah atau di luar sekolah dengan tujuan untuk mendapatkan
+                tambahan pengetahuan, keterampilan dan wawasan serta membantu
+                membentuk karakter peserta didik sesuai dengan minat dan bakat
+                masing-masing.
                 <a href="https://example.com">Baca lebih lanjut...</a>
               </p>
             </div>
-        
+
             <!-- Proclub Section -->
             <div class="col">
-              <h2>Proclub</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                class="img-fluid mb-3"/>
+              <h2>PROCLUB</h2>
+              <img src="img/wot.jpeg" alt="Logo PROCLUB" class="img-fluid mb-3 rounded-4" />
               <p class="center">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
+                yang dilakukan di luar jam pelajaran yang dilakukan baik di
+                sekolah atau di luar sekolah dengan tujuan untuk mendapatkan
+                tambahan pengetahuan, keterampilan dan wawasan serta membantu
+                membentuk karakter peserta didik sesuai dengan minat dan bakat
+                masing-masing.
                 <a href="https://example.com">Baca lebih lanjut...</a>
               </p>
             </div>
-        
+
             <!-- KDD Section -->
             <div class="col">
               <h2>KDD</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                class="img-fluid mb-3"/>
+              <img src="img/wot.jpeg" alt="Logo KDD" class="img-fluid mb-3 rounded-4" />
               <p class="center">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
+                yang dilakukan di luar jam pelajaran yang dilakukan baik di
+                sekolah atau di luar sekolah dengan tujuan untuk mendapatkan
+                tambahan pengetahuan, keterampilan dan wawasan serta membantu
+                membentuk karakter peserta didik sesuai dengan minat dan bakat
+                masing-masing.
                 <a href="https://example.com">Baca lebih lanjut...</a>
               </p>
             </div>
-        
+
             <!-- Rilis Section -->
             <div class="col">
-              <h2>Rilis</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                class="img-fluid mb-3"/>
+              <h2>RILIS</h2>
+              <img src="img/wot.jpeg" alt="Logo RILIS" class="img-fluid mb-3 rounded-4" />
               <p class="center">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
+                yang dilakukan di luar jam pelajaran yang dilakukan baik di
+                sekolah atau di luar sekolah dengan tujuan untuk mendapatkan
+                tambahan pengetahuan, keterampilan dan wawasan serta membantu
+                membentuk karakter peserta didik sesuai dengan minat dan bakat
+                masing-masing.
                 <a href="https://example.com">Baca lebih lanjut...</a>
               </p>
             </div>
-        
+
             <!-- Sanggar Section -->
             <div class="col">
-              <h2>Sanggar</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                class="img-fluid mb-3"/>
+              <h2>SANGGAR</h2>
+              <img src="img/wot.jpeg" alt="Logo SANGGAR" class="img-fluid mb-3 rounded-4" />
               <p class="center">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
+                yang dilakukan di luar jam pelajaran yang dilakukan baik di
+                sekolah atau di luar sekolah dengan tujuan untuk mendapatkan
+                tambahan pengetahuan, keterampilan dan wawasan serta membantu
+                membentuk karakter peserta didik sesuai dengan minat dan bakat
+                masing-masing.
                 <a href="https://example.com">Baca lebih lanjut...</a>
               </p>
             </div>
-        
+
             <!-- Olahraga Section -->
             <div class="col">
-              <h2>Olahraga</h2>
-              <img
-                src="img/wotb.jpeg"
-                alt="..."
-                class="img-fluid mb-3"/>
+              <h2>OLAHRAGA</h2>
+              <img src="img/wot.jpeg" alt="Logo OLAHRAGA" class="img-fluid mb-3 rounded-4" />
               <p class="center">
-                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan yang dilakukan di luar jam pelajaran yang dilakukan baik di sekolah atau di luar sekolah dengan tujuan untuk mendapatkan tambahan pengetahuan, keterampilan dan wawasan serta membantu membentuk karakter peserta didik sesuai dengan minat dan bakat masing-masing.
+                Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
+                yang dilakukan di luar jam pelajaran yang dilakukan baik di
+                sekolah atau di luar sekolah dengan tujuan untuk mendapatkan
+                tambahan pengetahuan, keterampilan dan wawasan serta membantu
+                membentuk karakter peserta didik sesuai dengan minat dan bakat
+                masing-masing.
                 <a href="https://example.com">Baca lebih lanjut...</a>
               </p>
             </div>
           </div>
         </div>
         <!-- end content 6 ukm -->
-    
+
         <!-- content 7 registration -->
         <div class="justify-content-center mb-5">
           <div class="card text-bg-dark">
-            <img src="img/papermob.jpg" class="card-img papermob" alt="...">
+            <img src="img/papermob.jpg" class="card-img papermob" alt="KTMB" />
             <div class="card-img-overlay text-start vignette">
-              <h2 class="card-title">
-                AYO DAFTAR!!
-              </h2>
+              <h2 class="card-title">AYO DAFTAR!!</h2>
               <p class="card-text long-paragraph">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
               </p>
-              <h2>
-                Why do we use it?
-              </h2>
+              <h2>Why do we use it?</h2>
               <p class="card-text long-paragraph">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).              
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.
+                Various versions have evolved over the years, sometimes by
+                accident, sometimes on purpose (injected humour and the like).
               </p>
               <!-- <p class="card-text"><small>Last updated 3 mins ago</small></p> -->
               <button type="button" class="btn btn-success btn-lg">
@@ -1047,465 +1167,443 @@
           </div>
         </div>
         <!-- end content 7 registration -->
-        
-        <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
+
+        <hr
+          class="my-4"
+          style="border: 1px solid #ccc; width: 90%; margin: auto"
+        />
 
         <!-- content 8 news -->
         <div class="news-container">
           <div class="header">
-            <h2>
-              Latest News
-            </h2>
+            <h2>Latest News</h2>
             <div class="navigation">
-              <button 
-              class="nav-btn prev" 
-              aria-label="Previous">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  stroke-width="2" 
-                  stroke-linecap="round" 
-                  stroke-linejoin="round">
-                <path d="m15 18-6-6 6-6"/>
-              </svg>
+              <button class="nav-btn prev" aria-label="Previous">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
               </button>
               <button class="nav-btn next" aria-label="Next">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  stroke-width="2" 
-                  stroke-linecap="round" 
-                  stroke-linejoin="round">
-                  <path d="m9 18 6-6-6-6"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="m9 18 6-6-6-6" />
                 </svg>
               </button>
             </div>
           </div>
           <div class="slider-wrapper">
             <div class="slider">
-              
               <!-- news 1 -->
               <a href="path/to/article.html" class="text-decoration-none">
                 <article class="news-card">
                   <div class="image-container">
-                    <img 
-                      src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80" 
-                      alt="Solar Technology">
-                    <span class="category">
-                      Academics
-                    </span>
+                    <img
+                      src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80"
+                      alt="Solar Technology"
+                    />
+                    <span class="category"> Academics </span>
                   </div>
                   <div class="content">
                     <div class="meta">
-                      <span class="date">
-                        Mar 15, 2024
-                      </span>
-                      <svg class="arrow-icon" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="20" 
-                        height="20" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round">
-                        <path d="M7 17L17 7"/>
-                        <path d="M7 7h10v10"/>
+                      <span class="date"> Mar 15, 2024 </span>
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M7 17L17 7" />
+                        <path d="M7 7h10v10" />
                       </svg>
                     </div>
                     <h3>
-                      The Future of Sustainable Energy: Breakthrough in Solar Technology
+                      The Future of Sustainable Energy: Breakthrough in Solar
+                      Technology
                     </h3>
                     <p>
-                      Scientists discover new material that could revolutionize solar panel efficiency, promising a greener future for energy production.
+                      Scientists discover new material that could revolutionize
+                      solar panel efficiency, promising a greener future for
+                      energy production.
                     </p>
                   </div>
                 </article>
               </a>
-              
+
               <!-- end news 1 -->
-    
+
               <!-- news 2 -->
               <a href="path/to/article.html" class="text-decoration-none">
                 <article class="news-card">
                   <div class="image-container">
-                    <img 
-                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" 
-                    alt="AI Summit">
-                    <span class="category">
-                      Business
-                    </span>
+                    <img
+                      src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80"
+                      alt="AI Summit"
+                    />
+                    <span class="category"> Business </span>
                   </div>
                   <div class="content">
                     <div class="meta">
-                      <span class="date">
-                        Mar 14, 2024
-                      </span>
-                      <svg 
-                        class="arrow-icon" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="20" 
-                        height="20" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round">
-                        <path d="M7 17L17 7"/>
-                        <path d="M7 7h10v10"/>
+                      <span class="date"> Mar 14, 2024 </span>
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M7 17L17 7" />
+                        <path d="M7 7h10v10" />
                       </svg>
                     </div>
-                    <h3>
-                      Global Economic Summit Addresses AI Integration
-                    </h3>
+                    <h3>Global Economic Summit Addresses AI Integration</h3>
                     <p>
-                      World leaders gather to discuss the impact of artificial intelligence on global economies and workforce transformation.
+                      World leaders gather to discuss the impact of artificial
+                      intelligence on global economies and workforce
+                      transformation.
                     </p>
                   </div>
                 </article>
               </a>
               <!-- end news 2 -->
-    
+
               <!-- news 3 -->
               <a href="path/to/article.html" class="text-decoration-none">
                 <article class="news-card">
                   <div class="image-container">
-                    <img 
-                    src="https://images.unsplash.com/photo-1597239450996-ea7c2c564412?w=800&q=80" 
-                    alt="Amazon Discovery">
-                    <span class="category">
-                      Science
-                    </span>
+                    <img
+                      src="https://images.unsplash.com/photo-1597239450996-ea7c2c564412?w=800&q=80"
+                      alt="Amazon Discovery"
+                    />
+                    <span class="category"> Science </span>
                   </div>
                   <div class="content">
                     <div class="meta">
-                      <span class="date">
-                        Mar 13, 2024
-                      </span>
-                      <svg 
-                        class="arrow-icon" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="20" 
-                        height="20" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round">
-                        <path d="M7 17L17 7"/>
-                        <path d="M7 7h10v10"/>
+                      <span class="date"> Mar 13, 2024 </span>
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M7 17L17 7" />
+                        <path d="M7 7h10v10" />
                       </svg>
                     </div>
-                    <h3>
-                      Revolutionary Health Discovery in Amazon Rainforest
-                    </h3>
+                    <h3>Revolutionary Health Discovery in Amazon Rainforest</h3>
                     <p>
-                      Researchers identify new plant species with potential breakthrough applications in medicine.
+                      Researchers identify new plant species with potential
+                      breakthrough applications in medicine.
                     </p>
                   </div>
                 </article>
               </a>
               <!-- end news 3 -->
-    
+
               <!-- news 4 -->
               <a href="path/to/article.html" class="text-decoration-none">
                 <article class="news-card">
                   <div class="image-container">
-                    <img 
-                    src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&q=80" 
-                    alt="Space Tourism">
-                    <span class="category">
-                      Space
-                    </span>
+                    <img
+                      src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&q=80"
+                      alt="Space Tourism"
+                    />
+                    <span class="category"> Space </span>
                   </div>
                   <div class="content">
                     <div class="meta">
-                      <span class="date">
-                        Mar 12, 2024
-                      </span>
-                      <svg 
-                        class="arrow-icon" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="20" 
-                        height="20" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round">
-                        <path d="M7 17L17 7"/>
-                        <path d="M7 7h10v10"/>
+                      <span class="date"> Mar 12, 2024 </span>
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M7 17L17 7" />
+                        <path d="M7 7h10v10" />
                       </svg>
                     </div>
                     <h3>
                       Space Tourism Takes Off: First Commercial Flight Success
                     </h3>
                     <p>
-                      Private space company achieves milestone with successful civilian space tourism mission.
+                      Private space company achieves milestone with successful
+                      civilian space tourism mission.
                     </p>
                   </div>
                 </article>
               </a>
               <!-- end news 4 -->
-    
+
               <!-- news 5 -->
               <a href="path/to/article.html" class="text-decoration-none">
                 <article class="news-card">
                   <div class="image-container">
-                    <img 
-                    src="https://images.unsplash.com/photo-1561740331-0bdf176a7878?w=800&q=80" 
-                    alt="Digital Art">
-                    <span class="category">
-                      Arts
-                    </span>
+                    <img
+                      src="https://images.unsplash.com/photo-1561740331-0bdf176a7878?w=800&q=80"
+                      alt="Digital Art"
+                    />
+                    <span class="category"> Arts </span>
                   </div>
                   <div class="content">
                     <div class="meta">
-                      <span class="date">
-                        Mar 11, 2024
-                      </span>
-                      <svg 
-                        class="arrow-icon" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="20" 
-                        height="20" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round">
-                        <path d="M7 17L17 7"/>
-                        <path d="M7 7h10v10"/>
+                      <span class="date"> Mar 11, 2024 </span>
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M7 17L17 7" />
+                        <path d="M7 7h10v10" />
                       </svg>
                     </div>
-                    <h3>
-                      Cultural Renaissance: Digital Art Movement Explodes
-                    </h3>
+                    <h3>Cultural Renaissance: Digital Art Movement Explodes</h3>
                     <p>
-                      NFT art market reaches new heights as traditional galleries embrace digital exhibitions.
+                      NFT art market reaches new heights as traditional
+                      galleries embrace digital exhibitions.
                     </p>
                   </div>
                 </article>
               </a>
               <!-- end news 5 -->
-    
+
               <!-- news 6 -->
               <a href="path/to/article.html" class="text-decoration-none">
                 <article class="news-card">
                   <div class="image-container">
-                    <img 
-                      src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" 
-                      alt="Quantum Computing">
-                    <span class="category">
-                      Technology
-                    </span>
+                    <img
+                      src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
+                      alt="Quantum Computing"
+                    />
+                    <span class="category"> Technology </span>
                   </div>
                   <div class="content">
                     <div class="meta">
-                      <span class="date">
-                        Mar 10, 2024
-                      </span>
-                      <svg 
-                        class="arrow-icon" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="20" 
-                        height="20" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round">
-                        <path d="M7 17L17 7"/>
-                        <path d="M7 7h10v10"/>
+                      <span class="date"> Mar 10, 2024 </span>
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M7 17L17 7" />
+                        <path d="M7 7h10v10" />
                       </svg>
                     </div>
-                    <h3>
-                      Breakthrough in Quantum Computing Achievement
-                    </h3>
+                    <h3>Breakthrough in Quantum Computing Achievement</h3>
                     <p>
-                      Tech giant announces major quantum computing milestone, solving complex problems in seconds.
+                      Tech giant announces major quantum computing milestone,
+                      solving complex problems in seconds.
                     </p>
                   </div>
                 </article>
               </a>
               <!-- end news 6 -->
-    
+
               <!-- news 7 -->
               <a href="path/to/article.html" class="text-decoration-none">
                 <article class="news-card">
                   <div class="image-container">
-                    <img 
-                      src="https://images.unsplash.com/photo-1484291470158-b8f8d608850d?w=800&q=80" 
-                      alt="Ocean Cleanup">
-                    <span class="category">
-                      Environment
-                    </span>
+                    <img
+                      src="https://images.unsplash.com/photo-1484291470158-b8f8d608850d?w=800&q=80"
+                      alt="Ocean Cleanup"
+                    />
+                    <span class="category"> Environment </span>
                   </div>
                   <div class="content">
                     <div class="meta">
-                      <span class="date">
-                        Mar 9, 2024
-                      </span>
-                      <svg 
-                        class="arrow-icon" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="20" 
-                        height="20" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round">
-                        <path d="M7 17L17 7"/>
-                        <path d="M7 7h10v10"/>
+                      <span class="date"> Mar 9, 2024 </span>
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M7 17L17 7" />
+                        <path d="M7 7h10v10" />
                       </svg>
                     </div>
-                    <h3>
-                      Ocean Cleanup Initiative Shows Promising Results
-                    </h3>
+                    <h3>Ocean Cleanup Initiative Shows Promising Results</h3>
                     <p>
-                      Innovative ocean cleaning technology removes 100,000 tons of plastic in pioneering mission.
+                      Innovative ocean cleaning technology removes 100,000 tons
+                      of plastic in pioneering mission.
                     </p>
                   </div>
                 </article>
               </a>
               <!-- end news 7 -->
-    
+
               <!-- news 8 -->
               <a href="path/to/article.html" class="text-decoration-none">
                 <article class="news-card">
                   <div class="image-container">
-                    <img 
-                    src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=800&q=80" 
-                    alt="Transportation">
-                    <span class="category">
-                      Innovation
-                    </span>
+                    <img
+                      src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=800&q=80"
+                      alt="Transportation"
+                    />
+                    <span class="category"> Innovation </span>
                   </div>
                   <div class="content">
                     <div class="meta">
-                      <span class="date">
-                        Mar 8, 2024
-                      </span>
-                      <svg 
-                        class="arrow-icon" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="20" 
-                        height="20" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round">
-                        <path d="M7 17L17 7"/>
-                        <path d="M7 7h10v10"/>
+                      <span class="date"> Mar 8, 2024 </span>
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M7 17L17 7" />
+                        <path d="M7 7h10v10" />
                       </svg>
                     </div>
-                    <h3>
-                      Revolutionary Transportation System Unveiled
-                    </h3>
+                    <h3>Revolutionary Transportation System Unveiled</h3>
                     <p>
-                      New high-speed transport system promises to revolutionize intercity travel.
+                      New high-speed transport system promises to revolutionize
+                      intercity travel.
                     </p>
                   </div>
                 </article>
               </a>
               <!-- end news 8 -->
-    
+
               <!-- news 9 -->
               <a href="path/to/article.html" class="text-decoration-none">
                 <article class="news-card">
                   <div class="image-container">
-                    <img 
-                    src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&q=80" 
-                    alt="Energy Storage">
-                    <span class="category">
-                      Energy
-                    </span>
+                    <img
+                      src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&q=80"
+                      alt="Energy Storage"
+                    />
+                    <span class="category"> Energy </span>
                   </div>
                   <div class="content">
                     <div class="meta">
-                      <span class="date">
-                        Mar 7, 2024
-                      </span>
-                      <svg 
-                        class="arrow-icon" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="20" 
-                        height="20" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round">
-                        <path d="M7 17L17 7"/>
-                        <path d="M7 7h10v10"/>
+                      <span class="date"> Mar 7, 2024 </span>
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M7 17L17 7" />
+                        <path d="M7 7h10v10" />
                       </svg>
                     </div>
-                    <h3>
-                      Breakthrough in Renewable Energy Storage
-                    </h3>
+                    <h3>Breakthrough in Renewable Energy Storage</h3>
                     <p>
-                      Scientists develop new battery technology that could solve renewable energy storage challenges.
+                      Scientists develop new battery technology that could solve
+                      renewable energy storage challenges.
                     </p>
                   </div>
                 </article>
               </a>
               <!-- end news 9 -->
-    
+
               <!-- news 10 -->
               <a href="path/to/article.html" class="text-decoration-none">
                 <article class="news-card">
                   <div class="image-container">
-                    <img 
-                    src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=800&q=80" 
-                    alt="Digital Education">
-                    <span class="category">
-                      Education
-                    </span>
+                    <img
+                      src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=800&q=80"
+                      alt="Digital Education"
+                    />
+                    <span class="category"> Education </span>
                   </div>
                   <div class="content">
                     <div class="meta">
-                      <span class="date">
-                        Mar 6, 2024
-                      </span>
-                      <svg 
-                        class="arrow-icon" 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="20" 
-                        height="20" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round">
-                        <path d="M7 17L17 7"/>
-                        <path d="M7 7h10v10"/>
+                      <span class="date"> Mar 6, 2024 </span>
+                      <svg
+                        class="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M7 17L17 7" />
+                        <path d="M7 7h10v10" />
                       </svg>
                     </div>
-                    <h3>
-                      Global Initiative for Digital Education Access
-                    </h3>
+                    <h3>Global Initiative for Digital Education Access</h3>
                     <p>
-                      Worldwide program launches to provide digital education resources to remote communities.
+                      Worldwide program launches to provide digital education
+                      resources to remote communities.
                     </p>
                   </div>
                 </article>
@@ -1515,13 +1613,12 @@
           </div>
         </div>
         <!-- end content 8 news -->
-
       </div>
       <!-- end content -->
     </main>
     <!-- end main -->
 
-    <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
+    <hr class="my-4" />
 
     <!-- content footer 1 -->
     <div class="container mt-2 mb-2">
@@ -1531,8 +1628,10 @@
           <a class="navbar-brand" href="#">
             <img
               src="https://sttcipasung.ac.id/wp-content/uploads/2023/07/STT-CIPASUNG-2-e1688823058980.png"
-              alt="Brand Logo"
-              style="height: 75px"/>
+              alt="Logo Kampus"
+              class="rounded-pill"
+              style="height: 75px"
+            />
           </a>
 
           <!-- Teks dan Tombol di sebelah kanan gambar -->
@@ -1546,20 +1645,21 @@
               class="btn btn-outline-success"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
-              data-bs-whatever="">
+              data-bs-whatever=""
+            >
               Sign Up for Email
             </button>
-          
+
             <!-- Modal -->
             <div
               class="modal fade"
               id="exampleModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
+              aria-hidden="true"
+            >
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                  
                   <!-- Modal Header -->
                   <div class="modal-header bg-success text-light">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">
@@ -1569,10 +1669,10 @@
                       type="button"
                       class="btn-close"
                       data-bs-dismiss="modal"
-                      aria-label="Close">
-                    </button>
+                      aria-label="Close"
+                    ></button>
                   </div>
-                  
+
                   <!-- Modal Body -->
                   <div class="modal-body bg-success text-light">
                     <form>
@@ -1580,82 +1680,91 @@
                         <label for="recipient-name" class="col-form-label">
                           Recipient:
                         </label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Enter your email">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-name"
+                          placeholder="Enter your email"
+                        />
                       </div>
                     </form>
                   </div>
-                  
+
                   <!-- Modal Footer -->
                   <div class="modal-footer bg-success text-light">
-                    <button type="button" 
-                      class="btn btn-primary">
-                      Send
-                    </button>
+                    <button type="button" class="btn btn-primary">Send</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
-
         </div>
       </div>
     </div>
     <!-- end footer 1 -->
 
-    <hr class="my-4" style="border: 1px solid #ccc; width: 90%; margin: auto" />
+    <hr class="my-4" />
 
     <!-- footer 2 -->
     <div class="container text-start mt-2 mb-2 d-none d-md-block">
       <div class="row align-items-start">
         <div class="col">
           <h3>About</h3>
-          <a 
+          <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Accreditation
           </a>
-          <a 
+          <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Student Achievements
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Careers
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Contact
           </a>
         </div>
         <div class="col">
           <h3>Academics</h3>
-          <a 
+          <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Faculty
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Academics
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             BA Program
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             MA Program
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Experiential Learning
           </a>
         </div>
@@ -1663,45 +1772,48 @@
           <h3>Admissions&aid</h3>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             How to Apply
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Tuition & Financial Aid
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             International Students
           </a>
         </div>
         <div class="col">
           <h3>Campus Life</h3>
-          <a
-            href="target_page.html"
-            class="d-block mt-2 do">
-            Overview
-          </a>
+          <a href="target_page.html" class="d-block mt-2 do"> Overview </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Residential Life
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Honor Code
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Parents
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Center for Ethical Living and Learning (ZCELL)
           </a>
         </div>
@@ -1709,27 +1821,32 @@
           <h3>Give</h3>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Ways to Give
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             12000 Strong
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Legacy Giving
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Capital Projects
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Contact Advancement
           </a>
         </div>
@@ -1737,27 +1854,32 @@
           <h3>Resources</h3>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             College Catalog
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Features
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Calendar
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Transcript Request
           </a>
           <a
             href="https://www.facebook.com/sttcipasung"
-            class="d-block mt-2 do">
+            class="d-block mt-2 do"
+          >
             Volunteer
           </a>
         </div>
@@ -1765,28 +1887,32 @@
     </div>
     <!-- end footer 2 -->
 
-    <hr class="my-4 d-none d-md-block" style="border: 1px solid #ccc; width: 90%; margin: auto" />
+    <hr
+      class="my-4 d-none d-md-block"
+      style="border: 1px solid #ccc; width: 90%; margin: auto"
+    />
 
     <!-- footer 3 -->
-    <div class="container text-center mt-2 mb-2">
+    <div class="container text-center mt-2">
       <div class="row g-2">
         <div class="col-6">
-          <div class="p-3">          
+          <div class="p-3">
             <h3>
               <a
                 href="tel:(0265)2550424"
-                class="text-decoration-none text-dark bottom">
+                class="text-decoration-none bottom f3">
                 (0265) 2550424
               </a>
             </h3>
           </div>
         </div>
         <div class="col-6">
-          <div class="p-3">          
+          <div class="p-3">
             <h3>
               <a
                 href="mailto:lppm@sttcipasung.ac.id"
-                class="text-decoration-none text-dark bottom">
+                class="text-decoration-none bottom f3"
+              >
                 lppm@sttcipasung.ac.id
               </a>
             </h3>
@@ -1794,12 +1920,14 @@
         </div>
         <!-- baris 2 -->
         <div class="col-12">
-          <div class="p-3">          
+          <div class="p-3">
             <h1>
               <a
                 href="https://g.co/kgs/BUKhG8w"
-                class="text-decoration-none text-dark bottom">
-                Jl. Raya Cisinga KM 01 Desa Cilampunghilir Kecamatan Padakembang Kabupaten Tasikmalaya 46466
+                class="text-decoration-none bottom f3"
+              >
+                Jl. Raya Cisinga KM 01 Desa Cilampunghilir Kecamatan Padakembang
+                Kabupaten Tasikmalaya 46466
               </a>
             </h1>
           </div>
@@ -1812,19 +1940,18 @@
     <footer class="text-white w-100">
       <div
         class="container-fluid bg-dark d-flex paling-bawah justify-content-center align-items-center"
-        style="height: 50px;">
+        style="height: 50px"
+      >
         <!-- Bagian Kiri -->
-          <span>
-            © 2024
-          </span>
-           |
-          <a href="#" class="text-white text-decoration-none">
-            Covid-19 Policy
-          </a>
-           |
-          <a href="src/bio_pa_ade.html" class="text-white text-decoration-none">
-            Privacy/CCPA
-          </a>
+        <span> © 2024 </span>
+        |
+        <a href="#" class="text-white text-decoration-none">
+          Covid-19 Policy
+        </a>
+        |
+        <a href="src/bio_pa_ade.html" class="text-white text-decoration-none">
+          Privacy/CCPA
+        </a>
       </div>
     </footer>
     <!-- end footer 4 -->
@@ -1833,23 +1960,7 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous">
-    </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const slider = document.querySelector('.slider');
-        const prevBtn = document.querySelector('.prev');
-        const nextBtn = document.querySelector('.next');
-        const scrollAmount = 370;
-
-        prevBtn.addEventListener('click', () => {
-          slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-        });
-
-        nextBtn.addEventListener('click', () => {
-          slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        });
-      });
-    </script>
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
