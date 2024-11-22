@@ -9,7 +9,7 @@ body {
   font-family: system-ui, sans-serif;
   background-color: white;
   color: black;
-  transition: background-color 1s, color 0.5s;
+  transition: background-color 3s, color 1s;
 }
 
 .container{
@@ -24,6 +24,7 @@ h1 {
 /* top */
 .haha {
   color: white;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Transisi halus */
 }
 
 .haha:hover,
@@ -35,6 +36,42 @@ h1 {
 .haha::after,
 .dropdown-toggle::after {
   display: none; /* Menghilangkan caret pada tombol dropdown dan elemen lain dengan kelas yang ditentukan */
+}
+/* Mode Gelap (dikontrol oleh JS) */
+body.dark-mode {
+  background-color: black; /* Latar belakang gelap */
+  color: white; /* Teks putih */
+}
+
+.semua-nav.dark-mode {
+  background-color: black; /* Navbar gelap */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Shadow terang */
+}
+
+.do.dark-mode {
+  color: rgba(255, 255, 255, 0.65); /* Link warna terang */
+}
+
+.haha.dark-mode {
+  color: white; /* Tombol dalam mode gelap */
+}
+
+.card-title {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .card-title {
+  color: lightblue;
+}
+
+.card-body {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .card-body {
+  color: white;
 }
 .form-control {
   color: green;
@@ -50,7 +87,7 @@ h1 {
   background-color: white;
   z-index: 3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.5s, box-shadow 0.5s;
+  transition: background-color 1s, box-shadow 3s;
 }
 
 .dropdown-item {
@@ -80,13 +117,13 @@ h1 {
 }
 
 .f3 {
-  font-size: 18px; /* Ukuran font default */
+  font-size: 26px; /* Ukuran font default */
   color: var(--text-color); /* Sesuaikan warna dengan tema */
-  transition: color 1s, font-size 0.5s; /* Animasi transisi untuk perubahan warna dan ukuran */
+  transition: color 0.5s, font-size 0.3s ease-in; /* Animasi transisi untuk perubahan warna dan ukuran */
 }
 
 .f3:hover {
-  font-size: 20px; /* Efek hover: memperbesar font */
+  font-size: 28px; /* Efek hover: memperbesar font */
   color: #198754; /* Efek hover: mengganti warna teks */
 }
 
@@ -157,8 +194,8 @@ h1 {
   left: 0; */
   /* max-width: auto;
   height: 500px; */
-  background-color: rgba(0, 0, 0, 0);
-}
+  /* background-color: rgba(0, 0, 0, 0);
+} */
 /* corousel end */
 
 /* konten 2 start */
@@ -283,7 +320,7 @@ h1 {
 }
 
 .col-xl-6:nth-child(even) .card-faculty {
-  background-color: rgb(172, 206, 32, 34%) /* Warna untuk baris genap */
+  background-color: rgb(172, 206, 32, 80%) /* Warna untuk baris genap */
 }
 
 /* Responsivitas */
@@ -304,7 +341,7 @@ h1 {
     margin: auto;
     width: 110%; /* Mengatur lebar gambar menjadi 80% dari kartu */
     height: auto; /* Tinggi otomatis untuk menjaga proporsi */
-    margin: 0 auto; /* Memusatkan gambar */
+    margin-left: -5%; 
   }
   
 /* konten 2 end */
@@ -323,9 +360,19 @@ h1 {
 .konten-1,
 .container .card {
   position: relative;
+  background-color: transparent;
   z-index: 0; /* Pastikan lebih tinggi dari carousel */
 }
 
+.card-title {
+  color: black; /* Default warna card title */
+  transition: color 0.3s ease;
+}
+
+.card-body {
+  color: black; /* Default warna card body */
+  transition: color 0.3s ease;
+}
 /* konten 6 */
 .calendar {
   margin: 0 auto;
