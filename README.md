@@ -14,7 +14,7 @@ NAMA: Rifa Maulana Ibrahim
 KELAS: IF V A
 NIM: 10222008
 
-NAMA: Abdul Halim
+NAMA: Abdul halim
 KELAS: IF V A
 NIM: 10222143
 KELOMPOK 2 IF V A
