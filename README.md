@@ -90,4 +90,6 @@ VITE_APP_NAME="${APP_NAME}"
         laravelsail/php81-composer:latest \
         composer update laravel/sail
     ```
+6. Jalankan perintah `./vendor/bin/sail ip` untuk membuat container
+7. Buka terminal baru dan jalankan `./vendor/bin/sail artisan migrate` untuk menjalankan migrasi
 
