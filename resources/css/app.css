@@ -1,3 +1,744 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 3s, color 1s;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: 'Crimpson Text', sans-serif;
+}
+
+/* top */
+.haha {
+    color: white;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* Transisi halus */
+}
+
+.haha:hover,
+.haha:active,
+.haha:focus {
+    color: green;
+    background-color: white;
+}
+
+.haha::after,
+.dropdown-toggle::after {
+    display: none;
+    /* Menghilangkan caret pada tombol dropdown dan elemen lain dengan kelas yang ditentukan */
+}
+
+/* Mode Gelap (dikontrol oleh JS) */
+body.dark-mode {
+    background-color: black;
+    /* Latar belakang gelap */
+    color: white;
+    /* Teks putih */
+}
+
+.semua-nav.dark-mode {
+    background-color: black;
+    /* Navbar gelap */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    /* Shadow terang */
+}
+
+.do.dark-mode {
+    color: rgba(255, 255, 255, 0.65);
+    /* Link warna terang */
+}
+
+.haha.dark-mode {
+    color: white;
+    /* Tombol dalam mode gelap */
+}
+
+.card-title {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .card-title {
+    color: lightblue;
+}
+
+.card-body {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .card-body {
+    color: white;
+}
+
+.form-control {
+    color: green;
+}
+
+.form-control:focus {
+    color: green;
+    border-color: #86b7fe;
+
+}
+
+.semua-nav {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 1s, box-shadow 3s;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    color: green;
+}
+
+/* link samar */
+.do {
+    color: rgba(0, 0, 0, 0.65);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.do:hover {
+    color: green;
+    /* Warna hover tetap sama */
+    border: 5px red;
+}
+
+/* footer 4 */
+.paling-bawah {
+    position: absolute;
+    /* margin-top: 33px; */
+    background-color: white;
+    z-index: 0;
+}
+
+.f3 {
+    font-size: 26px;
+    /* Ukuran font default */
+    color: var(--text-color);
+    /* Sesuaikan warna dengan tema */
+    transition: color 0.5s, font-size 0.3s ease-in;
+    /* Animasi transisi untuk perubahan warna dan ukuran */
+}
+
+.f3:hover {
+    font-size: 28px;
+    /* Efek hover: memperbesar font */
+    color: #198754;
+    /* Efek hover: mengganti warna teks */
+}
+
+
+@media (max-width: 425px) {
+    .offcanvas.offcanvas-end {
+        width: 50vw;
+        /* Atur lebar offcanvas menjadi 50% dari lebar viewport */
+    }
+}
+
+@media (max-width: 767px) {
+    .nav {
+        display: none;
+        /* top hilang */
+    }
+
+    .semua-nav {
+        margin-top: 0px;
+        /*navbar */
+        top: 0;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .semua-nav {
+        margin-top: 40px;
+        position: fixed;
+        z-index: 5;
+    }
+
+    main {
+        margin-top: 95px;
+    }
+}
+
+
+
+
+/* .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity));
+}
+.nav-link:focus, .nav-link:hover {
+  color: #000;
+} */
+
+#switch {
+    font-size: 16px;
+    /* Ukuran ikon */
+    background: none;
+    /* Hilangkan latar belakang default */
+    border: none;
+    /* Hilangkan border default */
+    cursor: pointer;
+    /* Ubah pointer saat hover */
+    transition: color 0.5s ease;
+    /* Animasi transisi warna */
+    color: white;
+}
+
+#switch:hover {
+    color: gold;
+    /* Warna saat hover */
+    background-color: white;
+}
+
+
+
+
+
+
+/* corousel start */
+/* .carousel-inner .carousel-item active .carousel-item{
+  position: absolute;
+  top: 0;
+  left: 0; */
+/* max-width: auto;
+  height: 500px; */
+/* background-color: rgba(0, 0, 0, 0);
+} */
+/* corousel end */
+
+/* konten 2 start */
+:root {
+    --color-background-even: rgb(0, 35, 116);
+    /* Warna latar belakang untuk baris genap */
+    --color-background-odd: rgb(240, 240, 240);
+    /* Warna latar belakang untuk baris ganjil */
+}
+
+/* Cara menggunakan variabel di CSS */
+.even-row {
+    background-color: var(--color-background-even);
+}
+
+.odd-row {
+    background-color: var(--color-background-odd);
+}
+
+/* .row {
+  display: flex;
+  flex-wrap: wrap; /* Mengatur agar kartu bisa membungkus */
+/* gap: 20px; */
+/* justify-content: center; */
+/* padding: 50px;   */
+/* background-color: red; */
+/* } */
+
+.card-faculty {
+    width: 35rem;
+    /* Anda bisa menyesuaikan lebar ini */
+    height: 36rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 45px;
+    /* Menghapus margin default */
+    animation: fadeIn 2s ease-in-out;
+
+    /* img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    transition: opacity 0.2s ease-out;
+  } */
+
+    &:hover img {
+        opacity: 40%;
+        /* Ubah opacity gambar saat hover */
+    }
+
+    .if {
+        position: absolute;
+        inset: auto auto 30px 30px;
+        margin: 0;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #ffffff;
+        /* Warna teks */
+    }
+
+    h2 {
+        position: absolute;
+        inset: auto auto 30px 30px;
+        margin-top: 10%;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #347928;
+        /* Warna teks */
+
+    }
+
+    .Informatika {
+        position: absolute;
+        opacity: 0;
+        max-width: 80%;
+        transition: opacity 0.3s ease-out;
+        color: #ffffff;
+    }
+
+    p,
+    a {
+        position: absolute;
+        text-align: start;
+        opacity: 0;
+        max-width: 80%;
+        transition: opacity 0.3s ease-out;
+        color: #050505;
+    }
+
+    p {
+        inset: auto auto 80px 30px;
+    }
+
+    a {
+        inset: auto auto 40px 30px;
+        color: inherit;
+        text-decoration: none;
+        color: #030303;
+    }
+
+    &:hover h2 {
+        inset: auto auto 220px 30px;
+        transition: inset 0.3s ease-out;
+    }
+
+    &:hover p,
+    &:hover a {
+        opacity: 1;
+        transition: opacity 0.5s 0.1s ease-in;
+    }
+
+    &:hover img {
+        transition: opacity 0.3s ease-in;
+        opacity: 20%;
+    }
+}
+
+/* Mengatur warna latar belakang untuk baris kartu */
+.col-xl-6:nth-child(odd) .card-faculty {
+    background-color: rgb(0, 35, 116, 90%);
+    /* Warna untuk baris ganjil */
+}
+
+.col-xl-6:nth-child(even) .card-faculty {
+    background-color: rgb(172, 206, 32, 80%)
+        /* Warna untuk baris genap */
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+        /* Mengatur lebar kartu pada layar kecil */
+    }
+}
+
+.logo-informatika {
+    width: 80%;
+    /* Mengatur lebar gambar menjadi 100% dari kartu */
+    height: auto;
+    /* Tinggi otomatis untuk menjaga proporsi */
+    margin: 0 auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.logo-teknik-industri {
+    margin: auto;
+    width: 110%;
+    /* Mengatur lebar gambar menjadi 80% dari kartu */
+    height: auto;
+    /* Tinggi otomatis untuk menjaga proporsi */
+    margin-left: -5%;
+}
+
+/* konten 2 end */
+
+.center {
+    text-align: justify;
+}
+
+.my-4 {
+    border: 1px solid #ccc;
+    width: 90%;
+    margin: auto;
+}
+
+/* semua konten  */
+.konten-1,
+.container .card {
+    position: relative;
+    background-color: transparent;
+    z-index: 0;
+    /* Pastikan lebih tinggi dari carousel */
+}
+
+.card-title {
+    color: black;
+    /* Default warna card title */
+    transition: color 0.3s ease;
+}
+
+.card-body {
+    color: black;
+    /* Default warna card body */
+    transition: color 0.3s ease;
+}
+
+/* konten 6 */
+.calendar {
+    margin: 0 auto;
+    width: clamp(320px, 400px, 90%);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+}
+
+.calendar header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendar nav {
+    display: flex;
+    align-items: center;
+}
+
+.calendar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color: black;
+}
+
+.calendar ul li {
+    width: calc(100% / 7);
+    position: relative;
+    z-index: 0;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#prev,
+#next {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#prev::before,
+#next::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    border-color: #ccc;
+}
+
+#next::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#prev::before {
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+#prev:hover::before,
+#next:hover::before {
+    border-color: #000;
+}
+
+.days {
+    font-weight: 600;
+}
+
+.dates li.today {
+    color: #198754;
+}
+
+.dates li.today::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.dates li.inactive {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+/* Media query untuk layar sempit */
+@media (max-width: 600px) {
+    .calendar {
+        width: 90%;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .calendar header h3 {
+        font-size: 1.2rem;
+    }
+
+    .calendar ul li {
+        width: calc(100% / 7);
+        font-size: 0.8rem;
+    }
+
+    #prev,
+    #next {
+        width: 16px;
+        height: 16px;
+    }
+
+    .dates li.today::before {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.turun-naik {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    /* Supaya border-radius diterapkan dengan benar */
+}
+
+/* konten 7 */
+.vignette {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
+
+}
+
+/* .papermob{
+  width: auto;
+  height: 30vw;
+} */
+.long-paragraph {
+    max-width: 600px;
+    /* Atur lebar maksimum untuk paragraf */
+    line-height: 1.6;
+    /* Jarak antar baris untuk keterbacaan */
+    margin-bottom: 20px;
+    /* Ruang bawah untuk pemisahan */
+    overflow-wrap: break-word;
+    /* Memastikan teks tidak meluap dari batas */
+}
+
+/* Container styles */
+.news-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.navigation {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 9999px;
+    background-color: white;
+    color: #4b5563;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #f9fafb;
+    transform: translateY(-1px);
+}
+
+/* Slider styles */
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    gap: 1.25rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    padding: 0.5rem;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card styles */
+.news-card {
+    flex: 0 0 350px;
+    width: 350px;
+    background: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    scroll-snap-align: start;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.image-container {
+    position: relative;
+    height: 192px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.content {
+    padding: 1.5rem;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.date {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.arrow-icon {
+    color: #9ca3af;
+}
+
+.content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #212529;
+}
+
+.content p {
+    color: #4b5563;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
