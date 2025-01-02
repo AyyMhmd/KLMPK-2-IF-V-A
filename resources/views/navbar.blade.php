@@ -171,7 +171,7 @@
                      <li class="nav-item dropdown">
                          <a class="nav-link dropdown-toggle do" href="#" role="button"
                              data-bs-toggle="dropdown" aria-expanded="false">
-                             About
+                             Tentang
                          </a>
                          <ul class="dropdown-menu dropdown-menu-end bg-success" style="margin-top: 11px;">
                              <li>

@@ -8,6 +8,12 @@ Route::get('/', function () {
 Route::get('if', function () {
     return view('if');
 });
+Route::get('sejarah', function () {
+    return view('sejarah');
+});
+Route::get('pakchobir', function () {
+    return view('pakchobir');
+});
 
 // untuk artikel
 use App\Http\Controllers\ArtikelController;

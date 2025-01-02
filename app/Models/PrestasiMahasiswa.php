@@ -11,7 +11,7 @@ class PrestasiMahasiswa extends Model
 
     protected $table = 'prestasi_mahasiswa'; // Nama tabel
 
-    protected $primaryKey = 'prestasi_id'; // Primary key
+    protected $primaryKey = 'id'; // Primary key
 
     protected $fillable = [
         'mahasiswa_id',

@@ -742,3 +742,108 @@ body.dark-mode .card-body {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.informatika {
+    padding: 8rem 7% 1.4rem;
+}
+
+.informatika h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: #000;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.informatika .row {
+    display: flex;
+}
+
+.informatika .row .informatika-img {
+    flex: 1 1 45rem;
+}
+
+.informatika-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    height: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+.informatika .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.informatika .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.informatika .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.6;
+    color: #000;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* sejarah */
+.sejarah-img {
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.content-sejarah {
+    text-align: center;
+    font-size: 1rem;
+    align-content: space-between;
+
+}
+
+.content {
+    text-align: center;
+    color: #198754;
+}
+
+.long-paragraph {
+    max-width: 600px;
+    /* Atur lebar maksimum untuk paragraf */
+    line-height: 1.6;
+    /* Jarak antar baris untuk keterbacaan */
+    margin-bottom: 20px;
+    /* Ruang bawah untuk pemisahan */
+    overflow-wrap: break-word;
+    /* Memastikan teks tidak meluap dari batas */
+}
+
+/* bio pak chobir */
+
+.text-success {
+    max-width: 600px;
+    /* Atur lebar maksimum untuk paragraf */
+    line-height: 1.6;
+    /* Jarak antar baris untuk keterbacaan */
+    margin-bottom: 20px;
+    /* Ruang bawah untuk pemisahan */
+    overflow-wrap: break-word;
+    /* Memastikan teks tidak meluap dari batas */
+}

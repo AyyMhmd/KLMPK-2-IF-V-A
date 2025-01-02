@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" />
-    <title>home</title>
-    <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-
-
-    <!-- main -->
+<!-- main -->
+@extends('layout.app')
+@section('content')
     <main>
         <!-- slide -->
         <div class="container-fluid-custom">
@@ -34,7 +17,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/IMG_0040 (2).JPG" class="d-block w-100" Updated upstream alt="gambar 1"
+                        <img src="storage/img/IMG_0040 (2).JPG" class="d-block w-100" Updated upstream alt="gambar 1"
                             style="height: auto" style="max-width: 100%" style="background-size: cover" />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>SU 152</h5>
@@ -44,7 +27,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/IMG_0226.JPG" class="d-block w-100" alt="gambar 2" style="height: auto"
+                        <img src="storage/img/IMG_0226.JPG" class="d-block w-100" alt="gambar 2" style="height: auto"
                             style="max-width: 100%" />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>LEOPARD</h5>
@@ -54,7 +37,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/IMG_8509.JPG" class="d-block w-100" alt="gambar 3" style="height: auto"
+                        <img src="storage/img/IMG_8509.JPG" class="d-block w-100" alt="gambar 3" style="height: auto"
                             style="max-width: 100%" />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>TIGER</h5>
@@ -64,7 +47,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/papermob.jpg" class="d-block w-100" alt="gambar 4" style="height: auto"
+                        <img src="storage/img/papermob.jpg" class="d-block w-100" alt="gambar 4" style="height: auto"
                             style="max-width: 100%" />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>KV 2</h5>
@@ -111,7 +94,7 @@
                 <div class="card mb-3 mx-auto">
                     <div class="row g-0 justify-content-center">
                         <div class="col-md-4 order-sm-1 order-md-2 d-flex align-items-center justify-content-center">
-                            <img src="img/pak chobir.JPG" class="img-fluid rounded-1"
+                            <img src="storage/img/pak chobir.JPG" class="img-fluid rounded-1"
                                 alt="DRS. KH ABDUL CHOBIR, M.T." />
                         </div>
                         <div class="col-md-8 order-sm-2 order-md-1">
@@ -125,7 +108,7 @@
                                     bidang keteknikan yang dibutuhkan oleh masyarakat, khususnya
                                     masyarakat di sekitar pesantren dan daerah pinggiran yang
                                     selama ini kurang mendapatkan perhatian.
-                                    <a href="src/bio_pa_chobir.html"> Baca lebih lanjut... </a>
+                                    <a href="views/pakchobir.blade.php"> Baca lebih lanjut... </a>
                                 </p>
                             </div>
                         </div>
@@ -137,7 +120,7 @@
                 <div class="card mb-3 mx-auto">
                     <div class="row g-0 justify-content-center">
                         <div class="col-md-4 d-flex align-items-center justify-content-center">
-                            <img src="img/pak ade.JPG" class="img-fluid rounded-1"
+                            <img src="storage/img/pak ade.JPG" class="img-fluid rounded-1"
                                 alt="AHMAD ZAMAKHSYARI SIDIQ, M.T" />
                         </div>
                         <div class="col-md-8">
@@ -169,7 +152,7 @@
                     <!-- content 3 Left -->
                     <div class="col-xl-6 mb-3 mb-sm-0 row-one">
                         <div class="card-faculty mx-auto">
-                            <img src="../img/INFORMATIKA (1).png" alt="LOGO INFORMATIKA" class="logo-informatika" />
+                            <img src="storage/img/INFORMATIKA (1).png" alt="LOGO INFORMATIKA" class="logo-informatika" />
                             <div class="card-content">
                                 <h2 class="if">INFORMATIKA</h2>
                             </div>
@@ -179,7 +162,7 @@
                                 pengembangan, pengujian, hingga evaluasi sistem operasi
                                 perangkat lunak.
                             </p>
-                            <a href="/src/if.html" class="button text-light">
+                            <a href="views/if.blade.php" class="button text-light">
                                 Find out more
                                 <span class="material-symbols-outlined">arrow_right_alt</span>
                             </a>
@@ -190,7 +173,7 @@
                     <!-- content 3 Right -->
                     <div class="col-xl-6 mb-3 mb-sm-0 row-two">
                         <div class="card-faculty mx-auto">
-                            <img src="../img/TEKNIK INDUSRTRI.png" alt="LOGO TEKNIK INDUSTRI"
+                            <img src="storage/img/TEKNIK INDUSRTRI.png" alt="LOGO TEKNIK INDUSTRI"
                                 class="logo-teknik-industri" />
                             <div class="card-content">
                                 <h2>TEKNIK INDUSTRI</h2>
@@ -313,9 +296,8 @@
                                 <h2 class="accordion-header">
                                     <button
                                         class="accordion-button collapsed bg-success text-light d-flex justify-content-between"
-                                        type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                        aria-controls="flush-collapseThree">
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
                                         <!-- Kolom Kiri: Judul -->
                                         <span> Seleksi Gelombang 3 </span>
                                         <!-- Kolom Kanan: Tanggal -->
@@ -414,9 +396,8 @@
                                 <h2 class="accordion-header">
                                     <button
                                         class="accordion-button collapsed bg-success text-light d-flex justify-content-between"
-                                        type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#flush-collapseSeven" aria-expanded="false"
-                                        aria-controls="flush-collapseSeven">
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                        aria-expanded="false" aria-controls="flush-collapseSeven">
                                         <!-- Kolom Kiri: Judul -->
                                         <span> Seleksi Gelombang 7 </span>
                                         <!-- Kolom Kanan: Tanggal -->
@@ -450,7 +431,7 @@
                     <!-- HMIF Section -->
                     <div class="col">
                         <h2>HMIF</h2>
-                        <img src="img/wot.jpeg" alt="Logo HMIF" class="img-fluid mb-3 rounded-4" />
+                        <img src="storage/img/wot.jpeg" alt="Logo HMIF" class="img-fluid mb-3 rounded-4" />
                         <p class="center">
                             Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
                             yang dilakukan di luar jam pelajaran yang dilakukan baik di
@@ -465,7 +446,7 @@
                     <!-- BEM Section -->
                     <div class="col">
                         <h2>BEM</h2>
-                        <img src="img/wot.jpeg" alt="Logo BEM" class="img-fluid mb-3 rounded-4" />
+                        <img src="storage/img/wot.jpeg" alt="Logo BEM" class="img-fluid mb-3 rounded-4" />
                         <p class="center">
                             Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
                             yang dilakukan di luar jam pelajaran yang dilakukan baik di
@@ -480,7 +461,7 @@
                     <!-- HMTI Section -->
                     <div class="col">
                         <h2>HMTI</h2>
-                        <img src="img/wot.jpeg" alt="Logo HMTI" class="img-fluid mb-3 rounded-4" />
+                        <img src="storage/img/wot.jpeg" alt="Logo HMTI" class="img-fluid mb-3 rounded-4" />
                         <p class="center">
                             Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
                             yang dilakukan di luar jam pelajaran yang dilakukan baik di
@@ -495,7 +476,7 @@
                     <!-- Kelapa Section -->
                     <div class="col">
                         <h2>Kelapa</h2>
-                        <img src="img/wot.jpeg" alt="Logo KELAPA" class="img-fluid mb-3 rounded-4" />
+                        <img src="storage/img/wot.jpeg" alt="Logo KELAPA" class="img-fluid mb-3 rounded-4" />
                         <p class="center">
                             Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
                             yang dilakukan di luar jam pelajaran yang dilakukan baik di
@@ -510,7 +491,7 @@
                     <!-- Proclub Section -->
                     <div class="col">
                         <h2>PROCLUB</h2>
-                        <img src="img/wot.jpeg" alt="Logo PROCLUB" class="img-fluid mb-3 rounded-4" />
+                        <img src="storage/img/wot.jpeg" alt="Logo PROCLUB" class="img-fluid mb-3 rounded-4" />
                         <p class="center">
                             Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
                             yang dilakukan di luar jam pelajaran yang dilakukan baik di
@@ -525,7 +506,7 @@
                     <!-- KDD Section -->
                     <div class="col">
                         <h2>KDD</h2>
-                        <img src="img/wot.jpeg" alt="Logo KDD" class="img-fluid mb-3 rounded-4" />
+                        <img src="storage/img/wot.jpeg" alt="Logo KDD" class="img-fluid mb-3 rounded-4" />
                         <p class="center">
                             Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
                             yang dilakukan di luar jam pelajaran yang dilakukan baik di
@@ -540,7 +521,7 @@
                     <!-- Rilis Section -->
                     <div class="col">
                         <h2>RILIS</h2>
-                        <img src="img/wot.jpeg" alt="Logo RILIS" class="img-fluid mb-3 rounded-4" />
+                        <img src="storage/img/wot.jpeg" alt="Logo RILIS" class="img-fluid mb-3 rounded-4" />
                         <p class="center">
                             Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
                             yang dilakukan di luar jam pelajaran yang dilakukan baik di
@@ -555,7 +536,7 @@
                     <!-- Sanggar Section -->
                     <div class="col">
                         <h2>SANGGAR</h2>
-                        <img src="img/wot.jpeg" alt="Logo SANGGAR" class="img-fluid mb-3 rounded-4" />
+                        <img src="storage/img/wot.jpeg" alt="Logo SANGGAR" class="img-fluid mb-3 rounded-4" />
                         <p class="center">
                             Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
                             yang dilakukan di luar jam pelajaran yang dilakukan baik di
@@ -570,7 +551,7 @@
                     <!-- Olahraga Section -->
                     <div class="col">
                         <h2>OLAHRAGA</h2>
-                        <img src="img/wot.jpeg" alt="Logo OLAHRAGA" class="img-fluid mb-3 rounded-4" />
+                        <img src="storage/img/wot.jpeg" alt="Logo OLAHRAGA" class="img-fluid mb-3 rounded-4" />
                         <p class="center">
                             Kegiatan ekstrakurikuler atau ekskul adalah kegiatan tambahan
                             yang dilakukan di luar jam pelajaran yang dilakukan baik di
@@ -588,7 +569,7 @@
             <!-- content 7 registration -->
             <div class="justify-content-center mb-5">
                 <div class="card text-bg-dark">
-                    <img src="img/papermob.jpg" class="card-img papermob" alt="KTMB" />
+                    <img src="storage/img/papermob.jpg" class="card-img papermob" alt="KTMB" />
                     <div class="card-img-overlay text-start vignette">
                         <h2 class="card-title">AYO DAFTAR!!</h2>
                         <p class="card-text long-paragraph">
@@ -633,16 +614,16 @@
                     <h2>Latest News</h2>
                     <div class="navigation">
                         <button class="nav-btn prev" aria-label="Previous">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
                                 <path d="m15 18-6-6 6-6" />
                             </svg>
                         </button>
                         <button class="nav-btn next" aria-label="Next">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
                                 <path d="m9 18 6-6-6-6" />
                             </svg>
                         </button>
@@ -950,7 +931,7 @@
 
     <!-- content footer 1 -->
     <div class="container mt-2 mb-2">
-        <div class="row align-items-center">
+        {{-- <div class="row align-items-center">
             <div class="col d-flex align-items-center">
                 <!-- Gambar berada di paling kiri -->
                 <a class="navbar-brand" href="#">
@@ -967,214 +948,46 @@
                     <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
                         data-bs-target="#exampleModal" data-bs-whatever="">
                         Sign Up for Email
-                    </button>
+                    </button> --}}
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header bg-success text-light">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                                        Subscription our news for
-                                    </h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-success text-light">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Subscription our news for
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                                <!-- Modal Body -->
-                                <div class="modal-body bg-success text-light">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="recipient-name" class="col-form-label">
-                                                Recipient:
-                                            </label>
-                                            <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Enter your email" />
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <!-- Modal Footer -->
-                                <div class="modal-footer bg-success text-light">
-                                    <button type="button" class="btn btn-primary">Send</button>
-                                </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body bg-success text-light">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">
+                                    Recipient:
+                                </label>
+                                <input type="text" class="form-control" id="recipient-name"
+                                    placeholder="Enter your email" />
                             </div>
-                        </div>
+                        </form>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer bg-success text-light">
+                        <button type="button" class="btn btn-primary">Send</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    </div>
+    </div>
     <!-- end footer 1 -->
 
     <hr class="my-4" />
-
-    <!-- footer 2 -->
-    <div class="container text-start mt-2 mb-2 d-none d-md-block">
-        <div class="row align-items-start">
-            <div class="col">
-                <h3>About</h3>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Accreditation
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Student Achievements
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Careers
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Contact
-                </a>
-            </div>
-            <div class="col">
-                <h3>Academics</h3>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Faculty
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Academics
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    BA Program
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    MA Program
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Experiential Learning
-                </a>
-            </div>
-            <div class="col">
-                <h3>Admissions&aid</h3>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    How to Apply
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Tuition & Financial Aid
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    International Students
-                </a>
-            </div>
-            <div class="col">
-                <h3>Campus Life</h3>
-                <a href="target_page.html" class="d-block mt-2 do"> Overview </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Residential Life
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Honor Code
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Parents
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Center for Ethical Living and Learning (ZCELL)
-                </a>
-            </div>
-            <div class="col">
-                <h3>Give</h3>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Ways to Give
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    12000 Strong
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Legacy Giving
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Capital Projects
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Contact Advancement
-                </a>
-            </div>
-            <div class="col">
-                <h3>Resources</h3>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    College Catalog
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Features
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Calendar
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Transcript Request
-                </a>
-                <a href="https://www.facebook.com/sttcipasung" class="d-block mt-2 do">
-                    Volunteer
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- end footer 2 -->
-
-    <hr class="my-4 d-none d-md-block" style="border: 1px solid #ccc; width: 90%; margin: auto" />
-
-    <!-- footer 3 -->
-    <div class="container text-center mt-2">
-        <div class="row g-2">
-            <div class="col-6">
-                <div class="p-3">
-                    <h3>
-                        <a href="tel:(0265)2550424" class="text-decoration-none bottom f3">
-                            (0265) 2550424
-                        </a>
-                    </h3>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="p-3">
-                    <h3>
-                        <a href="mailto:lppm@sttcipasung.ac.id" class="text-decoration-none bottom f3">
-                            lppm@sttcipasung.ac.id
-                        </a>
-                    </h3>
-                </div>
-            </div>
-            <!-- baris 2 -->
-            <div class="col-12">
-                <div class="p-3">
-                    <h1>
-                        <a href="https://g.co/kgs/BUKhG8w" class="text-decoration-none bottom f3">
-                            Jl. Raya Cisinga KM 01 Desa Cilampunghilir Kecamatan Padakembang
-                            Kabupaten Tasikmalaya 46466
-                        </a>
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end footer 3 -->
-
-    <!-- footer 4 -->
-    <footer class="text-white w-100">
-        <div class="container-fluid bg-dark d-flex paling-bawah justify-content-center align-items-center"
-            style="height: 50px">
-            <!-- Bagian Kiri -->
-            <span> © 2024 </span>
-            |
-            <a href="#" class="text-white text-decoration-none">
-                Covid-19 Policy
-            </a>
-            |
-            <a href="src/bio_pa_ade.html" class="text-white text-decoration-none">
-                Privacy/CCPA
-            </a>
-        </div>
-    </footer>
-    <!-- end footer 4 -->
-
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-</body>
-
-</html>
+@endsection

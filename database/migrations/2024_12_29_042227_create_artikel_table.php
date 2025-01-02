@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('artikel', function (Blueprint $table) {
-            $table->id('artikel_id'); // Kolom artikel_id sebagai primary key
+        Schema::create('artikels', function (Blueprint $table) {
+            $table->id('id'); // Kolom artikel_id sebagai primary key
             $table->text('artikel'); // Kolom untuk menyimpan teks artikel
             $table->string('upload_artikel'); // Kolom untuk menyimpan nama file atau path file
             $table->timestamps(); // Kolom created_at dan updated_at
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('artikel');
+        Schema::dropIfExists('artikels');
     }
 };

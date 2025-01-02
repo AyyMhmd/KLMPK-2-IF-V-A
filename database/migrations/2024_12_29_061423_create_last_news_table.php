@@ -11,7 +11,7 @@ return new class extends Migration {
     public function up()
     {
         Schema::create('last_news', function (Blueprint $table) {
-            $table->id(); // Kolom ID sebagai primary key
+            $table->id('id'); // Kolom ID sebagai primary key
             $table->string('judul'); // Kolom untuk judul berita
             $table->text('konten'); // Kolom untuk konten berita
             $table->string('gambar')->nullable(); // Kolom untuk gambar berita (nullable)

@@ -10,7 +10,7 @@ class PrestasiMahasiswaController extends Controller
     public function index()
     {
         $prestasi = PrestasiMahasiswa::with('mahasiswa')->get();
-        return response()->json($prestasi);
+        return view('prestasi.index', ["prestasi" => $prestasi_mahasiswa]);
     }
 
     public function store(Request $request)

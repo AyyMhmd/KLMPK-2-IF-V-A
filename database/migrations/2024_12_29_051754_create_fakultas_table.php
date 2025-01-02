@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('fakultas', function (Blueprint $table) {
-            $table->id(); // Kolom ID sebagai primary key
+            $table->id('id'); // Kolom ID sebagai primary key
             $table->string('nama_fakultas'); // Nama fakultas, misalnya Informatika, Teknik Industri
             $table->text('penjelasan'); // Penjelasan tentang fakultas
             $table->string('gambar')->nullable(); // Kolom untuk menyimpan path gambar fakultas (nullable)

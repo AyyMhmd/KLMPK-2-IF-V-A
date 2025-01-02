@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Artikel;
+use App\Models\Artikels;
 use Illuminate\Http\Request;
 
 class ArtikelController extends Controller
 {
     public function index()
     {
-        $artikels = Artikel::all(); // Mengambil semua data artikel
-        return response()->json($artikels);
+        $artikels = Artikels::all(); // Mengambil semua data artikel
+        return view('artikels.index', ["artikels" => $artikels]);
     }
 
     public function store(Request $request)

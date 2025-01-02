@@ -12,11 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('prestasi_mahasiswa', function (Blueprint $table) {
-            $table->id('prestasi_id'); // Kolom ID auto-increment sebagai primary key
+            $table->id('id'); // Kolom ID auto-increment sebagai primary key
             $table->unsignedBigInteger('mahasiswa_id'); // Relasi ke tabel mahasiswa
             $table->string('nama_prestasi'); // Nama prestasi
-            $table->string('tingkat'); // Tingkat prestasi (misal: lokal, nasional, internasional)
-            $table->string('tahun'); // Tahun perolehan prestasi
+            $table->string('tingkat')->nullable(); // Tingkat prestasi (misal: lokal, nasional, internasional)
+            $table->string('tahun')->nullable(); // Tahun perolehan prestasi
             $table->text('keterangan')->nullable(); // Keterangan tambahan
             $table->timestamps(); // Kolom created_at dan updated_at
 
