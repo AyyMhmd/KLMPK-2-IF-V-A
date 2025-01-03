@@ -11,7 +11,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" />
     <title>STTC</title>
-
+    <link rel="icon" type="image/png" href="storage/img/STTC_NEW-removebg-preview.png">
     <link rel="stylesheet" href="styles.css" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
