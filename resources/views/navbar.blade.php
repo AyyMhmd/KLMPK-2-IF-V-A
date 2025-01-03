@@ -125,7 +125,7 @@
 
          <li class="nav-item">
              <!-- Tombol dropdown untuk Career -->
-             <a class="nav-link haha" href="src/login.html" role="button" aria-expanded="false">
+             <a class="nav-link haha" href="{{ route('login') }}" role="button" aria-expanded="false">
                  Login
              </a>
          </li>
@@ -143,7 +143,7 @@
  <nav class="navbar navbar-expand-md bg-light">
      <div class="container-fluid semua-nav">
          <!-- Navbar Brand -->
-         <a class="navbar-brand align-items-center" title="home" style="padding: 0;" href="index.html">
+         <a class="navbar-brand align-items-center" title="home" style="padding: 0;" href="{{ route('home') }}">
              <img src="https://sttcipasung.ac.id/wp-content/uploads/2023/07/STT-CIPASUNG-2-e1688823058980.png"
                  alt="Logo kampus" class="rounded-5 rounded-top-0" style="height: 71px; width: auto" />
          </a>
@@ -175,7 +175,7 @@
                          </a>
                          <ul class="dropdown-menu dropdown-menu-end bg-success" style="margin-top: 11px;">
                              <li>
-                                 <a class="dropdown-item" href="#"> About </a>
+                                 <a class="dropdown-item" href="{{ route('tentang') }}"> About </a>
                              </li>
                              <li>
                                  <a class="dropdown-item" href="#"> Accreditation </a>
@@ -195,7 +195,7 @@
                          </a>
                          <ul class="dropdown-menu dropdown-menu-end bg-success" style="margin-top: 11px;">
                              <li>
-                                 <a class="dropdown-item" href="src/faculty.html">
+                                 <a class="dropdown-item" href="{{ route('faculty') }}">
                                      Faculty
                                  </a>
                              </li>

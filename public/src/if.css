@@ -1,27 +1,27 @@
 * {
     box-sizing: border-box;
   }
-  
+
   body {
     margin: 0;
     font-family: system-ui, sans-serif;
     color: green;
     background-color: white;
   }
-  
-  
+
+
   main {
     padding: 1rem;
   }
-  
+
   h1 {
-    
+
     font-weight: bold;
     font-size: 1.5rem;
   }
-  
-  
-  
+
+
+
   /* informatika */
   .informatika{
     padding: 8rem 7% 1.4rem;
@@ -41,14 +41,14 @@
   }
   .informatika-img{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    width: 5%; 
-    height: auto; 
+    width: 5%;
+    height: auto;
     animation: fadeIn 2s ease-in-out;
   }
-  
-  
+
+
   .informatika .row .content{
     flex: 1 1 35rem;
     padding: 0 1rem;
@@ -70,12 +70,12 @@
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
-  
+
   .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
   }
-  
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -129,7 +129,7 @@
   main {
     margin-top: 50px;
   }
-  
+
 }
 @media (min-width: 768px) {
   .semua-nav {

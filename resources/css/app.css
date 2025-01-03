@@ -263,6 +263,18 @@ body.dark-mode .card-body {
 /* background-color: red; */
 /* } */
 
+/* sejarah */
+.sejarah{
+    text-align: center;
+    color: #198754;
+    font-size: 5vh;
+}
+/* fakultas */
+.facultas{
+    text-align: center;
+    color: #198754;
+    font-size: 5vh;
+}
 .card-faculty {
     width: 35rem;
     /* Anda bisa menyesuaikan lebar ini */
@@ -742,7 +754,7 @@ body.dark-mode .card-body {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
+/* if */
 .informatika {
     padding: 8rem 7% 1.4rem;
 }
@@ -836,6 +848,13 @@ body.dark-mode .card-body {
 }
 
 /* bio pak chobir */
+.pak-chobir-img{
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    align-items: center;
+    margin-top: auto;
+}
 
 .text-success {
     max-width: 600px;
@@ -846,4 +865,205 @@ body.dark-mode .card-body {
     /* Ruang bawah untuk pemisahan */
     overflow-wrap: break-word;
     /* Memastikan teks tidak meluap dari batas */
+}
+/* pak de bio */
+.pak-ade-img{
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    align-items: center;
+    margin-top: auto;
+}
+/* prestasi */
+.prestasi{
+    text-align: center;
+    color: #198754;
+    font-size: 5vh;
+}
+/* events */
+.events{
+    text-align: center;
+    color: #198754;
+    font-size: 5vh;
+}
+/* ukm */
+.ukm{
+    text-align: center;
+    color: #198754;
+    font-size: 5vh;
+}
+/* industri */
+.industri{
+    padding: 8rem 7% 1.4rem;
+  }
+  .industri h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: #000;
+    animation: fadeIn 2s ease-in-out;
+  }
+  .industri .row{
+    display: flex;
+  }
+  .industri .row .industri-img{
+    flex: 1 1 45rem;
+  }
+  .industri-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    height: auto;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+
+  .industri .row .content{
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+  }
+  .industri .row .content h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  .industri .row .content p{
+    margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #000;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* tentang */
+  .tentang-img {
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    align-items: center;
+    margin-top: 30vh;
+}
+
+.visi, .misi, .tujuan {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .visi h1, .misi h1, .tujuan h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+  }
+.misi-ol, .tujuan-ol, .visi-p{
+    margin-left: 10vh;
+    font-size: mediumc;
+}
+
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+
+  a:hover {
+    color: #23527c;
+  }
+
+  /* Responsive Styles */
+
+  @media (max-width: 768px) {
+    .visi, .misi, .tujuan {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .visi, .misi, .tujuan {
+      padding: 5px;
+    }
+  }
+/* login */
+.login-container {
+    width: 300px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 10px;
+}
+
+.login-container input[type="text"], .login-container input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-container a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.login-container a:hover {
+    color: #3e8e41;
 }

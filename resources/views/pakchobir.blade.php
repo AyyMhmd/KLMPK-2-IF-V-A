@@ -2,8 +2,8 @@
 @section('content')
 
     <div class="row justify-content-center text-justify">
-        <div class="pak-chobir">
-            <img src="storage/img/pak chobir.jpg" alt="Pak Chobir">
+        <div class="pak-chobir-img">
+            <img src="storage/img/pak chobir.JPG" alt="Pak Chobir">
         </div>
         <div class="col-md-6">
             <p class="center">
