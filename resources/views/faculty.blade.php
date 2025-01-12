@@ -24,8 +24,7 @@
                     </p>
                     <a href="{{ route('if') }}" class="button text-light">
                         Find out more
-                        <span class="material-symbols-outlined">arrow_right_alt</span>
-                    </a>
+                        <i class="bi bi-arrow-right"></i> </a>
                 </div>
             </div>
             <!-- end content Left -->
@@ -44,8 +43,7 @@
                         </p>
                         <a href="{{ route('ti') }}" class="button">
                             Find out more
-                            <span class="material-symbols-outlined">arrow_right_alt</span>
-                        </a>
+                            <i class="bi bi-arrow-right"></i> </a>
                     </div>
                 </div>
             </div>
