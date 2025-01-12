@@ -9,12 +9,11 @@ class Mahasiswa extends Model
 {
     use HasFactory;
 
-    protected $table = 'mahasiswa'; // Nama tabel di database
+    protected $fillable = ['nim', 'nama', 'jurusan', 'user_id'];
 
-    protected $fillable = [
-        'nama',
-        'nim',
-        'email',
-        'tanggal_lahir',
-    ];
+    // Relasi ke User
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
