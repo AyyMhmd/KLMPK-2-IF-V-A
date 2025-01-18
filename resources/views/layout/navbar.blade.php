@@ -131,9 +131,9 @@
          </li>
          <li class="nav-item">
              <!-- Tombol dropdown untuk Career -->
-             <a class="nav-link haha" href="{{ route('register') }}" role="button" aria-expanded="false">
+             {{-- <a class="nav-link haha" href="{{ route('register') }}" role="button" aria-expanded="false">
                  Sign up
-             </a>
+             </a> --}}
          </li>
      </ul>
  </div>
@@ -171,7 +171,7 @@
                      <li class="nav-item dropdown">
                          <a class="nav-link dropdown-toggle do" href="{{ route('tentang') }}" role="button"
                              data-bs-toggle="dropdown" aria-expanded="false">
-                             Tentang
+                             About
                          </a>
                          <ul class="dropdown-menu dropdown-menu-end bg-success" style="margin-top: 11px;">
                              <li>

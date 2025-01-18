@@ -22,8 +22,9 @@ services:
         networks:
             - sail
         depends_on:
-            - mysql
+            - pgsql
             - redis
+            - mysql
     mysql:
         image: 'mysql/mysql-server:8.0'
         ports:
@@ -48,6 +49,26 @@ services:
                 - '-p${DB_PASSWORD}'
             retries: 3
             timeout: 5s
+    pgsql:
+        image: 'postgres:13'
+        ports:
+            - '${FORWARD_PGSQL_PORT:-5432}:5432'
+        environment:
+            POSTGRES_USER: '${DB_USERNAME}'
+            POSTGRES_PASSWORD: '${DB_PASSWORD}'
+            POSTGRES_DB: '${DB_DATABASE}'
+        volumes:
+            - 'sail-pgsql:/var/lib/postgresql/data'
+        networks:
+            - sail
+        healthcheck:
+            test:
+                - CMD
+                - pg_isready
+                - '-U'
+                - '${DB_USERNAME}'
+            retries: 3
+            timeout: 5s
     redis:
         image: 'redis:alpine'
         ports:
@@ -68,6 +89,8 @@ networks:
         driver: bridge
 volumes:
     sail-mysql:
+        driver: local
+    sail-pgsql:
         driver: local
     sail-redis:
         driver: local

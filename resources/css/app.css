@@ -933,7 +933,9 @@ body.dark-mode .card-body {
 
 .card-ukm h2 {
     font-size: 1.5em;
+    text-align: center;
     margin-bottom: 10px;
+    color: #198754;
 }
 
 .card-ukm p {

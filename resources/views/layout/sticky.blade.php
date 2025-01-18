@@ -128,11 +128,11 @@
                 Login
             </a>
         </li>
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <!-- Tombol dropdown untuk Career -->
             <a class="nav-link haha" href="#" role="button" aria-expanded="false">
                 Sign up
             </a>
-        </li>
+        </li> --}}
     </ul>
 </div>
